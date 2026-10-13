@@ -1,0 +1,40 @@
+name: Chercher des vidéos de fond
+
+on:
+  push:
+    branches: [main]
+    paths: [coran/fetch_videos.py, .github/workflows/vfonds.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install pillow
+      - run: python3 coran/fetch_videos.py
+        continue-on-error: true
+      - name: Mettre en ligne dans la release « vfonds »
+        if: hashFiles('out_vfonds/planche.jpg') != ''
+        run: |
+          gh release view vfonds >/dev/null 2>&1 || gh release create vfonds --title "Vidéos de fond" --notes "Vidéos libres de droits (CC0 / domaine public, Wikimedia Commons)."
+          gh release upload vfonds out_vfonds/*.webm out_vfonds/planche.jpg --clobber
+      - name: Enregistrer la liste
+        if: always()
+        run: |
+          git config user.name "quiz-bot"
+          git config user.email "quiz-bot@users.noreply.github.com"
+          git add coran/vfonds_log.txt
+          [ -f coran/vfonds_candidats.json ] && git add coran/vfonds_candidats.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Vidéos de fond : liste des candidates"
+          git pull --rebase
+          git push

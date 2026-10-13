@@ -89,6 +89,16 @@ def download(url, path):
     raise RuntimeError("téléchargement impossible : " + url)
 
 
+def trim_edges(sig, keep=0.35, thr=0.01):
+    """Coupe seulement le silence en trop au début et à la fin d'un fichier de verset."""
+    loud = np.where(np.abs(sig) > thr)[0]
+    if len(loud) == 0:
+        return sig
+    a = max(0, loud[0] - int(keep * SR))
+    b = min(len(sig), loud[-1] + int(keep * SR))
+    return sig[a:b]
+
+
 def read_audio(path):
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"],
                          check=True, capture_output=True).stdout
@@ -143,7 +153,7 @@ class PhotoBackground:
         shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         g = np.zeros((H, 1), np.float32)
         y = np.linspace(0, 1, H)[:, None]
-        g = 120 + 50 * np.abs(y - 0.45) * 2  # plus sombre en haut et en bas
+        g = 70 + 70 * np.abs(y - 0.45) * 2  # voile léger, plus sombre en haut et en bas
         a = np.repeat(np.clip(g, 0, 200).astype(np.uint8), W, axis=1)
         shade.putalpha(Image.fromarray(a, "L"))
         self.shade = shade
@@ -160,6 +170,31 @@ class PhotoBackground:
         x0 = room * (0.5 + self.dir * (p - 0.5) * 0.8)
         y0 = (self.im.height - ch) / 2
         img = self.im.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch)).convert("RGBA")
+        img.alpha_composite(self.shade)
+        return img
+
+
+class VideoBackground:
+    """Vraie vidéo de paysage (libre de droits) en boucle, recadrée en vertical, couleurs ravivées."""
+
+    def __init__(self, path, total):
+        vf = ("scale='if(gt(a,9/16),-2,1080)':'if(gt(a,9/16),1920,-2)',crop=1080:1920,"
+              "eq=saturation=1.25:contrast=1.06,fps=30")
+        self.proc = subprocess.Popen(
+            ["ffmpeg", "-v", "error", "-stream_loop", "-1", "-i", path, "-t", f"{total + 1:.2f}", "-an",
+             "-vf", vf, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+        y = np.linspace(0, 1, H)[:, None]
+        g = 60 + 80 * np.abs(y - 0.45) * 2
+        a = np.repeat(np.clip(g, 0, 200).astype(np.uint8), W, axis=1)
+        self.shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        self.shade.putalpha(Image.fromarray(a, "L"))
+        self.last = None
+
+    def frame(self, t):
+        raw = self.proc.stdout.read(W * H * 3)
+        if len(raw) == W * H * 3:
+            self.last = Image.frombytes("RGB", (W, H), raw)
+        img = (self.last or Image.new("RGB", (W, H), (10, 30, 40))).convert("RGBA")
         img.alpha_composite(self.shade)
         return img
 
@@ -317,7 +352,8 @@ HOOKS = [
     ("Ce rappel est peut-être", "un signe pour toi"),
 ]
 MIN_DUR, MAX_DUR = 62.0, 180.0
-INTRO, END, GAP_REC, GAP_FR = 3.2, 4.0, 0.7, 0.8
+INTRO, END, GAP_REC, GAP_FR = 3.2, 4.0, 0.0, 0.8
+MAX_EDGE_SILENCE = 0.35  # on garde la respiration naturelle du récitateur, sans blanc ajouté
 
 
 def place(buf, sig, at):
@@ -356,7 +392,7 @@ def gather(v, tmp):
 
     def add(s, a):
         ay = fetch(s, a)
-        ay["rec"] = read_audio(download(ay["audio"], os.path.join(tmp, f"r{s}_{a}.mp3")))
+        ay["rec"] = trim_edges(read_audio(download(ay["audio"], os.path.join(tmp, f"r{s}_{a}.mp3"))), MAX_EDGE_SILENCE / 2)
         if mode == "recit_trad":
             ay["frv"] = tts(ay["fr"], os.path.join(tmp, f"f{s}_{a}.mp3"))
         items.append(ay)
@@ -417,7 +453,12 @@ def build(items, mode, out_path, cfg, hook, bg_path=None):
             w.setframerate(SR)
             w.writeframes((audio * 32767).astype(np.int16).tobytes())
 
-        bg = PhotoBackground(bg_path, total, items[0]["s"]) if bg_path else Background(seed=items[0]["s"] * 1000 + items[0]["a"])
+        if bg_path and bg_path.endswith((".webm", ".mp4", ".mov")):
+            bg = VideoBackground(bg_path, total)
+        elif bg_path:
+            bg = PhotoBackground(bg_path, total, items[0]["s"])
+        else:
+            bg = Background(seed=items[0]["s"] * 1000 + items[0]["a"])
         cache = {}
         banner = cta_banner()
         empty = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -445,8 +486,8 @@ def build(items, mode, out_path, cfg, hook, bg_path=None):
             lay = cache[key]
             # pas de fondu quand on passe de la récitation à la traduction du même verset
             same = kind == "page" and fr_on and lt < 0.5
-            if lt < 0.5 and not same:
-                lay = Image.blend(empty, lay, lt / 0.5)
+            if lt < 0.25 and not same:
+                lay = Image.blend(empty, lay, lt / 0.25)
             frame.alpha_composite(lay)
             if cta_from <= tt <= cta_to and kind == "page":
                 k = min(1.0, (tt - cta_from) / 0.4, (cta_to - tt) / 0.4)
