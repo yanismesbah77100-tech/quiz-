@@ -72,7 +72,8 @@ def fetch(s, a):
             if a == 1 and s not in (1, 9) and text.startswith("بِسْمِ"):
                 text = " ".join(text.split(" ")[4:]).strip()
             return dict(s=s, a=a, ar=text, fr=fr["text"].strip(), audio=au["audio"],
-                        surah_ar=ar["surah"]["name"], surah=ar["surah"]["englishName"])
+                        surah_ar=ar["surah"]["name"], surah=ar["surah"]["englishName"],
+                        n_ayahs=ar["surah"]["numberOfAyahs"])
         except Exception as e:
             print("erreur API, nouvel essai :", e, file=sys.stderr)
     raise RuntimeError(f"verset {s}:{a} introuvable")
@@ -202,8 +203,9 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
     """Calque transparent : en-tête, texte arabe, traduction, pied de page."""
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
-    first, last = ayahs[0], ayahs[-1]
-    ref = f"{first['s']}:{first['a']}" + (f"-{last['a']}" if last["a"] != first["a"] else "")
+    shown0 = ayahs[idx] if idx is not None else ayahs[0]
+    first = shown0
+    ref = f"{shown0['s']}:{shown0['a']}"
     # en-tête
     hf = F(AR_FONT, 70)
     text_block(d, [first["surah_ar"]], hf, 130, 110, GOLD, rtl=True)
@@ -257,6 +259,17 @@ def end_layer(cfg):
 
 
 # ---------------------------------------------------------------- montage
+HOOKS = [
+    ("Prends une minute", "et écoute ce rappel"),
+    ("Écoute jusqu'à la fin", "ce rappel est pour toi"),
+    ("Que ces versets", "apaisent ton cœur"),
+    ("Arrête-toi un instant", "et écoute la Parole d'Allah"),
+    ("Ce rappel est peut-être", "un signe pour toi"),
+]
+MIN_DUR, MAX_DUR = 62.0, 180.0
+INTRO, END, GAP_REC, GAP_FR = 3.2, 4.0, 0.7, 0.8
+
+
 def place(buf, sig, at):
     i = int(at * SR)
     if i >= len(buf):
@@ -265,29 +278,78 @@ def place(buf, sig, at):
     buf[i:j] += sig[: j - i]
 
 
-def build(ayahs, mode, out_path, cfg, demo=False):
+def hook_layer(lines, cfg):
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    text_block(d, ["بِسْمِ اللَّهِ"], F(AR_FONT, 90), 520, 150, GOLD, rtl=True)
+    text_block(d, [lines[0]], F(LAT_B, 76), 780, 100, CREAM, stroke=3)
+    text_block(d, [lines[1]], F(LAT_SERIF_I, 58), 890, 80, SOFT)
+    text_block(d, ["Écoute jusqu'au bout et abonne-toi"], F(LAT, 38), 1120, 50, GOLD)
+    return layer
+
+
+def cta_banner():
+    b = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(b)
+    d.rounded_rectangle((130, 1560, W - 130, 1660), 50, fill=(232, 196, 110, 235))
+    text_block(d, ["Abonne-toi pour ne rien rater"], F(LAT_B, 42), 1585, 50, (12, 40, 40))
+    return b
+
+
+def gather(v, tmp):
+    """Récupère les versets demandés puis prolonge jusqu'à au moins MIN_DUR secondes."""
+    mode = v["mode"]
+    items = []
+
+    def add(s, a):
+        ay = fetch(s, a)
+        ay["rec"] = read_audio(download(ay["audio"], os.path.join(tmp, f"r{s}_{a}.mp3")))
+        if mode == "recit_trad":
+            ay["frv"] = tts(ay["fr"], os.path.join(tmp, f"f{s}_{a}.mp3"))
+        items.append(ay)
+
+    def duration():
+        t = INTRO + END
+        for ay in items:
+            t += len(ay["rec"]) / SR + GAP_REC
+            if "frv" in ay:
+                t += len(ay["frv"]) / SR + GAP_FR
+        return t
+
+    for n in range(v["from"], v["to"] + 1):
+        add(v["surah"], n)
+    # prolonge avec les versets suivants (puis la sourate suivante si besoin)
+    while duration() < MIN_DUR:
+        last = items[-1]
+        if last["a"] < last["n_ayahs"]:
+            nxt = (last["s"], last["a"] + 1)
+        elif last["s"] < 114:
+            nxt = (last["s"] + 1, 1)
+        else:
+            break
+        add(*nxt)
+        if duration() > MAX_DUR:
+            break
+    return items, duration()
+
+
+def build(items, mode, out_path, cfg, hook):
     with tempfile.TemporaryDirectory() as tmp:
-        segs, sounds = [], []  # segs: (start, dur, kind, idx, fr_on)
-        t = 0.0
-        intro = 1.2
-        segs.append((0.0, intro, "page", None, False))
-        t = intro
-        for i, a in enumerate(ayahs):
-            if demo:
-                rec = np.zeros(int(SR * 4))
-            else:
-                rec = read_audio(download(a["audio"], os.path.join(tmp, f"r{i}.mp3")))
-            idx = i if len(ayahs) > 1 else None
-            segs.append((t, len(rec) / SR + 0.7, "page", idx, False))
-            sounds.append((rec, t))
-            t += len(rec) / SR + 0.7
-            if mode == "recit_trad":
-                fr = np.zeros(int(SR * 3)) if demo else tts(a["fr"], os.path.join(tmp, f"f{i}.mp3"))
-                segs.append((t, len(fr) / SR + 0.8, "page", idx, True))
-                sounds.append((fr * 0.9, t + 0.2))
-                t += len(fr) / SR + 0.8
-        segs.append((t, 3.5, "end", None, False))
-        total = t + 3.5
+        segs, sounds = [("hook", 0.0, INTRO, None, False)], []
+        t = INTRO
+        for i, ay in enumerate(items):
+            r = len(ay["rec"]) / SR + GAP_REC
+            segs.append(("page", t, r, i, False))
+            sounds.append((ay["rec"], t))
+            t += r
+            if "frv" in ay:
+                f = len(ay["frv"]) / SR + GAP_FR
+                segs.append(("page", t, f, i, True))
+                sounds.append((ay["frv"] * 0.9, t + 0.2))
+                t += f
+        segs.append(("end", t, END, None, False))
+        total = t + END
+        cta_from, cta_to = total * 0.45, total * 0.45 + 4.0
 
         audio = np.zeros(int(SR * total) + SR)
         for sig, at in sounds:
@@ -302,8 +364,11 @@ def build(ayahs, mode, out_path, cfg, demo=False):
             w.setframerate(SR)
             w.writeframes((audio * 32767).astype(np.int16).tobytes())
 
-        bg = Background(seed=ayahs[0]["s"] * 1000 + ayahs[0]["a"])
+        bg = Background(seed=items[0]["s"] * 1000 + items[0]["a"])
         cache = {}
+        banner = cta_banner()
+        empty = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        black = Image.new("RGBA", (W, H), (0, 0, 0, 255))
         proc = subprocess.Popen(
             ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
              "-i", "-", "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-pix_fmt", "yuv420p",
@@ -311,24 +376,36 @@ def build(ayahs, mode, out_path, cfg, demo=False):
         si = 0
         for f in range(int(total * FPS)):
             tt = f / FPS
-            while si + 1 < len(segs) and tt >= segs[si + 1][0]:
+            while si + 1 < len(segs) and tt >= segs[si + 1][1]:
                 si += 1
-            st, dur, kind, idx, fr_on = segs[si]
+            kind, st, dur, idx, fr_on = segs[si]
             key = (kind, idx, fr_on)
             if key not in cache:
-                cache[key] = end_layer(cfg) if kind == "end" else layout(ayahs, cfg, fr_on, idx)
+                if kind == "hook":
+                    cache[key] = hook_layer(hook, cfg)
+                elif kind == "end":
+                    cache[key] = end_layer(cfg)
+                else:
+                    cache[key] = layout(items, cfg, fr_on, idx)
             frame = bg.frame(tt)
-            # fondu d'entrée de chaque page
             lt = tt - st
             lay = cache[key]
-            if lt < 0.5:
-                a = lt / 0.5
-                lay = Image.blend(Image.new("RGBA", (W, H), (0, 0, 0, 0)), lay, a)
+            # pas de fondu quand on passe de la récitation à la traduction du même verset
+            same = kind == "page" and fr_on and lt < 0.5
+            if lt < 0.5 and not same:
+                lay = Image.blend(empty, lay, lt / 0.5)
             frame.alpha_composite(lay)
-            if tt < 0.6:
-                frame = Image.blend(Image.new("RGBA", (W, H), (0, 0, 0, 255)), frame, tt / 0.6)
+            if cta_from <= tt <= cta_to and kind == "page":
+                k = min(1.0, (tt - cta_from) / 0.4, (cta_to - tt) / 0.4)
+                frame.alpha_composite(Image.blend(empty, banner, max(0.0, k)))
+            # barre de progression
+            d = ImageDraw.Draw(frame)
+            d.rectangle((0, 0, W, 10), fill=(255, 255, 255, 40))
+            d.rectangle((0, 0, int(W * tt / total), 10), fill=GOLD + (230,))
+            if tt < 0.5:
+                frame = Image.blend(black, frame, tt / 0.5)
             if tt > total - 0.6:
-                frame = Image.blend(Image.new("RGBA", (W, H), (0, 0, 0, 255)), frame, max(0.0, (total - tt) / 0.6))
+                frame = Image.blend(black, frame, max(0.0, (total - tt) / 0.6))
             proc.stdin.write(frame.convert("RGB").tobytes())
         proc.stdin.close()
         if proc.wait() != 0:
@@ -348,19 +425,21 @@ def main():
     cfg = json.load(open(cfg_path, encoding="utf-8")) if os.path.exists(cfg_path) else {}
     print("police arabe :", AR_FONT)
     if a.demo:
-        demo = [dict(s=1, a=1, ar="بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ", fr="(texte de démonstration)",
-                     audio=None, surah_ar="سُورَةُ ٱلْفَاتِحَةِ", surah="Al-Faatiha")]
-        for mode in ("recit", "recit_trad"):
-            build(demo, mode, os.path.join(a.out, f"demo-{mode}.mp4"), cfg, demo=True)
+        items = [dict(s=1, a=i, ar="بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ", fr="(texte de démonstration)",
+                      surah_ar="سُورَةُ ٱلْفَاتِحَةِ", surah="Al-Faatiha", rec=np.zeros(SR * 4),
+                      frv=np.zeros(SR * 3)) for i in (1, 2)]
+        build(items, "recit_trad", os.path.join(a.out, "demo.mp4"), cfg, HOOKS[0])
         return
     jobs = json.load(open(a.queue, encoding="utf-8"))["videos"]
     for v in jobs:
         if a.only is not None and v["name"] not in a.only:
             continue
         out = os.path.join(a.out, f"{v['name']}.mp4")
-        ayahs = [fetch(v["surah"], n) for n in range(v["from"], v["to"] + 1)]
-        dur = build(ayahs, v["mode"], out, cfg)
-        print(f"ok {out} ({dur:.1f}s)")
+        with tempfile.TemporaryDirectory() as tmp:
+            items, _ = gather(v, tmp)
+            hook = HOOKS[int(v["name"].lstrip("c") or 0) % len(HOOKS)]
+            dur = build(items, v["mode"], out, cfg, hook)
+        print(f"ok {out} ({dur:.1f}s, versets {items[0]['s']}:{items[0]['a']} -> {items[-1]['s']}:{items[-1]['a']})")
 
 
 if __name__ == "__main__":
