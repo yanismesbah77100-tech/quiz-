@@ -7,7 +7,7 @@ name: Générer les vidéos quiz
 on:
   push:
     branches: [main]
-    paths: [queue.json, generate.py]
+    paths: [queue.json, generate.py, .github/workflows/videos.yml]
   workflow_dispatch:
 
 permissions:
