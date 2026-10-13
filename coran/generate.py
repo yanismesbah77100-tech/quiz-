@@ -128,6 +128,42 @@ def star_tile(size=360, alpha=22):
     return t
 
 
+class PhotoBackground:
+    """Vraie photo de paysage (libre de droits) avec lent zoom et déplacement, voile sombre pour le texte."""
+
+    def __init__(self, path, total, seed):
+        im = Image.open(path).convert("RGB")
+        # on travaille sur une version dont la hauteur fait au moins 2100 px
+        scale = max(2100 / im.height, 1300 / im.width, 1.0)
+        if scale > 1:
+            im = im.resize((int(im.width * scale), int(im.height * scale)), Image.LANCZOS)
+        self.im, self.total = im, total
+        rnd = random.Random(seed)
+        self.dir = rnd.choice([-1, 1])
+        shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        g = np.zeros((H, 1), np.float32)
+        y = np.linspace(0, 1, H)[:, None]
+        g = 120 + 50 * np.abs(y - 0.45) * 2  # plus sombre en haut et en bas
+        a = np.repeat(np.clip(g, 0, 200).astype(np.uint8), W, axis=1)
+        shade.putalpha(Image.fromarray(a, "L"))
+        self.shade = shade
+
+    def frame(self, t):
+        p = t / max(self.total, 1)
+        z = 1.0 + 0.12 * p
+        ch = self.im.height / z
+        cw = ch * W / H
+        if cw > self.im.width:
+            cw = self.im.width
+            ch = cw * H / W
+        room = self.im.width - cw
+        x0 = room * (0.5 + self.dir * (p - 0.5) * 0.8)
+        y0 = (self.im.height - ch) / 2
+        img = self.im.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch)).convert("RGBA")
+        img.alpha_composite(self.shade)
+        return img
+
+
 class Background:
     def __init__(self, seed):
         rnd = random.Random(seed)
@@ -333,7 +369,7 @@ def gather(v, tmp):
     return items, duration()
 
 
-def build(items, mode, out_path, cfg, hook):
+def build(items, mode, out_path, cfg, hook, bg_path=None):
     with tempfile.TemporaryDirectory() as tmp:
         segs, sounds = [("hook", 0.0, INTRO, None, False)], []
         t = INTRO
@@ -364,7 +400,7 @@ def build(items, mode, out_path, cfg, hook):
             w.setframerate(SR)
             w.writeframes((audio * 32767).astype(np.int16).tobytes())
 
-        bg = Background(seed=items[0]["s"] * 1000 + items[0]["a"])
+        bg = PhotoBackground(bg_path, total, items[0]["s"]) if bg_path else Background(seed=items[0]["s"] * 1000 + items[0]["a"])
         cache = {}
         banner = cta_banner()
         empty = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -419,6 +455,8 @@ def main():
     ap.add_argument("--out", default="out")
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--demo", action="store_true")
+    ap.add_argument("--bg", help="photo de fond (test)")
+    ap.add_argument("--fonds", default="fonds", help="dossier des photos de fond")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     cfg_path = os.path.join(HERE, "config.json")
@@ -428,7 +466,7 @@ def main():
         items = [dict(s=1, a=i, ar="بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ", fr="(texte de démonstration)",
                       surah_ar="سُورَةُ ٱلْفَاتِحَةِ", surah="Al-Faatiha", rec=np.zeros(SR * 4),
                       frv=np.zeros(SR * 3)) for i in (1, 2)]
-        build(items, "recit_trad", os.path.join(a.out, "demo.mp4"), cfg, HOOKS[0])
+        build(items, "recit_trad", os.path.join(a.out, "demo.mp4"), cfg, HOOKS[0], a.bg)
         return
     jobs = json.load(open(a.queue, encoding="utf-8"))["videos"]
     for v in jobs:
@@ -437,8 +475,14 @@ def main():
         out = os.path.join(a.out, f"{v['name']}.mp4")
         with tempfile.TemporaryDirectory() as tmp:
             items, _ = gather(v, tmp)
-            hook = HOOKS[int(v["name"].lstrip("c") or 0) % len(HOOKS)]
-            dur = build(items, v["mode"], out, cfg, hook)
+            num = int(v["name"].lstrip("c") or 0)
+            hook = HOOKS[num % len(HOOKS)]
+            bgs = json.load(open(os.path.join(HERE, "backgrounds.json"), encoding="utf-8"))
+            bg_path = os.path.join(a.fonds, v.get("bg") or bgs[(num * 5) % len(bgs)]["file"])
+            if not os.path.exists(bg_path):
+                print("fond introuvable :", bg_path, file=sys.stderr)
+                bg_path = None
+            dur = build(items, v["mode"], out, cfg, hook, bg_path)
         print(f"ok {out} ({dur:.1f}s, versets {items[0]['s']}:{items[0]['a']} -> {items[-1]['s']}:{items[-1]['a']})")
 
 
