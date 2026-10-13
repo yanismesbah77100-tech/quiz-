@@ -1,0 +1,4 @@
+{
+ "cat_weights": {},
+ "notes": "Poids par catégorie de questions (1 = normal, 2 = deux fois plus souvent, 0.5 = moitié moins). Mis à jour chaque jour d'après les statistiques TikTok (voir analytics.md)."
+}

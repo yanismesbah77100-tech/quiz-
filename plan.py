@@ -34,9 +34,16 @@ def main():
     n = int(sys.argv[1])
     bank, queue, used, qpath = load()
     rnd = random.Random(len(used))
-    pools = {lvl: [q["id"] for q in bank if q["lvl"] == lvl and q["id"] not in used] for lvl in (1, 2, 3)}
-    for p in pools.values():
-        rnd.shuffle(p)
+    # strategy.json : {"cat_weights": {"Sport": 2.0, "Art": 0.5, ...}} -> catégories favorisées
+    spath = os.path.join(HERE, "strategy.json")
+    weights = json.load(open(spath, encoding="utf-8")).get("cat_weights", {}) if os.path.exists(spath) else {}
+    cat = {q["id"]: q["cat"] for q in bank}
+    pools = {}
+    for lvl in (1, 2, 3):
+        ids = [q["id"] for q in bank if q["lvl"] == lvl and q["id"] not in used]
+        # tirage pondéré sans remise : clé = u^(1/poids), on garde les plus grandes en fin de liste
+        ids.sort(key=lambda i: rnd.random() ** (1.0 / max(0.05, float(weights.get(cat[i], 1.0)))))
+        pools[lvl] = ids
     num = max([int(v["name"][1:]) for v in queue["videos"]] or [0])
     added = []
     for _ in range(n):
