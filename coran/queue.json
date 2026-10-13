@@ -13,6 +13,41 @@
    "from": 1,
    "to": 11,
    "mode": "recit"
+  },
+  {
+   "name": "c0013",
+   "surah": 1,
+   "from": 1,
+   "to": 7,
+   "mode": "recit"
+  },
+  {
+   "name": "c0014",
+   "surah": 2,
+   "from": 255,
+   "to": 255,
+   "mode": "recit"
+  },
+  {
+   "name": "c0015",
+   "surah": 94,
+   "from": 1,
+   "to": 8,
+   "mode": "recit"
+  },
+  {
+   "name": "c0016",
+   "surah": 39,
+   "from": 53,
+   "to": 53,
+   "mode": "recit"
+  },
+  {
+   "name": "c0017",
+   "surah": 13,
+   "from": 28,
+   "to": 28,
+   "mode": "recit"
   }
  ]
 }
