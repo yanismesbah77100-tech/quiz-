@@ -1,0 +1,34 @@
+name: Chercher des fonds paysages
+
+on:
+  push:
+    branches: [main]
+    paths: [coran/fetch_backgrounds.py, .github/workflows/fonds.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pillow
+      - run: python3 coran/fetch_backgrounds.py
+      - name: Mettre en ligne dans la release « fonds »
+        run: |
+          gh release view fonds >/dev/null 2>&1 || gh release create fonds --title "Fonds paysages" --notes "Photos libres de droits (CC0 / domaine public, Wikimedia Commons)."
+          gh release upload fonds out_fonds/*.jpg --clobber
+      - name: Enregistrer la liste des candidats
+        run: |
+          git config user.name "quiz-bot"
+          git config user.email "quiz-bot@users.noreply.github.com"
+          git add coran/fonds_candidats.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Fonds : liste des photos candidates"
+          git pull --rebase
+          git push
