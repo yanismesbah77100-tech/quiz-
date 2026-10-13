@@ -1,5 +1,9 @@
 name: Générer les vidéos quiz
 
+# Les vidéos ne sont PAS enregistrées dans le dépôt (il deviendrait énorme) :
+# elles sont mises en ligne comme fichiers de la release « videos ».
+# videos/index.json liste les vidéos disponibles et leur lien.
+
 on:
   push:
     branches: [main]
@@ -16,7 +20,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -26,18 +32,37 @@ jobs:
           sudo apt-get install -y -q ffmpeg fonts-dejavu-core
           pip install edge-tts gTTS pillow numpy
 
-      - name: Générer les vidéos de la file
+      - name: Préparer la release
         run: |
-          
-          
-          python3 generate.py --queue queue.json --out videos
+          gh release view videos >/dev/null 2>&1 || gh release create videos --title "Vidéos quiz" --notes "Vidéos générées automatiquement."
+          gh release view videos --json assets --jq '.assets[].name' > existing.txt || true
+          cat existing.txt
 
-      - name: Enregistrer les vidéos
+      - name: Générer et mettre en ligne les vidéos manquantes
         run: |
+          mkdir -p out
+          for name in $(python3 -c "import json;print(' '.join(v['name'] for v in json.load(open('queue.json'))['videos']))"); do
+            if grep -qx "$name.mp4" existing.txt; then echo "déjà en ligne : $name"; continue; fi
+            ids=$(python3 -c "import json,sys;print(' '.join(str(i) for v in json.load(open('queue.json'))['videos'] if v['name']=='$name' for i in v['ids']))")
+            python3 generate.py --name "$name" --ids $ids --out out
+            gh release upload videos "out/$name.mp4" --clobber
+            echo "$name.mp4" >> existing.txt
+          done
+
+      - name: Mettre à jour videos/index.json
+        run: |
+          mkdir -p videos
+          python3 - <<'EOF'
+          import json
+          names = sorted({l.strip()[:-4] for l in open("existing.txt") if l.strip().endswith(".mp4")})
+          repo = "${{ github.repository }}"
+          idx = {n: f"https://github.com/{repo}/releases/download/videos/{n}.mp4" for n in names}
+          json.dump(idx, open("videos/index.json", "w"), indent=1)
+          EOF
           git config user.name "quiz-bot"
           git config user.email "quiz-bot@users.noreply.github.com"
-          git add videos
+          git add videos/index.json
           git diff --cached --quiet && exit 0
-          git commit -m "Nouvelles vidéos quiz"
+          git commit -m "Vidéos en ligne : mise à jour de l'index"
           git pull --rebase
           git push
