@@ -1,0 +1,70 @@
+requête beach sunset CC-Zero -> 12 résultats 
+requête beach sunset PD-self -> 12 résultats 
+requête beach sunset PD-user -> 12 résultats 
+beach sunset -> 21
+requête clouds sky CC-Zero -> 12 résultats 
+requête clouds sky PD-self -> 12 résultats 
+requête clouds sky PD-user -> 12 résultats 
+clouds sky -> 49
+requête ocean waves CC-Zero -> 12 résultats 
+requête ocean waves PD-self -> 12 résultats 
+requête ocean waves PD-user -> 12 résultats 
+ocean waves -> 71
+requête sand dunes desert CC-Zero -> 12 résultats 
+erreur API sand dunes desert PD-self <HTTPError 429: 'Too Many Requests'>
+erreur API sand dunes desert PD-user <HTTPError 429: 'Too Many Requests'>
+sand dunes desert -> 82
+erreur API mountain lake CC-Zero <HTTPError 429: 'Too Many Requests'>
+erreur API mountain lake PD-self <HTTPError 429: 'Too Many Requests'>
+erreur API mountain lake PD-user <HTTPError 429: 'Too Many Requests'>
+mountain lake -> 82
+erreur API sunrise sea CC-Zero <HTTPError 429: 'Too Many Requests'>
+erreur API sunrise sea PD-self <HTTPError 429: 'Too Many Requests'>
+erreur API sunrise sea PD-user <HTTPError 429: 'Too Many Requests'>
+sunrise sea -> 82
+erreur API sky clouds sunset CC-Zero <HTTPError 429: 'Too Many Requests'>
+erreur API sky clouds sunset PD-self <HTTPError 429: 'Too Many Requests'>
+erreur API sky clouds sunset PD-user <HTTPError 429: 'Too Many Requests'>
+sky clouds sunset -> 82
+erreur API palm beach CC-Zero <HTTPError 429: 'Too Many Requests'>
+erreur API palm beach PD-self <HTTPError 429: 'Too Many Requests'>
+erreur API palm beach PD-user <HTTPError 429: 'Too Many Requests'>
+palm beach -> 82
+erreur API night sky stars landscape CC-Zero <HTTPError 429: 'Too Many Requests'>
+erreur API night sky stars landscape PD-self <HTTPError 429: 'Too Many Requests'>
+erreur API night sky stars landscape PD-user <HTTPError 429: 'Too Many Requests'>
+night sky stars landscape -> 82
+erreur API waterfall forest CC-Zero <HTTPError 429: 'Too Many Requests'>
+erreur API waterfall forest PD-self <HTTPError 429: 'Too Many Requests'>
+erreur API waterfall forest PD-user <HTTPError 429: 'Too Many Requests'>
+waterfall forest -> 82
+échec File:Hallandale Beach sunset.JPG <HTTPError 429: 'Too many requests (f061ab2)'>
+échec File:Sunset on North Beach at Fort De Soto Park.jpg <HTTPError 429: 'Too many requests (f061ab2)'>
+échec File:Beach sunset at Thornbury, Ontario.jpg <HTTPError 429: 'Too many requests (f061ab2)'>
+échec File:Ocean Beach, San Diego at sunset Dec 2006.jpg <HTTPError 429: 'Too many requests (f061ab2)'>
+échec File:Sunset at the Tithal Beach, Valsad.jpg <HTTPError 429: 'Too many requests (f061ab2)'>
+échec File:Sunset in Bauang Beach.JPG <HTTPError 429: 'Too many requests (f061ab2)'>
+échec File:Sunset of White Beach, Boracay Island (Dec. 2005 28th).JPG <HTTPError 429: 'Too many requests (f061ab2)'>
+échec File:Sky Clouds Sun.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Sky with clouds and trees without leaves.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Berninabahn zwischen Lagalb und Ospizio Bernina im Winter.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Clouds Sky.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Clouds in the sky, seen from above (21 July 2010).jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Clouds sicily.JPG <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Field, corn, Liechtenstein, Mountains, Alps, Vaduz, sky, clouds, landscape.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Sky with puffy clouds.JPG <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:The Spire.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:BahamasCloud.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Clouds over Hastings at Sunset2.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Cloudy Sky Over Sarein (Iran).jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:DollymountStrand 3647w.JPG <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Kilkee1.JPG <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Orange clouds above trees.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:The sky over Galloway, Scotland.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Drone view of ocean waves (Unsplash).jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Ocean Waves-saam 2013.67.5.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Ocean waves and foam seascape -- 29 of 33.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Ocean Spokojny.JPG <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Wave against blockhaus in Capbreton 1.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Wave against blockhaus in Capbreton 2.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
+échec File:Wave against blockhaus in Capbreton 3.jpg <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
