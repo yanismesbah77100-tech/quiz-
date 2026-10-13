@@ -40,8 +40,8 @@ jobs:
       - name: Télécharger les photos de fond
         run: |
           mkdir -p fonds
-          for f in $(python3 -c "import json;print(' '.join(b['file'] for b in json.load(open('coran/backgrounds.json'))))"); do
-            gh release download fonds -D fonds -p "$f" --clobber
+          python3 -c "import json;[print(b.get('release','fonds'), b['file']) for b in json.load(open('coran/backgrounds.json'))]" | while read rel f; do
+            gh release download "$rel" -D fonds -p "$f" --clobber
           done
           ls fonds
 

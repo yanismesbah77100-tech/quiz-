@@ -1,10 +1,17 @@
 {
  "videos": [
   {
-   "name": "c0010",
+   "name": "c0011",
    "surah": 112,
    "from": 1,
    "to": 4,
+   "mode": "recit"
+  },
+  {
+   "name": "c0012",
+   "surah": 93,
+   "from": 1,
+   "to": 11,
    "mode": "recit"
   }
  ]

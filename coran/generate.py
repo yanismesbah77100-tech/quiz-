@@ -181,7 +181,7 @@ class VideoBackground:
         vf = ("scale='if(gt(a,9/16),-2,1080)':'if(gt(a,9/16),1920,-2)',crop=1080:1920,"
               "eq=saturation=1.25:contrast=1.06,fps=30")
         self.proc = subprocess.Popen(
-            ["ffmpeg", "-v", "error", "-stream_loop", "-1", "-i", path, "-t", f"{total + 1:.2f}", "-an",
+            ["ffmpeg", "-v", "quiet", "-stream_loop", "-1", "-i", path, "-t", f"{total + 1:.2f}", "-an",
              "-vf", vf, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
         y = np.linspace(0, 1, H)[:, None]
         g = 60 + 80 * np.abs(y - 0.45) * 2
