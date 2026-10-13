@@ -1,52 +1,52 @@
 {
  "videos": [
   {
-   "name": "c0011",
+   "name": "c0018",
+   "surah": 2,
+   "from": 255,
+   "to": 257,
+   "mode": "recit"
+  },
+  {
+   "name": "c0019",
    "surah": 112,
    "from": 1,
    "to": 4,
    "mode": "recit"
   },
   {
-   "name": "c0012",
+   "name": "c0020",
    "surah": 93,
    "from": 1,
    "to": 11,
    "mode": "recit"
   },
   {
-   "name": "c0013",
-   "surah": 1,
-   "from": 1,
-   "to": 7,
+   "name": "c0021",
+   "surah": 59,
+   "from": 21,
+   "to": 24,
    "mode": "recit"
   },
   {
-   "name": "c0014",
-   "surah": 2,
-   "from": 255,
-   "to": 255,
-   "mode": "recit"
-  },
-  {
-   "name": "c0015",
+   "name": "c0022",
    "surah": 94,
    "from": 1,
    "to": 8,
    "mode": "recit"
   },
   {
-   "name": "c0016",
-   "surah": 39,
-   "from": 53,
-   "to": 53,
+   "name": "c0023",
+   "surah": 2,
+   "from": 284,
+   "to": 286,
    "mode": "recit"
   },
   {
-   "name": "c0017",
-   "surah": 13,
-   "from": 28,
-   "to": 28,
+   "name": "c0024",
+   "surah": 97,
+   "from": 1,
+   "to": 5,
    "mode": "recit"
   }
  ]

@@ -32,7 +32,8 @@ W, H = 1080, 1920
 FPS = 30
 SR = 44100
 HERE = os.path.dirname(os.path.abspath(__file__))
-API = "https://api.alquran.cloud/v1/ayah/{s}:{a}/editions/quran-uthmani,fr.hamidullah,ar.alafasy"
+API = "https://api.alquran.cloud/v1/ayah/{s}:{a}/editions/quran-uthmani,fr.hamidullah"
+AUDIO = "https://everyayah.com/data/{folder}/{s:03d}{a:03d}.mp3"
 FR_VOICE = "fr-FR-HenriNeural"
 GOLD = (232, 196, 110)
 CREAM = (250, 244, 228)
@@ -66,12 +67,12 @@ def fetch(s, a):
         try:
             with urllib.request.urlopen(url, timeout=30) as r:
                 d = json.load(r)["data"]
-            ar, fr, au = d
+            ar, fr = d
             text = ar["text"].strip()
             # l'API colle la basmala au 1er verset de chaque sourate (sauf 1 et 9)
             if a == 1 and s not in (1, 9) and text.startswith("بِسْمِ"):
                 text = " ".join(text.split(" ")[4:]).strip()
-            return dict(s=s, a=a, ar=text, fr=fr["text"].strip(), audio=au["audio"],
+            return dict(s=s, a=a, ar=text, fr=fr["text"].strip(),
                         surah_ar=ar["surah"]["name"], surah=ar["surah"]["englishName"],
                         n_ayahs=ar["surah"]["numberOfAyahs"])
         except Exception as e:
@@ -276,7 +277,7 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
     d = ImageDraw.Draw(layer)
     shown0 = ayahs[idx] if idx is not None else ayahs[0]
     first = shown0
-    ref = f"{shown0['s']}:{shown0['a']}"
+    ref = "Basmala" if shown0.get("basmala") else f"{shown0['s']}:{shown0['a']}"
     # en-tête
     hf = F(AR_FONT, 70)
     text_block(d, [first["surah_ar"]], hf, 130, 110, GOLD, rtl=True)
@@ -285,7 +286,7 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
     d.line((W / 2 - 160, 330, W / 2 + 160, 330), fill=GOLD + (180,), width=3)
 
     shown = ayahs if idx is None else [ayahs[idx]]
-    ar = " ".join(f"{a['ar']} ﴿{to_ar_digits(a['a'])}﴾" for a in shown)
+    ar = " ".join(a["ar"] if a.get("basmala") else f"{a['ar']} ﴿{to_ar_digits(a['a'])}﴾" for a in shown)
     fr = " ".join(a["fr"] for a in shown)
     # taille adaptée : arabe en haut (jusqu'à ~55 % de la place), traduction dessous
     top, bottom = 380, H - 260
@@ -306,7 +307,7 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
                 break
         y = top + (bottom - top - len(al) * alh) / 2
         text_block(d, al, af, y, alh, CREAM, rtl=True)
-        credit = "Récitation : Mishary Alafasy"
+        credit = "Récitation : " + cfg_global.get("_reciter", "")
     else:
         for fsize in (56, 52, 48, 44, 40, 36, 32, 29, 26):
             ff = F(LAT_SERIF_I, fsize)
@@ -319,7 +320,7 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
         y = text_block(d, al, af, y, alh, CREAM, rtl=True)
         d.line((W / 2 - 60, y + 50, W / 2 + 60, y + 50), fill=GOLD + (150,), width=2)
         text_block(d, fl, ff, y + 110, flh, (255, 255, 255) if highlight_fr else SOFT)
-        credit = "Traduction : Muhammad Hamidullah  •  Récitation : Mishary Alafasy"
+        credit = "Traduction : Muhammad Hamidullah  •  Récitation : " + cfg_global.get("_reciter", "")
 
     small = F(LAT, 28)
     text_block(d, [credit], small, H - 230, 34, (200, 210, 205))
@@ -351,7 +352,7 @@ HOOKS = [
     ("Arrête-toi un instant", "et écoute la Parole d'Allah"),
     ("Ce rappel est peut-être", "un signe pour toi"),
 ]
-MIN_DUR, MAX_DUR = 62.0, 180.0
+MIN_DUR = 62.0
 INTRO, END, GAP_REC, GAP_FR = 3.2, 4.0, 0.0, 0.8
 MAX_EDGE_SILENCE = 0.35  # on garde la respiration naturelle du récitateur, sans blanc ajouté
 
@@ -385,14 +386,33 @@ def cta_banner():
 cfg_global = {}
 
 
-def gather(v, tmp):
-    """Récupère les versets demandés puis prolonge jusqu'à au moins MIN_DUR secondes."""
+def gather(v, tmp, folder):
+    """Récupère le passage demandé. Si la vidéo fait moins de MIN_DUR secondes :
+    - on continue le passage dans la même sourate (suite cohérente) ;
+    - si la sourate est finie, on ajoute la sourate suivante EN ENTIER.
+    On ne coupe jamais une sourate commencée par une extension. Avant chaque
+    sourate commencée au verset 1 (sauf 1 et 9), on met la basmala récitée."""
     mode = v["mode"] if cfg_global.get("spoken_translation", True) else "recit"
     items = []
+    basm_cache = {}
+
+    def add_basmala(s):
+        if "t" not in basm_cache:
+            b = fetch(1, 1)
+            b["rec"] = trim_edges(read_audio(download(AUDIO.format(folder=folder, s=1, a=1),
+                                                      os.path.join(tmp, "basmala.mp3"))), MAX_EDGE_SILENCE / 2)
+            basm_cache["t"] = b
+        ref = fetch(s, 1)
+        b = dict(basm_cache["t"], s=s, a=0, basmala=True, surah_ar=ref["surah_ar"], surah=ref["surah"],
+                 n_ayahs=ref["n_ayahs"])
+        items.append(b)
 
     def add(s, a):
+        if a == 1 and s not in (1, 9):
+            add_basmala(s)
         ay = fetch(s, a)
-        ay["rec"] = trim_edges(read_audio(download(ay["audio"], os.path.join(tmp, f"r{s}_{a}.mp3"))), MAX_EDGE_SILENCE / 2)
+        ay["rec"] = trim_edges(read_audio(download(AUDIO.format(folder=folder, s=s, a=a),
+                                                    os.path.join(tmp, f"r{s}_{a}.mp3"))), MAX_EDGE_SILENCE / 2)
         if mode == "recit_trad":
             ay["frv"] = tts(ay["fr"], os.path.join(tmp, f"f{s}_{a}.mp3"))
         items.append(ay)
@@ -407,17 +427,18 @@ def gather(v, tmp):
 
     for n in range(v["from"], v["to"] + 1):
         add(v["surah"], n)
-    # prolonge avec les versets suivants (puis la sourate suivante si besoin)
     while duration() < MIN_DUR:
         last = items[-1]
         if last["a"] < last["n_ayahs"]:
-            nxt = (last["s"], last["a"] + 1)
+            add(last["s"], last["a"] + 1)
         elif last["s"] < 114:
-            nxt = (last["s"] + 1, 1)
+            nxt = last["s"] + 1
+            first = fetch(nxt, 1)
+            if first["n_ayahs"] > 45:  # on n'ajoute pas une longue sourate entière
+                break
+            for n in range(1, first["n_ayahs"] + 1):
+                add(nxt, n)
         else:
-            break
-        add(*nxt)
-        if duration() > MAX_DUR:
             break
     return items, duration()
 
@@ -533,7 +554,10 @@ def main():
             continue
         out = os.path.join(a.out, f"{v['name']}.mp4")
         with tempfile.TemporaryDirectory() as tmp:
-            items, _ = gather(v, tmp)
+            recs = cfg.get("reciters") or [{"name": "Mishary Alafasy", "folder": "Alafasy_128kbps"}]
+            rec = next((r for r in recs if r["folder"] == v.get("reciter")), None) or recs[int(v["name"].lstrip("c") or 0) % len(recs)]
+            cfg_global["_reciter"] = rec["name"]
+            items, _ = gather(v, tmp, rec["folder"])
             num = int(v["name"].lstrip("c") or 0)
             hook = HOOKS[num % len(HOOKS)]
             bgs = json.load(open(os.path.join(HERE, "backgrounds.json"), encoding="utf-8"))
@@ -542,7 +566,7 @@ def main():
                 print("fond introuvable :", bg_path, file=sys.stderr)
                 bg_path = None
             dur = build(items, v["mode"] if cfg.get("spoken_translation", True) else "recit", out, cfg, hook, bg_path)
-        print(f"ok {out} ({dur:.1f}s, versets {items[0]['s']}:{items[0]['a']} -> {items[-1]['s']}:{items[-1]['a']})")
+        print(f"ok {out} ({dur:.1f}s, {cfg_global['_reciter']}, versets {items[0]['s']}:{items[0]['a']} -> {items[-1]['s']}:{items[-1]['a']})")
 
 
 if __name__ == "__main__":

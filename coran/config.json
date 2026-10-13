@@ -1,1 +1,39 @@
-{"handle": "", "translation": true, "spoken_translation": false}
+{
+ "handle": "",
+ "translation": true,
+ "spoken_translation": false,
+ "reciters": [
+  {
+   "name": "Mishary Alafasy",
+   "folder": "Alafasy_128kbps"
+  },
+  {
+   "name": "Abdur-Rahman As-Sudais",
+   "folder": "Abdurrahmaan_As-Sudais_192kbps"
+  },
+  {
+   "name": "Maher Al-Muaiqly",
+   "folder": "MaherAlMuaiqly128kbps"
+  },
+  {
+   "name": "Yasser Ad-Dossari",
+   "folder": "Yasser_Ad-Dussary_128kbps"
+  },
+  {
+   "name": "Saoud Ash-Shuraym",
+   "folder": "Saood_ash-Shuraym_128kbps"
+  },
+  {
+   "name": "Nasser Al-Qatami",
+   "folder": "Nasser_Alqatami_128kbps"
+  },
+  {
+   "name": "Mohamed Siddiq Al-Minshawi",
+   "folder": "Minshawy_Murattal_128kbps"
+  },
+  {
+   "name": "Abu Bakr Ash-Shatri",
+   "folder": "Abu_Bakr_Ash-Shaatree_128kbps"
+  }
+ ]
+}
