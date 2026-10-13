@@ -351,7 +351,7 @@ cfg_global = {}
 
 def gather(v, tmp):
     """Récupère les versets demandés puis prolonge jusqu'à au moins MIN_DUR secondes."""
-    mode = v["mode"] if cfg_global.get("translation", True) else "recit"
+    mode = v["mode"] if cfg_global.get("spoken_translation", True) else "recit"
     items = []
 
     def add(s, a):
@@ -500,7 +500,7 @@ def main():
             if not os.path.exists(bg_path):
                 print("fond introuvable :", bg_path, file=sys.stderr)
                 bg_path = None
-            dur = build(items, v["mode"] if cfg.get("translation", True) else "recit", out, cfg, hook, bg_path)
+            dur = build(items, v["mode"] if cfg.get("spoken_translation", True) else "recit", out, cfg, hook, bg_path)
         print(f"ok {out} ({dur:.1f}s, versets {items[0]['s']}:{items[0]['a']} -> {items[-1]['s']}:{items[-1]['a']})")
 
 
