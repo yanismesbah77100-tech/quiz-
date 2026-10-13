@@ -26,15 +26,29 @@ def get(params):
         return json.load(r)
 
 
+LOG = open("coran/fonds_log.txt", "w")
+
+
+def log(*a):
+    print(*a, file=LOG, flush=True)
+    print(*a, file=sys.stderr)
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     seen, cands = set(), []
     for q in QUERIES:
         for cat in ("CC-Zero", "PD-self", "PD-user"):
-            d = get({"action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
-                     "gsrsearch": f'{q} incategory:"{cat}" filetype:bitmap', "gsrlimit": 12,
-                     "prop": "imageinfo", "iiprop": "url|size|extmetadata|mime",
-                     "iiurlwidth": 2400})
+            try:
+                d = get({"action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
+                         "gsrsearch": f'{q} incategory:"{cat}" filetype:bitmap', "gsrlimit": 12,
+                         "prop": "imageinfo", "iiprop": "url|size|extmetadata|mime",
+                         "iiurlwidth": 2400})
+            except Exception as e:
+                log("erreur API", q, cat, repr(e))
+                continue
+            n = len(d.get("query", {}).get("pages", {}) or {})
+            log("requête", q, cat, "->", n, "résultats", d.get("error", ""))
             for p in (d.get("query", {}).get("pages", {}) or {}).values():
                 ii = p.get("imageinfo", [{}])[0]
                 if p["title"] in seen or ii.get("mime") != "image/jpeg":
@@ -49,7 +63,7 @@ def main():
                 cands.append(dict(title=p["title"], query=q, license=meta.get("LicenseShortName", {}).get("value"),
                                   page=ii.get("descriptionurl"), url=ii.get("thumburl") or ii["url"],
                                   w=ii["width"], h=ii["height"]))
-        print(q, "->", len(cands), file=sys.stderr)
+        log(q, "->", len(cands))
     cands = cands[:60]
     thumbs = []
     for i, c in enumerate(cands, 1):
@@ -64,7 +78,10 @@ def main():
             th.thumbnail((360, 240))
             thumbs.append((c["file"], th))
         except Exception as e:
-            print("échec", c["title"], e, file=sys.stderr)
+            log("échec", c["title"], repr(e))
+    if not thumbs:
+        log("aucune image trouvée")
+        sys.exit(1)
     cols = 6
     rows = (len(thumbs) + cols - 1) // cols
     sheet = Image.new("RGB", (cols * 370, rows * 275), (20, 20, 20))

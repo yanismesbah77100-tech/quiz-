@@ -19,15 +19,18 @@ jobs:
       - uses: actions/checkout@v4
       - run: pip install pillow
       - run: python3 coran/fetch_backgrounds.py
+        continue-on-error: true
       - name: Mettre en ligne dans la release « fonds »
+        if: hashFiles('out_fonds/planche.jpg') != ''
         run: |
           gh release view fonds >/dev/null 2>&1 || gh release create fonds --title "Fonds paysages" --notes "Photos libres de droits (CC0 / domaine public, Wikimedia Commons)."
           gh release upload fonds out_fonds/*.jpg --clobber
       - name: Enregistrer la liste des candidats
+        if: always()
         run: |
           git config user.name "quiz-bot"
           git config user.email "quiz-bot@users.noreply.github.com"
-          git add coran/fonds_candidats.json
+          git add coran/fonds_candidats.json coran/fonds_log.txt 2>/dev/null || git add coran/fonds_log.txt
           git diff --cached --quiet && exit 0
           git commit -m "Fonds : liste des photos candidates"
           git pull --rebase
