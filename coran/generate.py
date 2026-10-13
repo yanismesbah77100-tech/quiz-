@@ -486,7 +486,7 @@ def build(items, mode, out_path, cfg, hook, bg_path=None):
         black = Image.new("RGBA", (W, H), (0, 0, 0, 255))
         proc = subprocess.Popen(
             ["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
-             "-i", "-", "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "22", "-pix_fmt", "yuv420p",
+             "-i", "-", "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "23", "-maxrate", "1500k", "-bufsize", "3000k", "-pix_fmt", "yuv420p",
              "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", out_path], stdin=subprocess.PIPE)
         si = 0
         for f in range(int(total * FPS)):
