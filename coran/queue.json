@@ -1,0 +1,18 @@
+{
+ "videos": [
+  {
+   "name": "c0001",
+   "surah": 112,
+   "from": 1,
+   "to": 4,
+   "mode": "recit"
+  },
+  {
+   "name": "c0002",
+   "surah": 94,
+   "from": 5,
+   "to": 6,
+   "mode": "recit_trad"
+  }
+ ]
+}

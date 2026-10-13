@@ -1,0 +1,65 @@
+name: Générer les vidéos versets
+
+# Vidéos mises en ligne dans la release « coran » ; liens dans coran/index.json.
+
+on:
+  push:
+    branches: [main]
+    paths: [coran/queue.json, coran/generate.py, coran/config.json, .github/workflows/coran.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coran
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer les outils
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg fonts-dejavu-core fonts-hosny-amiri libraqm0 libfribidi0 libharfbuzz0b
+          pip install edge-tts gTTS pillow numpy
+          python3 -c "from PIL import features; assert features.check('raqm'), 'raqm manquant'; print('raqm ok')"
+          fc-list | grep -i amiri
+
+      - name: Préparer la release
+        run: |
+          gh release view coran >/dev/null 2>&1 || gh release create coran --title "Vidéos versets" --notes "Vidéos générées automatiquement."
+          gh release view coran --json assets --jq '.assets[].name' > existing.txt || true
+
+      - name: Générer et mettre en ligne les vidéos manquantes
+        run: |
+          mkdir -p out
+          for name in $(python3 -c "import json;print(' '.join(v['name'] for v in json.load(open('coran/queue.json'))['videos']))"); do
+            if grep -qx "$name.mp4" existing.txt; then echo "déjà en ligne : $name"; continue; fi
+            python3 coran/generate.py --queue coran/queue.json --only "$name" --out out
+            gh release upload coran "out/$name.mp4" --clobber
+            echo "$name.mp4" >> existing.txt
+          done
+
+      - name: Mettre à jour coran/index.json
+        run: |
+          python3 - <<'EOF'
+          import json
+          names = sorted({l.strip()[:-4] for l in open("existing.txt") if l.strip().endswith(".mp4")})
+          repo = "${{ github.repository }}"
+          json.dump({n: f"https://github.com/{repo}/releases/download/coran/{n}.mp4" for n in names},
+                    open("coran/index.json", "w"), indent=1)
+          EOF
+          git config user.name "quiz-bot"
+          git config user.email "quiz-bot@users.noreply.github.com"
+          git add coran/index.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Vidéos versets en ligne : mise à jour de l'index"
+          git pull --rebase
+          git push
