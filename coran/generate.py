@@ -190,8 +190,10 @@ def wrap(d, text, fnt, maxw, rtl=False):
 def text_block(d, lines, fnt, y, lh, fill, rtl=False, stroke=0):
     kw = dict(direction="rtl", language="ar") if rtl else {}
     for line in lines:
-        w = d.textlength(line, font=fnt, **kw)
-        d.text(((W - w) / 2, y), line, font=fnt, fill=fill, stroke_width=stroke, stroke_fill=(0, 0, 0, 120), **kw)
+        # on cale le haut réel des glyphes (les polices arabes ont de grandes marges)
+        l, t, r, b = d.textbbox((0, 0), line, font=fnt, **kw)
+        d.text(((W - (r - l)) / 2 - l, y - t + (lh - (b - t)) / 2), line, font=fnt, fill=fill,
+               stroke_width=stroke, stroke_fill=(0, 0, 0, 120), **kw)
         y += lh
     return y
 
@@ -203,10 +205,10 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
     first, last = ayahs[0], ayahs[-1]
     ref = f"{first['s']}:{first['a']}" + (f"-{last['a']}" if last["a"] != first["a"] else "")
     # en-tête
-    hf = F(AR_FONT, 64)
-    text_block(d, [first["surah_ar"]], hf, 150, 80, GOLD, rtl=True)
-    sub = F(LAT_B, 36)
-    text_block(d, [f"Sourate {first['surah']}  •  {ref}"], sub, 260, 44, SOFT)
+    hf = F(AR_FONT, 70)
+    text_block(d, [first["surah_ar"]], hf, 130, 110, GOLD, rtl=True)
+    sub = F(LAT_B, 38)
+    text_block(d, [f"Sourate {first['surah']}  •  {ref}"], sub, 255, 50, SOFT)
     d.line((W / 2 - 160, 330, W / 2 + 160, 330), fill=GOLD + (180,), width=3)
 
     shown = ayahs if idx is None else [ayahs[idx]]
@@ -214,23 +216,23 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
     fr = " ".join(a["fr"] for a in shown)
     # taille adaptée : arabe en haut (jusqu'à ~55 % de la place), traduction dessous
     top, bottom = 380, H - 260
-    for size in (92, 84, 76, 68, 62, 56, 50, 46, 42):
+    for size in (118, 108, 98, 90, 82, 74, 66, 58, 52, 46, 42):
         af = F(AR_FONT, size)
         al = wrap(d, ar, af, W - 140, rtl=True)
-        alh = int(size * 1.75)
+        alh = int(size * 1.9)
         if len(al) * alh <= (bottom - top) * 0.58:
             break
-    for fsize in (46, 42, 38, 35, 32, 29, 26):
+    for fsize in (56, 52, 48, 44, 40, 36, 32, 29, 26):
         ff = F(LAT_SERIF_I, fsize)
         fl = wrap(d, fr, ff, W - 160)
         flh = int(fsize * 1.4)
-        if len(al) * alh + 70 + len(fl) * flh <= bottom - top:
+        if len(al) * alh + 110 + len(fl) * flh <= bottom - top:
             break
-    total = len(al) * alh + 70 + len(fl) * flh
+    total = len(al) * alh + 110 + len(fl) * flh
     y = top + (bottom - top - total) / 2
     y = text_block(d, al, af, y, alh, CREAM, rtl=True)
-    d.line((W / 2 - 60, y + 30, W / 2 + 60, y + 30), fill=GOLD + (150,), width=2)
-    text_block(d, fl, ff, y + 70, flh, (255, 255, 255) if highlight_fr else SOFT)
+    d.line((W / 2 - 60, y + 50, W / 2 + 60, y + 50), fill=GOLD + (150,), width=2)
+    text_block(d, fl, ff, y + 110, flh, (255, 255, 255) if highlight_fr else SOFT)
 
     small = F(LAT, 28)
     text_block(d, ["Traduction : Muhammad Hamidullah  •  Récitation : Mishary Alafasy"], small, H - 230, 34, (200, 210, 205))
