@@ -260,20 +260,34 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
         alh = int(size * 1.9)
         if len(al) * alh <= (bottom - top) * 0.58:
             break
-    for fsize in (56, 52, 48, 44, 40, 36, 32, 29, 26):
-        ff = F(LAT_SERIF_I, fsize)
-        fl = wrap(d, fr, ff, W - 160)
-        flh = int(fsize * 1.4)
-        if len(al) * alh + 110 + len(fl) * flh <= bottom - top:
-            break
-    total = len(al) * alh + 110 + len(fl) * flh
-    y = top + (bottom - top - total) / 2
-    y = text_block(d, al, af, y, alh, CREAM, rtl=True)
-    d.line((W / 2 - 60, y + 50, W / 2 + 60, y + 50), fill=GOLD + (150,), width=2)
-    text_block(d, fl, ff, y + 110, flh, (255, 255, 255) if highlight_fr else SOFT)
+    show_fr = cfg.get("translation", True)
+    if not show_fr:
+        # sans traduction : l'arabe prend toute la place
+        for size in (124, 112, 102, 94, 86, 78, 70, 62, 56, 50, 44):
+            af = F(AR_FONT, size)
+            al = wrap(d, ar, af, W - 140, rtl=True)
+            alh = int(size * 1.9)
+            if len(al) * alh <= (bottom - top) * 0.92:
+                break
+        y = top + (bottom - top - len(al) * alh) / 2
+        text_block(d, al, af, y, alh, CREAM, rtl=True)
+        credit = "Récitation : Mishary Alafasy"
+    else:
+        for fsize in (56, 52, 48, 44, 40, 36, 32, 29, 26):
+            ff = F(LAT_SERIF_I, fsize)
+            fl = wrap(d, fr, ff, W - 160)
+            flh = int(fsize * 1.4)
+            if len(al) * alh + 110 + len(fl) * flh <= bottom - top:
+                break
+        total = len(al) * alh + 110 + len(fl) * flh
+        y = top + (bottom - top - total) / 2
+        y = text_block(d, al, af, y, alh, CREAM, rtl=True)
+        d.line((W / 2 - 60, y + 50, W / 2 + 60, y + 50), fill=GOLD + (150,), width=2)
+        text_block(d, fl, ff, y + 110, flh, (255, 255, 255) if highlight_fr else SOFT)
+        credit = "Traduction : Muhammad Hamidullah  •  Récitation : Mishary Alafasy"
 
     small = F(LAT, 28)
-    text_block(d, ["Traduction : Muhammad Hamidullah  •  Récitation : Mishary Alafasy"], small, H - 230, 34, (200, 210, 205))
+    text_block(d, [credit], small, H - 230, 34, (200, 210, 205))
     if cfg.get("handle"):
         text_block(d, [cfg["handle"]], F(LAT_B, 42), H - 170, 50, GOLD)
     return layer
@@ -332,9 +346,12 @@ def cta_banner():
     return b
 
 
+cfg_global = {}
+
+
 def gather(v, tmp):
     """Récupère les versets demandés puis prolonge jusqu'à au moins MIN_DUR secondes."""
-    mode = v["mode"]
+    mode = v["mode"] if cfg_global.get("translation", True) else "recit"
     items = []
 
     def add(s, a):
@@ -461,6 +478,7 @@ def main():
     os.makedirs(a.out, exist_ok=True)
     cfg_path = os.path.join(HERE, "config.json")
     cfg = json.load(open(cfg_path, encoding="utf-8")) if os.path.exists(cfg_path) else {}
+    cfg_global.update(cfg)
     print("police arabe :", AR_FONT)
     if a.demo:
         items = [dict(s=1, a=i, ar="بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ", fr="(texte de démonstration)",
@@ -482,7 +500,7 @@ def main():
             if not os.path.exists(bg_path):
                 print("fond introuvable :", bg_path, file=sys.stderr)
                 bg_path = None
-            dur = build(items, v["mode"], out, cfg, hook, bg_path)
+            dur = build(items, v["mode"] if cfg.get("translation", True) else "recit", out, cfg, hook, bg_path)
         print(f"ok {out} ({dur:.1f}s, versets {items[0]['s']}:{items[0]['a']} -> {items[-1]['s']}:{items[-1]['a']})")
 
 
