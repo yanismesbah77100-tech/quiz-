@@ -1,3 +1,15 @@
 [
- {"video": "c0018", "surah": 2, "from": 255, "to": 257, "date": "2026-10-14T10:00:00+02:00", "metricool_id": 395559410, "title": "Ayat al-Kursi 🤍", "compte": "lem7710"}
+ {"video": "c0018", "surah": 2, "from": 255, "to": 257, "date": "2026-10-14T10:00:00+02:00", "metricool_id": 395559410, "title": "Ayat al-Kursi 🤍", "compte": "lem7710", "long": false, "reciter": "Maher Al-Muaiqly"},
+ {"video": "c0025", "surah": 93, "from": 1, "to": 11, "date": "2026-10-14T13:00:00+02:00", "metricool_id": 395637134, "title": "Sourate Ad-Duha 🤍", "compte": "lem7710", "long": false, "reciter": "Mishary Alafasy"},
+ {"video": "c0026", "surah": 28, "from": 7, "to": 13, "date": "2026-10-14T18:00:00+02:00", "metricool_id": 395637165, "title": "La mère de Moussa 🤍", "compte": "lem7710", "long": false, "reciter": "Yasser Ad-Dossari"},
+ {"video": "c0027", "surah": 20, "from": 25, "to": 39, "date": "2026-10-15T10:00:00+02:00", "metricool_id": 395637210, "title": "L'invocation de Moussa 🤍", "compte": "lem7710", "long": false, "reciter": "Nasser Al-Qatami"},
+ {"video": "c0029", "surah": 2, "from": 163, "to": 164, "date": "2026-10-15T13:00:00+02:00", "metricool_id": 395637230, "title": "Les signes de la création 🤍", "compte": "lem7710", "long": false, "reciter": "Hani Ar-Rifai"},
+ {"video": "c0030", "surah": 67, "from": 1, "to": 30, "date": "2026-10-15T18:00:00+02:00", "metricool_id": 395637283, "title": "Sourate Al-Mulk en entier 🤍", "compte": "lem7710", "long": true, "reciter": "Maher Al-Muaiqly"},
+ {"video": "c0028", "surah": 12, "from": 83, "to": 87, "date": "2026-10-16T10:00:00+02:00", "metricool_id": 395637298, "title": "Ne désespère pas 🤍", "compte": "lem7710", "long": false, "reciter": "Abu Bakr Ash-Shatri"},
+ {"video": "c0022", "surah": 94, "from": 1, "to": 8, "date": "2026-10-16T13:00:00+02:00", "metricool_id": 395637354, "title": "Sourate Ash-Sharh 🤍", "compte": "lem7710", "long": false, "reciter": "Mohamed Siddiq Al-Minshawi"},
+ {"video": "c0032", "surah": 19, "from": 16, "to": 40, "date": "2026-10-16T18:00:00+02:00", "metricool_id": 395637389, "title": "L'histoire de Maryam 🤍", "compte": "lem7710", "long": true, "reciter": "Mishary Alafasy"},
+ {"video": "c0019", "surah": 112, "from": 1, "to": 4, "date": "2026-10-17T10:00:00+02:00", "metricool_id": 395637447, "title": "Al-Ikhlas, Al-Falaq, An-Nas 🤍", "compte": "lem7710", "long": false, "reciter": "Yasser Ad-Dossari"},
+ {"video": "c0021", "surah": 59, "from": 21, "to": 24, "date": "2026-10-17T13:00:00+02:00", "metricool_id": 395637473, "title": "Fin de la sourate Al-Hashr 🤍", "compte": "lem7710", "long": false, "reciter": "Nasser Al-Qatami"},
+ {"video": "c0023", "surah": 2, "from": 284, "to": 286, "date": "2026-10-18T10:00:00+02:00", "metricool_id": 395637500, "title": "La fin d'Al-Baqara 🤍", "compte": "lem7710", "long": false, "reciter": "Abu Bakr Ash-Shatri"},
+ {"video": "c0024", "surah": 97, "from": 1, "to": 5, "date": "2026-10-18T13:00:00+02:00", "metricool_id": 395637547, "title": "Sourate Al-Qadr 🤍", "compte": "lem7710", "long": false, "reciter": "Mishary Alafasy"}
 ]
