@@ -8,10 +8,6 @@
    "folder": "Alafasy_128kbps"
   },
   {
-   "name": "Abdur-Rahman As-Sudais",
-   "folder": "Abdurrahmaan_As-Sudais_192kbps"
-  },
-  {
    "name": "Maher Al-Muaiqly",
    "folder": "MaherAlMuaiqly128kbps"
   },
@@ -20,20 +16,40 @@
    "folder": "Yasser_Ad-Dussary_128kbps"
   },
   {
-   "name": "Saoud Ash-Shuraym",
-   "folder": "Saood_ash-Shuraym_128kbps"
-  },
-  {
    "name": "Nasser Al-Qatami",
    "folder": "Nasser_Alqatami_128kbps"
   },
   {
-   "name": "Mohamed Siddiq Al-Minshawi",
-   "folder": "Minshawy_Murattal_128kbps"
-  },
-  {
    "name": "Abu Bakr Ash-Shatri",
    "folder": "Abu_Bakr_Ash-Shaatree_128kbps"
+  },
+  {
+   "name": "Hani Ar-Rifai",
+   "folder": "Hani_Rifai_192kbps"
+  },
+  {
+   "name": "Ahmed Al-Ajamy",
+   "folder": "Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net"
+  },
+  {
+   "name": "Fares Abbad",
+   "folder": "Fares_Abbad_64kbps"
+  },
+  {
+   "name": "Salah Bukhatir",
+   "folder": "Salaah_AbdulRahman_Bukhatir_128kbps"
+  },
+  {
+   "name": "Abdullah Al-Juhany",
+   "folder": "Abdullaah_3awwaad_Al-Juhaynee_128kbps"
+  },
+  {
+   "name": "Muhammad Ayyoub",
+   "folder": "Muhammad_Ayyoub_128kbps"
+  },
+  {
+   "name": "Mohamed Siddiq Al-Minshawi",
+   "folder": "Minshawy_Murattal_128kbps"
   }
  ]
 }

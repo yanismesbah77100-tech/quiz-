@@ -12,13 +12,15 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import urllib.error
 
 from PIL import Image, ImageDraw, ImageFont
 
 API = "https://commons.wikimedia.org/w/api.php"
 UA = {"User-Agent": "quiz-ou-pas-video-bot/1.0 (github.com/yanismesbah77100-tech/quiz-; contact via GitHub)"}
-QUERIES = ["timelapse clouds", "sunset timelapse", "ocean waves", "beach waves", "waterfall",
-           "aurora borealis", "sea sunset", "clouds sky timelapse", "mountains clouds", "river forest"]
+QUERIES = ["waterfall", "forest", "river", "stream forest", "lake mountains", "sunset", "sunrise",
+           "mountains", "sea", "beach", "desert dunes", "snow mountains", "aurora", "meadow flowers", "rain forest"]
+PREFIX = os.environ.get("VF_PREFIX", "n")  # nouveaux noms : ne jamais écraser les vidéos déjà utilisées (v01…)
 OK_LIC = ("cc0", "public domain", "pd")
 OUT = "out_vfonds"
 LOG = open("coran/vfonds_log.txt", "w")
@@ -43,7 +45,8 @@ def get(params):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    seen, cands = set(), []
+    old = json.load(open("coran/vfonds_candidats.json")) if os.path.exists("coran/vfonds_candidats.json") else []
+    seen, cands = {c["title"] for c in old}, []
     for q in QUERIES:
         for cat in ("CC-Zero", "PD-self"):
             time.sleep(3)
@@ -73,23 +76,31 @@ def main():
                 cands.append(dict(title=p["title"], query=q, license=meta.get("LicenseShortName", {}).get("value"),
                                   page=ii.get("descriptionurl"), url=url, w=ii.get("width"), h=ii.get("height")))
     log("candidats :", len(cands))
-    cands = cands[:30]
+    cands = cands[:25]
     thumbs = []
     for i, c in enumerate(cands, 1):
-        path = os.path.join(OUT, f"v{i:02d}.webm")
-        time.sleep(4)
+        path = os.path.join(OUT, f"{PREFIX}{i:02d}.webm")
+        time.sleep(15)
         try:
-            req = urllib.request.Request(c["url"], headers=UA)
-            with urllib.request.urlopen(req, timeout=300) as r, open(path, "wb") as f:
-                f.write(r.read())
+            for k in range(5):
+                try:
+                    req = urllib.request.Request(c["url"], headers=UA)
+                    with urllib.request.urlopen(req, timeout=300) as r, open(path, "wb") as f:
+                        f.write(r.read())
+                    break
+                except urllib.error.HTTPError as e:
+                    if e.code != 429 or k == 4:
+                        raise
+                    log("429, pause", 60 * (k + 1), "s")
+                    time.sleep(60 * (k + 1))
             dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
                                        capture_output=True, text=True).stdout.strip() or 0)
-            jpg = os.path.join(OUT, f"v{i:02d}.jpg")
+            jpg = os.path.join(OUT, f"{PREFIX}{i:02d}.jpg")
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(dur / 2), "-i", path, "-frames:v", "1", jpg], check=True)
             th = Image.open(jpg).convert("RGB")
             th.thumbnail((360, 240))
-            c.update(file=f"v{i:02d}.webm", duration=round(dur, 1))
-            thumbs.append((f"v{i:02d} ({dur:.0f}s)", th))
+            c.update(file=f"{PREFIX}{i:02d}.webm", duration=round(dur, 1))
+            thumbs.append((f"{PREFIX}{i:02d} ({dur:.0f}s)", th))
         except Exception as e:
             log("échec", c["title"], repr(e))
     if not thumbs:
@@ -103,8 +114,8 @@ def main():
         x, y = (k % cols) * 370 + 5, (k // cols) * 275 + 5
         sheet.paste(th, (x, y))
         dr.text((x + 4, y + 244), name, fill=(255, 255, 0), font=ImageFont.load_default(22))
-    sheet.save(os.path.join(OUT, "planche.jpg"), quality=85)
-    json.dump([c for c in cands if "file" in c], open("coran/vfonds_candidats.json", "w"), indent=1, ensure_ascii=False)
+    sheet.save(os.path.join(OUT, f"planche_{PREFIX}.jpg"), quality=85)
+    json.dump(old + [c for c in cands if "file" in c], open("coran/vfonds_candidats.json", "w"), indent=1, ensure_ascii=False)
 
 
 if __name__ == "__main__":
