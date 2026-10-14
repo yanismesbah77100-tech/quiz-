@@ -37,6 +37,22 @@
    "mode": "recit"
   },
   {
+   "name": "c0030",
+   "surah": 67,
+   "from": 1,
+   "to": 30,
+   "mode": "recit",
+   "reciter": "MaherAlMuaiqly128kbps"
+  },
+  {
+   "name": "c0031",
+   "surah": 19,
+   "from": 16,
+   "to": 40,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps"
+  },
+  {
    "name": "c0018",
    "surah": 2,
    "from": 255,
