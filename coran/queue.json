@@ -109,6 +109,120 @@
    "to": 31,
    "mode": "recit",
    "reciter": "Nasser_Alqatami_128kbps"
+  },
+  {
+   "name": "c0035",
+   "surah": 93,
+   "from": 1,
+   "to": 11,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps"
+  },
+  {
+   "name": "c0036",
+   "surah": 28,
+   "from": 7,
+   "to": 13,
+   "mode": "recit",
+   "reciter": "Yasser_Ad-Dussary_128kbps"
+  },
+  {
+   "name": "c0037",
+   "surah": 20,
+   "from": 25,
+   "to": 36,
+   "mode": "recit",
+   "reciter": "Nasser_Alqatami_128kbps"
+  },
+  {
+   "name": "c0038",
+   "surah": 2,
+   "from": 163,
+   "to": 164,
+   "mode": "recit",
+   "reciter": "Hani_Rifai_192kbps"
+  },
+  {
+   "name": "c0039",
+   "surah": 67,
+   "from": 1,
+   "to": 30,
+   "mode": "recit",
+   "reciter": "MaherAlMuaiqly128kbps",
+   "bg": "n09.webm"
+  },
+  {
+   "name": "c0040",
+   "surah": 12,
+   "from": 83,
+   "to": 87,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps"
+  },
+  {
+   "name": "c0041",
+   "surah": 94,
+   "from": 1,
+   "to": 8,
+   "mode": "recit",
+   "reciter": "Minshawy_Murattal_128kbps"
+  },
+  {
+   "name": "c0042",
+   "surah": 19,
+   "from": 16,
+   "to": 40,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "bg": "n13.webm"
+  },
+  {
+   "name": "c0043",
+   "surah": 112,
+   "from": 1,
+   "to": 4,
+   "mode": "recit",
+   "reciter": "Yasser_Ad-Dussary_128kbps"
+  },
+  {
+   "name": "c0044",
+   "surah": 59,
+   "from": 21,
+   "to": 24,
+   "mode": "recit",
+   "reciter": "Nasser_Alqatami_128kbps"
+  },
+  {
+   "name": "c0045",
+   "surah": 76,
+   "from": 1,
+   "to": 31,
+   "mode": "recit",
+   "reciter": "Fares_Abbad_64kbps"
+  },
+  {
+   "name": "c0046",
+   "surah": 2,
+   "from": 284,
+   "to": 286,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps"
+  },
+  {
+   "name": "c0047",
+   "surah": 97,
+   "from": 1,
+   "to": 5,
+   "mode": "recit",
+   "reciter": "Salaah_AbdulRahman_Bukhatir_128kbps"
+  },
+  {
+   "name": "c0048",
+   "surah": 21,
+   "from": 83,
+   "to": 90,
+   "mode": "recit",
+   "reciter": "Abdullaah_3awwaad_Al-Juhaynee_128kbps"
   }
  ]
 }

@@ -323,7 +323,11 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
         credit = "Traduction : Muhammad Hamidullah  •  Récitation : " + cfg_global.get("_reciter", "")
 
     small = F(LAT, 28)
-    text_block(d, [credit], small, H - 230, 34, (200, 210, 205))
+    if d.textlength(credit, font=small) > W - 80:  # nom de récitateur long : on passe sur 2 lignes
+        parts = credit.split("  •  ")
+        text_block(d, parts, small, H - 250, 34, (200, 210, 205))
+    else:
+        text_block(d, [credit], small, H - 230, 34, (200, 210, 205))
     if cfg.get("handle"):
         text_block(d, [cfg["handle"]], F(LAT_B, 42), H - 170, 50, GOLD)
     return layer
@@ -336,9 +340,10 @@ def to_ar_digits(n):
 def end_layer(cfg):
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
-    text_block(d, ["Abonne-toi"], F(LAT_B, 96), 700, 110, CREAM, stroke=3)
-    text_block(d, ["pour un verset chaque jour"], F(LAT, 54), 830, 64, SOFT)
-    text_block(d, ["Partage-le à quelqu'un", "qui en a besoin"], F(LAT_B, 50), 1000, 64, GOLD)
+    # écran de fin sobre, sans appel à liker / s'abonner / partager (règles TikTok : pas d'« engagement bait »)
+    text_block(d, ["سُبْحَانَ اللَّهِ وَبِحَمْدِهِ"], F(AR_FONT, 84), 760, 140, GOLD, rtl=True)
+    text_block(d, ["Récitation : " + cfg_global.get("_reciter", "")], F(LAT, 40), 960, 56, SOFT)
+    text_block(d, ["Traduction : Muhammad Hamidullah"], F(LAT, 34), 1020, 50, SOFT)
     if cfg.get("handle"):
         text_block(d, [cfg["handle"]], F(LAT_B, 52), 1250, 60, GOLD)
     return layer
@@ -371,7 +376,6 @@ def hook_layer(lines, cfg):
     text_block(d, ["بِسْمِ اللَّهِ"], F(AR_FONT, 90), 520, 150, GOLD, rtl=True)
     text_block(d, [lines[0]], F(LAT_B, 76), 780, 100, CREAM, stroke=3)
     text_block(d, [lines[1]], F(LAT_SERIF_I, 58), 890, 80, SOFT)
-    text_block(d, ["Écoute jusqu'au bout et abonne-toi"], F(LAT, 38), 1120, 50, GOLD)
     return layer
 
 
@@ -510,7 +514,7 @@ def build(items, mode, out_path, cfg, hook, bg_path=None):
             if lt < 0.25 and not same:
                 lay = Image.blend(empty, lay, lt / 0.25)
             frame.alpha_composite(lay)
-            if cta_from <= tt <= cta_to and kind == "page":
+            if cfg.get("cta_banner", False) and cta_from <= tt <= cta_to and kind == "page":  # désactivé : pas d'appel à s'abonner
                 k = min(1.0, (tt - cta_from) / 0.4, (cta_to - tt) / 0.4)
                 frame.alpha_composite(Image.blend(empty, banner, max(0.0, k)))
             # barre de progression
