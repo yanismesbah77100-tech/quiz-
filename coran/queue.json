@@ -45,12 +45,13 @@
    "reciter": "MaherAlMuaiqly128kbps"
   },
   {
-   "name": "c0031",
+   "name": "c0032",
    "surah": 19,
    "from": 16,
    "to": 40,
    "mode": "recit",
-   "reciter": "Alafasy_128kbps"
+   "reciter": "Alafasy_128kbps",
+   "bg": "n13.webm"
   },
   {
    "name": "c0018",
