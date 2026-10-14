@@ -1,6 +1,42 @@
 {
  "videos": [
   {
+   "name": "c0025",
+   "surah": 93,
+   "from": 1,
+   "to": 11,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps"
+  },
+  {
+   "name": "c0026",
+   "surah": 28,
+   "from": 7,
+   "to": 13,
+   "mode": "recit"
+  },
+  {
+   "name": "c0027",
+   "surah": 20,
+   "from": 25,
+   "to": 36,
+   "mode": "recit"
+  },
+  {
+   "name": "c0028",
+   "surah": 12,
+   "from": 83,
+   "to": 87,
+   "mode": "recit"
+  },
+  {
+   "name": "c0029",
+   "surah": 2,
+   "from": 163,
+   "to": 164,
+   "mode": "recit"
+  },
+  {
    "name": "c0018",
    "surah": 2,
    "from": 255,
@@ -12,13 +48,6 @@
    "surah": 112,
    "from": 1,
    "to": 4,
-   "mode": "recit"
-  },
-  {
-   "name": "c0020",
-   "surah": 93,
-   "from": 1,
-   "to": 11,
    "mode": "recit"
   },
   {
