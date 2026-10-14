@@ -94,6 +94,21 @@
    "from": 1,
    "to": 5,
    "mode": "recit"
+  },
+  {
+   "name": "c0033",
+   "surah": 21,
+   "from": 83,
+   "to": 90,
+   "mode": "recit"
+  },
+  {
+   "name": "c0034",
+   "surah": 76,
+   "from": 1,
+   "to": 31,
+   "mode": "recit",
+   "reciter": "Nasser_Alqatami_128kbps"
   }
  ]
 }
