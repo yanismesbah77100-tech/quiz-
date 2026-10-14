@@ -1,42 +1,33 @@
-requête timelapse clouds CC-Zero -> 7
-requête timelapse clouds PD-self -> 1
-requête sunset timelapse CC-Zero -> 2
-requête sunset timelapse PD-self -> 0
-requête ocean waves CC-Zero -> 10
-requête ocean waves PD-self -> 0
-requête beach waves CC-Zero -> 4
-requête beach waves PD-self -> 0
 requête waterfall CC-Zero -> 10
 requête waterfall PD-self -> 10
-requête aurora borealis CC-Zero -> 10
-requête aurora borealis PD-self -> 2
-requête sea sunset CC-Zero -> 0
-requête sea sunset PD-self -> 0
-requête clouds sky timelapse CC-Zero -> 2
+requête forest CC-Zero -> 10
+requête forest PD-self -> 10
+requête river CC-Zero -> 10
+requête river PD-self -> 10
+requête stream forest CC-Zero -> 3
+requête stream forest PD-self -> 0
+requête lake mountains CC-Zero -> 6
+requête lake mountains PD-self -> 1
 API erreur, pause <HTTPError 429: 'Too Many Requests'>
+requête sunset CC-Zero -> 10
+requête sunset PD-self -> 4
+requête sunrise CC-Zero -> 10
+requête sunrise PD-self -> 0
+requête mountains CC-Zero -> 10
+requête mountains PD-self -> 10
+requête sea CC-Zero -> 10
+requête sea PD-self -> 5
+requête beach CC-Zero -> 10
+requête beach PD-self -> 3
 API erreur, pause <HTTPError 429: 'Too Many Requests'>
-requête clouds sky timelapse PD-self -> 0
-requête mountains clouds CC-Zero -> 4
-requête mountains clouds PD-self -> 0
-requête river forest CC-Zero -> 3
-requête river forest PD-self -> 0
-candidats : 44
-échec File:Ocean surface waves 03.ogv <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Ocean surface waves 04.ogv <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Ocean surface waves 05.ogv <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Ocean surface waves 08.ogv <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Ocean surface waves 09.ogv <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Ocean surface waves 10.ogv <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
-échec File:Body surfing a wave.webm <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Southern Wallabi Beach surf conditions and recreational surfing, Saltwater National Park, New South Wales.webm <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Strandwellenbeugung (Ostspitze Wangerooge) ii.webm <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Strandwellenfrequenz (etwa 0,3 Hertz).webm <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Delaneys Falls.webm <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Minnehaha Falls, Minneapolis.webm <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Mt Nimrod Scenic Reserve - Waterfall on Nimrod Stream (video).webm <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Pwll Uffern Video Afon Pysgotwr.webm <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
-échec File:Rapids and Falls of the Youghiogheny at Ohiopyle.webm <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Watagataki Falls (Video).webm <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
-échec File:Waterfall in Huascarán National Park - Peru.webm <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
-échec File:Earland Falls 4.ogv <HTTPError 429: 'Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)'>
-échec File:Video de la grande cascade du Mont-Dore.ogv <HTTPError 429: 'Your request does not comply with our robot policy, https://w.wiki/4wJS. Please contact noc@wikimedia.org for further information (0fa5166)'>
+requête desert dunes CC-Zero -> 5
+requête desert dunes PD-self -> 0
+requête snow mountains CC-Zero -> 0
+requête snow mountains PD-self -> 0
+requête aurora CC-Zero -> 10
+requête aurora PD-self -> 3
+requête meadow flowers CC-Zero -> 1
+requête meadow flowers PD-self -> 0
+requête rain forest CC-Zero -> 2
+requête rain forest PD-self -> 0
+candidats : 100
