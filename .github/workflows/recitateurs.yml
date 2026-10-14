@@ -1,0 +1,36 @@
+name: Tester les récitateurs
+
+on:
+  push:
+    branches: [main]
+    paths: [coran/recitateurs_a_tester.txt, .github/workflows/recitateurs.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vérifier chaque dossier sur everyayah.com (début, milieu, fin du Coran)
+        run: |
+          : > coran/recitateurs_resultat.txt
+          while read f; do
+            [ -z "$f" ] && continue
+            r=""
+            for a in 001001 002255 020025 028024 093001 114006; do
+              c=$(curl -s -o /dev/null -w "%{http_code}" -I "https://everyayah.com/data/$f/$a.mp3")
+              r="$r $c"
+            done
+            echo "$f$r" | tee -a coran/recitateurs_resultat.txt
+          done < coran/recitateurs_a_tester.txt
+      - run: |
+          git config user.name "quiz-bot"
+          git config user.email "quiz-bot@users.noreply.github.com"
+          git add coran/recitateurs_resultat.txt
+          git diff --cached --quiet && exit 0
+          git commit -m "Récitateurs : résultat du test"
+          git pull --rebase
+          git push
