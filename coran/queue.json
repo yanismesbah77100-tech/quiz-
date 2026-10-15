@@ -1,6 +1,56 @@
 {
  "videos": [
   {
+   "name": "c0101",
+   "surah": 87,
+   "from": 1,
+   "to": 19,
+   "mode": "sourate_complete",
+   "title": "Sourate Al-A'la",
+   "reciter_nom": "Ali Jaber",
+   "fichier_pret": true
+  },
+  {
+   "name": "c0102",
+   "surah": 88,
+   "from": 1,
+   "to": 26,
+   "mode": "sourate_complete",
+   "title": "Sourate Al-Ghashiya",
+   "reciter_nom": "Hani Ar-Rifai",
+   "fichier_pret": true
+  },
+  {
+   "name": "c0103",
+   "surah": 86,
+   "from": 1,
+   "to": 17,
+   "mode": "sourate_complete",
+   "title": "Sourate At-Tariq",
+   "reciter_nom": "Khalid Al-Qahtani",
+   "fichier_pret": true
+  },
+  {
+   "name": "c0104",
+   "surah": 90,
+   "from": 1,
+   "to": 20,
+   "mode": "sourate_complete",
+   "title": "Sourate Al-Balad",
+   "reciter_nom": "Abdullah Al-Juhany",
+   "fichier_pret": true
+  },
+  {
+   "name": "c0105",
+   "surah": 91,
+   "from": 1,
+   "to": 15,
+   "mode": "sourate_complete",
+   "title": "Sourate Ash-Shams",
+   "reciter_nom": "Akram Al-Alaqimy",
+   "fichier_pret": true
+  },
+  {
    "name": "c0025",
    "surah": 93,
    "from": 1,

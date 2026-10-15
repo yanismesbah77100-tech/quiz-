@@ -5,7 +5,7 @@ name: Générer les vidéos versets
 on:
   push:
     branches: [main]
-    paths: [coran/queue.json, coran/generate.py, coran/config.json, coran/backgrounds.json, .github/workflows/coran.yml]
+    paths: [coran/queue.json, coran/media/**, coran/generate.py, coran/config.json, coran/backgrounds.json, .github/workflows/coran.yml]
   workflow_dispatch:
 
 permissions:
@@ -50,7 +50,8 @@ jobs:
           mkdir -p out
           for name in $(python3 -c "import json;print(' '.join(v['name'] for v in json.load(open('coran/queue.json'))['videos']))"); do
             if grep -qx "$name.mp4" existing.txt; then echo "déjà en ligne : $name"; continue; fi
-            python3 coran/generate.py --queue coran/queue.json --only "$name" --out out
+            if [ -f "coran/media/$name.mp4" ]; then cp "coran/media/$name.mp4" "out/$name.mp4"; else
+            python3 coran/generate.py --queue coran/queue.json --only "$name" --out out; fi
             gh release upload coran "out/$name.mp4" --clobber
             echo "$name.mp4" >> existing.txt
           done
