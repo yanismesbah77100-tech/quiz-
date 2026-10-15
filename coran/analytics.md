@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-15 (matin) — point quotidien
+- Publication : aucune ajoutée (octobre 20/20 utilisé, semaine test déjà programmée jusqu'au 18/10).
+- Vidéos @lem7710 depuis le 14/10 : c0035 Ad-Duha (11h30) = 87 vues, 10 j'aime, 0 partage (moins d'un jour). c0036 La mère de Moussa (18h) : « publiée » dans Metricool mais pas encore dans les stats (probablement mise à jour pas encore faite) → à revérifier demain ; si toujours absente, la traiter comme bloquée.
+- c0018 Ayat al-Kursi : toujours absente des stats (bloquée le 14/10).
+- Repère (vidéos d'avant le 14/10, ancien style avec #pourtoi) : Al-Baqara 286 = 1 892 vues, Ar-Rahman = 1 142, Al-Mulk 1-4 = 1 037.
+- Compte : 8 abonnés (13/10). Temps moyen regardé, % jusqu'au bout, sources de vues et audience (sexe, pays) : non fournis par Metricool (vides) — sans doute parce que le compte TikTok n'est pas en « compte professionnel ».
+- Conclusions : pas encore assez de données. Aucun changement.
+
 ## 2026-10-14 (11h) — vidéo bloquée par TikTok
 - c0018 (Ayat al-Kursi, Maher Al-Muaiqly, 10h) publiée puis retirée par TikTok : « violation des règles » (motif exact pas encore connu ; Yanis doit regarder « Statut du compte » et faire appel).
 - Corrections appliquées (règles « For You » de TikTok) : plus aucun appel à s'abonner/liker/partager dans la vidéo (intro, bandeau, écran de fin) ni dans la légende ; légende sobre (sourate + versets + récitateur + traducteur, 3 hashtags, sans #pourtoi) ; écran de fin « سبحان الله وبحمده » + crédits.
