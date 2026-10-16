@@ -2,6 +2,15 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-16 (matin) — vidéo disparue, pause de 48 h
+- c0036 « La mère de Moussa » (14/10 18h) : « publiée » dans Metricool mais toujours absente des stats TikTok 36 h après, alors que les vidéos suivantes (15/10 10h et 13h) y sont → traitée comme bloquée/retirée.
+- Règle appliquée : les 6 vidéos prévues dans les 48 h (16/10 10h, 13h, 18h ; 17/10 10h, 13h, 18h) sont mises en BROUILLON dans Metricool. Restent programmées : 18/10 10h, 13h, 18h. Yanis doit vérifier le motif dans TikTok (Profil → ☰ → Paramètres → Statut du compte) et faire appel.
+- Surprise : c0018 Ayat al-Kursi (bloquée le 14/10) réapparaît dans les stats avec 1 737 vues, 125 j'aime, 6 partages → peut-être rétablie après appel (à confirmer par Yanis).
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime) : Ad-Duha 303 / 33 ; L'invocation de Moussa 264 / 35 ; Les signes de la création 242 / 37 ; Al-Mulk en entier (15/10 18h) pas encore dans les stats.
+- Compte : abonnés non fournis aujourd'hui (dernier chiffre : 12 le 14/10, +4). Temps moyen regardé, % jusqu'au bout, sexe et pays : toujours vides dans Metricool.
+- Conclusions : pas encore assez de données (3 vidéos du nouveau style avec des vues, aucune longue mesurée). Aucun changement de passages ni de generate.py.
+- Publication : aucune (octobre 20/20).
+
 ## 2026-10-15 (matin) — point quotidien
 - Publication : aucune ajoutée (octobre 20/20 utilisé, semaine test déjà programmée jusqu'au 18/10).
 - Vidéos @lem7710 depuis le 14/10 : c0035 Ad-Duha (11h30) = 87 vues, 10 j'aime, 0 partage (moins d'un jour). c0036 La mère de Moussa (18h) : « publiée » dans Metricool mais pas encore dans les stats (probablement mise à jour pas encore faite) → à revérifier demain ; si toujours absente, la traiter comme bloquée.
