@@ -364,6 +364,34 @@ FADE = 0.02  # micro-fondu (20 ms) au début/fin de chaque verset : pas de clic,
 MAX_EDGE_SILENCE = 0.35  # on garde la respiration naturelle du récitateur, sans blanc ajouté
 
 
+def close_gaps(sig, max_gap=0.7, keep=0.5, thr=0.008):
+    """Raccourcit les longs blancs À L'INTÉRIEUR d'un fichier de verset (pause du récitateur
+    de plusieurs secondes) : au-delà de max_gap s, on ne garde que keep s de silence.
+    La voix n'est jamais coupée, seul le silence est raccourci (avec micro-fondus)."""
+    win = int(0.02 * SR)
+    n = len(sig) // win
+    if n < 3:
+        return sig
+    rms = np.sqrt(np.mean(sig[: n * win].reshape(n, win) ** 2, axis=1))
+    quiet = rms < thr
+    out, pos, i = [], 0, 0
+    while i < n:
+        if quiet[i]:
+            j = i
+            while j < n and quiet[j]:
+                j += 1
+            if (j - i) * win > max_gap * SR and i > 0 and j < n:  # blanc interne trop long
+                a = i * win + int(keep / 2 * SR)
+                b = j * win - int(keep / 2 * SR)
+                out.append(soften(sig[pos:a]))
+                pos = b
+            i = j
+        else:
+            i += 1
+    out.append(sig[pos:])
+    return np.concatenate(out) if len(out) > 1 else sig
+
+
 def soften(sig):
     n = min(int(FADE * SR), len(sig) // 2)
     if n > 0:
@@ -426,8 +454,8 @@ def gather(v, tmp, folder):
         if a == 1 and s not in (1, 9):
             add_basmala(s)
         ay = fetch(s, a)
-        ay["rec"] = trim_edges(read_audio(download(AUDIO.format(folder=folder, s=s, a=a),
-                                                    os.path.join(tmp, f"r{s}_{a}.mp3"))), MAX_EDGE_SILENCE / 2)
+        ay["rec"] = close_gaps(trim_edges(read_audio(download(AUDIO.format(folder=folder, s=s, a=a),
+                                                    os.path.join(tmp, f"r{s}_{a}.mp3"))), MAX_EDGE_SILENCE / 2))
         if mode == "recit_trad":
             ay["frv"] = tts(ay["fr"], os.path.join(tmp, f"f{s}_{a}.mp3"))
         items.append(ay)
