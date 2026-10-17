@@ -2,6 +2,11 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-17 (soir) — reprise demandée par Yanis
+- Yanis veut continuer à publier. Les 9 vidéos en brouillon sont reprogrammées à 1 par jour du 18 au 26/10 (courtes à 10h, longues Maryam 21/10 et Al-Insan 24/10 à 18h). Ce ne sont pas de nouvelles publications : elles faisaient déjà partie du quota d'octobre.
+- IMPORTANT pour la tâche quotidienne : NE PAS remettre ces vidéos en brouillon à cause de c0036 / c0039 (déjà connues, décision de Yanis). La règle des 48 h ne s'applique que si une NOUVELLE vidéo disparaît ou passe en erreur.
+- Rien d'autre à programmer en octobre. Reprise normale le 1er novembre (stock c0101 à c0105).
+
 ## 2026-10-17 (matin) — 2e vidéo disparue (Al-Mulk longue), pause de 48 h
 - c0039 « Sourate Al-Mulk en entier » (vidéo longue, 15/10 18h) : « publiée » dans Metricool mais absente des stats TikTok ~39 h après, alors que la vidéo de 13h le même jour y est → traitée comme bloquée/retirée. c0036 « La mère de Moussa » toujours absente.
 - Règle appliquée : les 3 vidéos du 18/10 (10h, 13h, 18h) mises en BROUILLON dans Metricool. Plus aucune vidéo programmée en octobre (quota 20/20 de toute façon).
