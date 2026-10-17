@@ -358,8 +358,19 @@ HOOKS = [
     ("Ce rappel est peut-être", "un signe pour toi"),
 ]
 MIN_DUR = 62.0
-INTRO, END, GAP_REC, GAP_FR = 3.2, 4.0, 0.0, 0.8
+# INTRO = 0 : la récitation commence dès la 1re image (demande de Yanis, 17/10)
+INTRO, END, GAP_REC, GAP_FR = 0.0, 3.0, 0.0, 0.8
+FADE = 0.02  # micro-fondu (20 ms) au début/fin de chaque verset : pas de clic, pas de coupure sèche
 MAX_EDGE_SILENCE = 0.35  # on garde la respiration naturelle du récitateur, sans blanc ajouté
+
+
+def soften(sig):
+    n = min(int(FADE * SR), len(sig) // 2)
+    if n > 0:
+        sig = sig.copy()
+        sig[:n] *= np.linspace(0, 1, n)
+        sig[-n:] *= np.linspace(1, 0, n)
+    return sig
 
 
 def place(buf, sig, at):
@@ -449,12 +460,17 @@ def gather(v, tmp, folder):
 
 def build(items, mode, out_path, cfg, hook, bg_path=None):
     with tempfile.TemporaryDirectory() as tmp:
-        segs, sounds = [("hook", 0.0, INTRO, None, False)], []
+        # le tout premier verset démarre sans blanc
+        first = items[0]["rec"]
+        loud = np.where(np.abs(first) > 0.01)[0]
+        if len(loud):
+            items[0] = dict(items[0], rec=first[max(0, loud[0] - int(0.03 * SR)):])
+        segs, sounds = ([("hook", 0.0, INTRO, None, False)] if INTRO > 0 else []), []
         t = INTRO
         for i, ay in enumerate(items):
             r = len(ay["rec"]) / SR + GAP_REC
             segs.append(("page", t, r, i, False))
-            sounds.append((ay["rec"], t))
+            sounds.append((soften(ay["rec"]), t))
             t += r
             if "frv" in ay:
                 f = len(ay["frv"]) / SR + GAP_FR
@@ -511,7 +527,7 @@ def build(items, mode, out_path, cfg, hook, bg_path=None):
             lay = cache[key]
             # pas de fondu quand on passe de la récitation à la traduction du même verset
             same = kind == "page" and fr_on and lt < 0.5
-            if lt < 0.25 and not same:
+            if lt < 0.25 and not same and tt >= 0.25:  # 1re image : texte visible tout de suite
                 lay = Image.blend(empty, lay, lt / 0.25)
             frame.alpha_composite(lay)
             if cfg.get("cta_banner", False) and cta_from <= tt <= cta_to and kind == "page":  # désactivé : pas d'appel à s'abonner
@@ -521,7 +537,7 @@ def build(items, mode, out_path, cfg, hook, bg_path=None):
             d = ImageDraw.Draw(frame)
             d.rectangle((0, 0, W, 10), fill=(255, 255, 255, 40))
             d.rectangle((0, 0, int(W * tt / total), 10), fill=GOLD + (230,))
-            if tt < 0.5:
+            if INTRO > 0 and tt < 0.5:
                 frame = Image.blend(black, frame, tt / 0.5)
             if tt > total - 0.6:
                 frame = Image.blend(black, frame, max(0.0, (total - tt) / 0.6))

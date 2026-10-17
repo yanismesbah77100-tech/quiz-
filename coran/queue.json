@@ -12,17 +12,6 @@
    "caption": "Sourate Al-A'la (87:1-19) 🤍\nRécitation : Ali Jaber • Traduction : Muhammad Hamidullah\n#coran #islam #alala"
   },
   {
-   "name": "c0102",
-   "surah": 88,
-   "from": 1,
-   "to": 26,
-   "mode": "sourate_complete",
-   "title": "Sourate Al-Ghashiya",
-   "reciter_nom": "Hani Ar-Rifai",
-   "fichier_pret": true,
-   "caption": "Sourate Al-Ghashiya (88:1-26) 🤍\nRécitation : Hani Ar-Rifai • Traduction : Muhammad Hamidullah\n#coran #islam #alghashiya"
-  },
-  {
    "name": "c0103",
    "surah": 86,
    "from": 1,
@@ -278,6 +267,97 @@
    "to": 90,
    "mode": "recit",
    "reciter": "Abdullaah_3awwaad_Al-Juhaynee_128kbps"
+  },
+  {
+   "name": "c0106",
+   "surah": 2,
+   "from": 284,
+   "to": 286,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+   "remplace": "c0046"
+  },
+  {
+   "name": "c0107",
+   "surah": 12,
+   "from": 83,
+   "to": 87,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+   "remplace": "c0040"
+  },
+  {
+   "name": "c0108",
+   "surah": 97,
+   "from": 1,
+   "to": 5,
+   "mode": "recit",
+   "reciter": "Salaah_AbdulRahman_Bukhatir_128kbps",
+   "remplace": "c0047"
+  },
+  {
+   "name": "c0109",
+   "surah": 19,
+   "from": 16,
+   "to": 40,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "remplace": "c0042",
+   "bg": "n13.webm"
+  },
+  {
+   "name": "c0110",
+   "surah": 112,
+   "from": 1,
+   "to": 4,
+   "mode": "recit",
+   "reciter": "Minshawy_Murattal_128kbps",
+   "remplace": "c0043"
+  },
+  {
+   "name": "c0111",
+   "surah": 59,
+   "from": 21,
+   "to": 24,
+   "mode": "recit",
+   "reciter": "Muhammad_Ayyoub_128kbps",
+   "remplace": "c0044"
+  },
+  {
+   "name": "c0112",
+   "surah": 76,
+   "from": 1,
+   "to": 31,
+   "mode": "recit",
+   "reciter": "Fares_Abbad_64kbps",
+   "remplace": "c0045"
+  },
+  {
+   "name": "c0113",
+   "surah": 94,
+   "from": 1,
+   "to": 8,
+   "mode": "recit",
+   "reciter": "Minshawy_Murattal_128kbps",
+   "remplace": "c0041"
+  },
+  {
+   "name": "c0114",
+   "surah": 21,
+   "from": 83,
+   "to": 90,
+   "mode": "recit",
+   "reciter": "Abdullaah_3awwaad_Al-Juhaynee_128kbps",
+   "remplace": "c0048"
+  },
+  {
+   "name": "c0115",
+   "surah": 88,
+   "from": 1,
+   "to": 26,
+   "mode": "recit",
+   "reciter": "Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net",
+   "remplace": "c0102"
   }
  ]
 }

@@ -8,24 +8,8 @@
    "folder": "Alafasy_128kbps"
   },
   {
-   "name": "Maher Al-Muaiqly",
-   "folder": "MaherAlMuaiqly128kbps"
-  },
-  {
-   "name": "Yasser Ad-Dossari",
-   "folder": "Yasser_Ad-Dussary_128kbps"
-  },
-  {
-   "name": "Nasser Al-Qatami",
-   "folder": "Nasser_Alqatami_128kbps"
-  },
-  {
    "name": "Abu Bakr Ash-Shatri",
    "folder": "Abu_Bakr_Ash-Shaatree_128kbps"
-  },
-  {
-   "name": "Hani Ar-Rifai",
-   "folder": "Hani_Rifai_192kbps"
   },
   {
    "name": "Ahmed Al-Ajamy",
@@ -51,5 +35,11 @@
    "name": "Mohamed Siddiq Al-Minshawi",
    "folder": "Minshawy_Murattal_128kbps"
   }
+ ],
+ "reciters_retires_son_coupe": [
+  "Hani Ar-Rifai",
+  "Maher Al-Muaiqly",
+  "Nasser Al-Qatami",
+  "Yasser Ad-Dossari"
  ]
 }
