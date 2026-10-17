@@ -2,6 +2,15 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-17 (matin) — 2e vidéo disparue (Al-Mulk longue), pause de 48 h
+- c0039 « Sourate Al-Mulk en entier » (vidéo longue, 15/10 18h) : « publiée » dans Metricool mais absente des stats TikTok ~39 h après, alors que la vidéo de 13h le même jour y est → traitée comme bloquée/retirée. c0036 « La mère de Moussa » toujours absente.
+- Règle appliquée : les 3 vidéos du 18/10 (10h, 13h, 18h) mises en BROUILLON dans Metricool. Plus aucune vidéo programmée en octobre (quota 20/20 de toute façon).
+- Piste : les 2 vidéos disparues font partie de la même série refaite le 14/10 ; possible problème de droits sur la récitation (Yasser Ad-Dossari, Maher Al-Muaiqly) ou blocage des vidéos longues. Motif à lire par Yanis dans TikTok (Statut du compte).
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime) : Ad-Duha 307 / 33 ; L'invocation de Moussa 264 / 35 ; Les signes de la création 299 / 46. Ayat al-Kursi (rétablie ?) 1 742 / 126 / 6 partages.
+- Compte : 15 abonnés (15/10, +3). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : pas encore assez de données (3 vidéos du nouveau style avec des vues, aucune longue mesurable). Aucun changement de passages ni de generate.py.
+- Publication : aucune (octobre 20/20). Stock prêt : c0101 à c0105.
+
 ## 2026-10-16 (matin) — vidéo disparue, pause de 48 h
 - c0036 « La mère de Moussa » (14/10 18h) : « publiée » dans Metricool mais toujours absente des stats TikTok 36 h après, alors que les vidéos suivantes (15/10 10h et 13h) y sont → traitée comme bloquée/retirée.
 - Règle appliquée : les 6 vidéos prévues dans les 48 h (16/10 10h, 13h, 18h ; 17/10 10h, 13h, 18h) sont mises en BROUILLON dans Metricool. Restent programmées : 18/10 10h, 13h, 18h. Yanis doit vérifier le motif dans TikTok (Profil → ☰ → Paramètres → Statut du compte) et faire appel.
