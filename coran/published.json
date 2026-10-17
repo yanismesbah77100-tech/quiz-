@@ -262,12 +262,11 @@
   "from": 83,
   "to": 87,
   "date": "2026-10-19T10:00:00+02:00",
-  "metricool_id": 398677465,
   "title": "Sourate Yusuf (12:83-87)",
   "compte": "lem7710",
   "long": false,
   "reciter": "Abu Bakr Ash-Shatri",
-  "statut": "reprogrammée le 17/10 à la demande de Yanis (1 par jour, 18 au 26/10)"
+  "statut": "remplacée avant publication par c0117 (17/10 : début direct, sans blanc, récitateur sans son coupé)"
  },
  {
   "video": "c0041",
@@ -275,12 +274,11 @@
   "from": 1,
   "to": 8,
   "date": "2026-10-25T10:00:00+02:00",
-  "metricool_id": 398677828,
   "title": "Sourates Ash-Sharh et At-Tin",
   "compte": "lem7710",
   "long": false,
   "reciter": "Mohamed Siddiq Al-Minshawi",
-  "statut": "reprogrammée le 17/10 à la demande de Yanis (1 par jour, 18 au 26/10)"
+  "statut": "remplacée avant publication par c0123 (17/10 : début direct, sans blanc, récitateur sans son coupé)"
  },
  {
   "video": "c0042",
@@ -288,12 +286,11 @@
   "from": 16,
   "to": 40,
   "date": "2026-10-21T18:00:00+02:00",
-  "metricool_id": 398677503,
   "title": "Sourate Maryam (19:16-40)",
   "compte": "lem7710",
   "long": true,
   "reciter": "Mishary Alafasy",
-  "statut": "reprogrammée le 17/10 à la demande de Yanis (1 par jour, 18 au 26/10)"
+  "statut": "remplacée avant publication par c0119 (17/10 : début direct, sans blanc, récitateur sans son coupé)"
  },
  {
   "video": "c0043",
@@ -301,12 +298,11 @@
   "from": 1,
   "to": 4,
   "date": "2026-10-22T10:00:00+02:00",
-  "metricool_id": 398677527,
   "title": "Al-Ikhlas, Al-Falaq, An-Nas",
   "compte": "lem7710",
   "long": false,
   "reciter": "Yasser Ad-Dossari",
-  "statut": "reprogrammée le 17/10 à la demande de Yanis (1 par jour, 18 au 26/10)"
+  "statut": "remplacée avant publication par c0120 (17/10 : début direct, sans blanc, récitateur sans son coupé)"
  },
  {
   "video": "c0044",
@@ -314,12 +310,11 @@
   "from": 21,
   "to": 24,
   "date": "2026-10-23T10:00:00+02:00",
-  "metricool_id": 398677555,
   "title": "Fin de la sourate Al-Hashr",
   "compte": "lem7710",
   "long": false,
   "reciter": "Nasser Al-Qatami",
-  "statut": "reprogrammée le 17/10 à la demande de Yanis (1 par jour, 18 au 26/10)"
+  "statut": "remplacée avant publication par c0121 (17/10 : début direct, sans blanc, récitateur sans son coupé)"
  },
  {
   "video": "c0045",
@@ -327,12 +322,11 @@
   "from": 1,
   "to": 31,
   "date": "2026-10-24T18:00:00+02:00",
-  "metricool_id": 398677587,
   "title": "Sourate Al-Insan en entier",
   "compte": "lem7710",
   "long": true,
   "reciter": "Fares Abbad",
-  "statut": "reprogrammée le 17/10 à la demande de Yanis (1 par jour, 18 au 26/10)"
+  "statut": "remplacée avant publication par c0122 (17/10 : début direct, sans blanc, récitateur sans son coupé)"
  },
  {
   "video": "c0046",
@@ -340,12 +334,11 @@
   "from": 284,
   "to": 286,
   "date": "2026-10-18T10:00:00+02:00",
-  "metricool_id": 398677443,
   "title": "La fin d'Al-Baqara",
   "compte": "lem7710",
   "long": false,
   "reciter": "Abu Bakr Ash-Shatri",
-  "statut": "reprogrammée le 17/10 à la demande de Yanis (1 par jour, 18 au 26/10)"
+  "statut": "remplacée avant publication par c0116 (17/10 : début direct, sans blanc, récitateur sans son coupé)"
  },
  {
   "video": "c0047",
@@ -353,12 +346,11 @@
   "from": 1,
   "to": 5,
   "date": "2026-10-20T10:00:00+02:00",
-  "metricool_id": 398677485,
   "title": "Sourates Al-Qadr et Al-Bayyina",
   "compte": "lem7710",
   "long": false,
   "reciter": "Salah Bukhatir",
-  "statut": "reprogrammée le 17/10 à la demande de Yanis (1 par jour, 18 au 26/10)"
+  "statut": "remplacée avant publication par c0118 (17/10 : début direct, sans blanc, récitateur sans son coupé)"
  },
  {
   "video": "c0048",
@@ -366,11 +358,118 @@
   "from": 83,
   "to": 90,
   "date": "2026-10-26T10:00:00+02:00",
-  "metricool_id": 398677844,
   "title": "Les invocations des prophètes",
   "compte": "lem7710",
   "long": false,
   "reciter": "Abdullah Al-Juhany",
-  "statut": "reprogrammée le 17/10 à la demande de Yanis (1 par jour, 18 au 26/10)"
+  "statut": "remplacée avant publication par c0124 (17/10 : début direct, sans blanc, récitateur sans son coupé)"
+ },
+ {
+  "video": "c0116",
+  "surah": 2,
+  "from": 284,
+  "to": 286,
+  "date": "2026-10-18T10:00:00+02:00",
+  "metricool_id": 398720515,
+  "title": "La fin d'Al-Baqara",
+  "compte": "lem7710",
+  "long": false,
+  "reciter": "Abu Bakr Ash-Shatri"
+ },
+ {
+  "video": "c0117",
+  "surah": 12,
+  "from": 83,
+  "to": 87,
+  "date": "2026-10-19T10:00:00+02:00",
+  "metricool_id": 398720537,
+  "title": "Sourate Yusuf (12:83-87)",
+  "compte": "lem7710",
+  "long": false,
+  "reciter": "Abu Bakr Ash-Shatri"
+ },
+ {
+  "video": "c0118",
+  "surah": 97,
+  "from": 1,
+  "to": 5,
+  "date": "2026-10-20T10:00:00+02:00",
+  "metricool_id": 398720569,
+  "title": "Sourates Al-Qadr et Al-Bayyina",
+  "compte": "lem7710",
+  "long": false,
+  "reciter": "Salah Bukhatir"
+ },
+ {
+  "video": "c0119",
+  "surah": 19,
+  "from": 16,
+  "to": 40,
+  "date": "2026-10-21T18:00:00+02:00",
+  "metricool_id": 398720611,
+  "title": "Sourate Maryam (19:16-40)",
+  "compte": "lem7710",
+  "long": true,
+  "reciter": "Mishary Alafasy"
+ },
+ {
+  "video": "c0120",
+  "surah": 112,
+  "from": 1,
+  "to": 4,
+  "date": "2026-10-22T10:00:00+02:00",
+  "metricool_id": 398720633,
+  "title": "Al-Ikhlas, Al-Falaq, An-Nas",
+  "compte": "lem7710",
+  "long": false,
+  "reciter": "Mohamed Siddiq Al-Minshawi"
+ },
+ {
+  "video": "c0121",
+  "surah": 59,
+  "from": 21,
+  "to": 24,
+  "date": "2026-10-23T10:00:00+02:00",
+  "metricool_id": 398720665,
+  "title": "Fin de la sourate Al-Hashr",
+  "compte": "lem7710",
+  "long": false,
+  "reciter": "Muhammad Ayyoub"
+ },
+ {
+  "video": "c0122",
+  "surah": 76,
+  "from": 1,
+  "to": 31,
+  "date": "2026-10-24T18:00:00+02:00",
+  "metricool_id": 398720726,
+  "title": "Sourate Al-Insan en entier",
+  "compte": "lem7710",
+  "long": true,
+  "reciter": "Fares Abbad"
+ },
+ {
+  "video": "c0123",
+  "surah": 94,
+  "from": 1,
+  "to": 8,
+  "date": "2026-10-25T10:00:00+02:00",
+  "metricool_id": 398720740,
+  "title": "Sourates Ash-Sharh et At-Tin",
+  "compte": "lem7710",
+  "long": false,
+  "reciter": "Mohamed Siddiq Al-Minshawi"
+ },
+ {
+  "video": "c0124",
+  "surah": 21,
+  "from": 83,
+  "to": 90,
+  "date": "2026-10-26T10:00:00+02:00",
+  "metricool_id": 398720770,
+  "title": "Les invocations des prophètes",
+  "compte": "lem7710",
+  "long": false,
+  "reciter": "Abdullah Al-Juhany"
  }
 ]

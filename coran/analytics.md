@@ -2,6 +2,12 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-17 (nuit) — demandes de Yanis : début direct, sans coupure, son non retiré
+- Yanis : le SON a été RETIRÉ par TikTok (droits d'auteur) sur 4 vidéos, celles de Maher Al-Muaiqly, Yasser Ad-Dossari, Nasser Al-Qatami et Hani Ar-Rifai. Les vidéos Mishary Alafasy n'ont pas eu de problème. → Ces 4 récitateurs sont retirés de config.json (NE JAMAIS LES REMETTRE). Les 2 vidéos « disparues » des stats (c0036 Dossari, c0039 Maher) sont sans doute celles au son retiré, pas des vidéos bloquées.
+- generate.py : plus d'intro de 3,2 s (la récitation commence à 0 s, texte du verset dès la 1re image) ; micro-fondus de 20 ms entre versets (pas de clic) ; les longs blancs à l'intérieur d'un verset (pauses de 3 à 6 s chez certains récitateurs) sont réduits à 0,5 s ; écran de fin 3 s.
+- Les 9 vidéos programmées du 18 au 26/10 sont refaites (c0116 à c0124) et remplacées dans Metricool (mêmes dates). c0102 (Ar-Rifai) retirée du stock, remplacée par c0125 (Al-Ghashiya, Ahmed Al-Ajamy). c0101 recoupée pour démarrer sans blanc.
+- À surveiller : si le son d'une nouvelle vidéo est retiré, noter le récitateur ici et le retirer de config.json.
+
 ## 2026-10-17 (soir) — reprise demandée par Yanis
 - Yanis veut continuer à publier. Les 9 vidéos en brouillon sont reprogrammées à 1 par jour du 18 au 26/10 (courtes à 10h, longues Maryam 21/10 et Al-Insan 24/10 à 18h). Ce ne sont pas de nouvelles publications : elles faisaient déjà partie du quota d'octobre.
 - IMPORTANT pour la tâche quotidienne : NE PAS remettre ces vidéos en brouillon à cause de c0036 / c0039 (déjà connues, décision de Yanis). La règle des 48 h ne s'applique que si une NOUVELLE vidéo disparaît ou passe en erreur.
