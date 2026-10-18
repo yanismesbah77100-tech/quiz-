@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-18 (matin) — point quotidien
+- Aucune vidéo nouvelle bloquée ni en erreur. Toutes les vidéos programmées du 18 au 26/10 (c0116 à c0124) sont « en attente » normalement ; 1re aujourd'hui à 10h (fin d'Al-Baqara, Ash-Shatri).
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime) : Ad-Duha 307 / 33 ; L'invocation de Moussa 264 / 35 ; Les signes de la création 301 / 46 ; Ayat al-Kursi 1 752 / 126 / 6 partages. c0036 et c0039 toujours absentes (déjà connues, son retiré).
+- Compte : 15 abonnés (dernier chiffre, 16/10). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : pas encore assez de données (aucune vidéo publiée depuis le 15/10). Aucun changement.
+- Publication : aucune (octobre 20/20, vidéo déjà prévue aujourd'hui). Stock prêt : c0101, c0103, c0104, c0105, c0125 ; 56 passages libres.
+
 ## 2026-10-17 (nuit) — style validé par Yanis
 - Yanis a vu l'extrait de c0116 et valide le style actuel : « c'est parfait, reste comme ça ». NE PAS changer le format des vidéos (début direct, sans intro, sans blanc, fond nature, texte arabe + traduction) sans qu'il le demande.
 
