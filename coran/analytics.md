@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-19 (matin) — point quotidien
+- Aucune vidéo bloquée ni en erreur. c0116 « La fin d'Al-Baqara » (18/10 10h, Ash-Shatri) bien publiée et présente dans les stats. Aujourd'hui 10h : c0117 Yusuf 12:83-87 (en attente, normal). Programmées ensuite jusqu'au 26/10 : toutes « en attente ».
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Fin d'Al-Baqara 736 / 143 / 2 (en moins d'1 jour, meilleur départ du nouveau style) ; Ad-Duha 307 / 33 / 0 ; Les signes de la création 302 / 46 / 0 ; L'invocation de Moussa 264 / 35 / 0 ; Ayat al-Kursi 1 752 / 126 / 6.
+- Compte : 16 abonnés (17/10). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Premières tendances (prudence, 5 vidéos, pas de données de rétention) : les passages d'Al-Baqara marchent le mieux (Ayat al-Kursi, fin d'Al-Baqara, et déjà 2:286 avant le 14/10) ; Ash-Shatri démarre bien. Aucune vidéo longue mesurable (Al-Mulk disparue). Pas de changement de format (validé par Yanis). Aucun changement de file aujourd'hui (tout est programmé jusqu'au 26/10).
+- À FAIRE le 1er novembre : le stock c0101 (Ali Jaber), c0103 (Khalid Al-Qahtani), c0105 (Akram Al-Alaqimy) utilise des récitateurs absents de la liste coran/config.json → ne pas les publier tels quels ; les refaire avec un récitateur de la liste (de préférence Ash-Shatri ou Alafasy) ou passer à c0104 / c0125. Penser à faire passer un passage d'Al-Baqara libre (2:127-129, 2:30-33, 2:261-262) plus tôt.
+- Publication : aucune (octobre 20/20, vidéo déjà prévue aujourd'hui). Stock prêt : c0101, c0103, c0104, c0105, c0125 ; 56 passages libres.
+
 ## 2026-10-18 (matin) — point quotidien
 - Aucune vidéo nouvelle bloquée ni en erreur. Toutes les vidéos programmées du 18 au 26/10 (c0116 à c0124) sont « en attente » normalement ; 1re aujourd'hui à 10h (fin d'Al-Baqara, Ash-Shatri).
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime) : Ad-Duha 307 / 33 ; L'invocation de Moussa 264 / 35 ; Les signes de la création 301 / 46 ; Ayat al-Kursi 1 752 / 126 / 6 partages. c0036 et c0039 toujours absentes (déjà connues, son retiré).
