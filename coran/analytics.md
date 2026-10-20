@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-20 (matin) — point quotidien
+- Aucune vidéo bloquée ni en erreur. c0117 Yusuf 12:83-87 (19/10, Ash-Shatri) bien publiée. Aujourd'hui 10h : Al-Qadr + Al-Bayyina (Bukhatir), en attente normale. Programmées jusqu'au 26/10 : toutes « en attente ».
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 754 / 126 / 6 ; Fin d'Al-Baqara 802 / 146 / 3 ; Yaqoub et la patience (Yusuf) 637 / 102 / 0 (en 1 jour) ; Ad-Duha 307 / 33 ; Signes de la création 305 / 46 ; Invocation de Moussa 264 / 35. La mère de Moussa et Al-Mulk entier toujours absentes (déjà connues).
+- Compte : 16 abonnés (18/10). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions prudentes (6 vidéos) : Al-Baqara reste le thème le plus fort ; Ash-Shatri fait les 2 meilleurs départs du nouveau style (802 et 637 vues, ~16-18 % de j'aime). Les vidéos à 10h marchent mieux que celles de 13h. Pas encore de longue mesurable.
+- Changement : dans coran/passages.json, 2:127-129 (Ibrahim et la Kaaba) passe en tête des passages libres et 2:30-33 (Adam et les anges) remonte en 3e. Pour novembre, préférer Ash-Shatri (Abu_Bakr_Ash-Shaatree_128kbps) en "reciter" sur ces nouvelles entrées.
+- Publication : aucune (octobre 20/20, vidéo déjà prévue aujourd'hui). Stock prêt : c0101, c0103, c0104, c0105, c0125 ; 56 passages libres.
+
 ## 2026-10-19 (matin) — point quotidien
 - Aucune vidéo bloquée ni en erreur. c0116 « La fin d'Al-Baqara » (18/10 10h, Ash-Shatri) bien publiée et présente dans les stats. Aujourd'hui 10h : c0117 Yusuf 12:83-87 (en attente, normal). Programmées ensuite jusqu'au 26/10 : toutes « en attente ».
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Fin d'Al-Baqara 736 / 143 / 2 (en moins d'1 jour, meilleur départ du nouveau style) ; Ad-Duha 307 / 33 / 0 ; Les signes de la création 302 / 46 / 0 ; L'invocation de Moussa 264 / 35 / 0 ; Ayat al-Kursi 1 752 / 126 / 6.
