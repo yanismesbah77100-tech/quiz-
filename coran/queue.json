@@ -360,6 +360,51 @@
    "remplace": "c0102",
    "caption": "Sourate Al-Ghashiya (88:1-26) 🤍\nRécitation : Ahmed Al-Ajamy • Traduction : Muhammad Hamidullah\n#coran #islam #alghashiya",
    "title": "Sourate Al-Ghashiya"
+  },
+  {
+   "name": "c0126",
+   "surah": 112,
+   "from": 1,
+   "to": 4,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+   "remplace": "c0120"
+  },
+  {
+   "name": "c0127",
+   "surah": 59,
+   "from": 21,
+   "to": 24,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "remplace": "c0121"
+  },
+  {
+   "name": "c0128",
+   "surah": 76,
+   "from": 1,
+   "to": 31,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "remplace": "c0122"
+  },
+  {
+   "name": "c0129",
+   "surah": 94,
+   "from": 1,
+   "to": 8,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+   "remplace": "c0123"
+  },
+  {
+   "name": "c0130",
+   "surah": 21,
+   "from": 83,
+   "to": 90,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "remplace": "c0124"
   }
  ]
 }
