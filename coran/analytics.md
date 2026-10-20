@@ -2,6 +2,12 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-20 (après-midi) — son retiré sur la vidéo Bukhatir
+- Yanis : le SON de la vidéo du 20/10 10h (c0118, Al-Qadr + Al-Bayyina, Salah Bukhatir) a été RETIRÉ par TikTok. → Salah Bukhatir retiré de config.json (NE PAS LE REMETTRE).
+- Bilan son : OK sur TikTok = Mishary Alafasy, Abu Bakr Ash-Shatri. Son retiré = Maher, Dossari, Qatami, Ar-Rifai, Bukhatir. Jamais testés = Minshawi, Ayyoub, Fares Abbad, Al-Juhany, Al-Ajamy.
+- Par prudence, les 5 vidéos programmées du 22 au 26/10 (qui utilisaient des récitateurs jamais testés) sont refaites avec Alafasy / Ash-Shatri : c0126 (22/10, Ash-Shatri), c0127 (23/10, Alafasy), c0128 (24/10 18h, Alafasy, longue 5 min 17), c0129 (25/10, Ash-Shatri), c0130 (26/10, Alafasy). Mêmes dates, mêmes passages, remplacées dans Metricool. Maryam du 21/10 (Alafasy) inchangée.
+- Stock c0104 (Al-Juhany) et c0125 (Al-Ajamy) : récitateurs non testés, à refaire avec Alafasy / Ash-Shatri avant publication en novembre.
+
 ## 2026-10-20 (matin) — point quotidien
 - Aucune vidéo bloquée ni en erreur. c0117 Yusuf 12:83-87 (19/10, Ash-Shatri) bien publiée. Aujourd'hui 10h : Al-Qadr + Al-Bayyina (Bukhatir), en attente normale. Programmées jusqu'au 26/10 : toutes « en attente ».
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 754 / 126 / 6 ; Fin d'Al-Baqara 802 / 146 / 3 ; Yaqoub et la patience (Yusuf) 637 / 102 / 0 (en 1 jour) ; Ad-Duha 307 / 33 ; Signes de la création 305 / 46 ; Invocation de Moussa 264 / 35. La mère de Moussa et Al-Mulk entier toujours absentes (déjà connues).

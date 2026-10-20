@@ -398,7 +398,8 @@
   "title": "Sourates Al-Qadr et Al-Bayyina",
   "compte": "lem7710",
   "long": false,
-  "reciter": "Salah Bukhatir"
+  "reciter": "Salah Bukhatir",
+  "statut": "son retiré par TikTok (droits d'auteur) le 20/10 — Salah Bukhatir"
  },
  {
   "video": "c0119",
@@ -413,63 +414,63 @@
   "reciter": "Mishary Alafasy"
  },
  {
-  "video": "c0120",
+  "video": "c0126",
   "surah": 112,
   "from": 1,
   "to": 4,
   "date": "2026-10-22T10:00:00+02:00",
-  "metricool_id": 398720633,
+  "metricool_id": 401188042,
   "title": "Al-Ikhlas, Al-Falaq, An-Nas",
   "compte": "lem7710",
   "long": false,
-  "reciter": "Mohamed Siddiq Al-Minshawi"
+  "reciter": "Abu Bakr Ash-Shatri"
  },
  {
-  "video": "c0121",
+  "video": "c0127",
   "surah": 59,
   "from": 21,
   "to": 24,
   "date": "2026-10-23T10:00:00+02:00",
-  "metricool_id": 398720665,
+  "metricool_id": 401188112,
   "title": "Fin de la sourate Al-Hashr",
   "compte": "lem7710",
   "long": false,
-  "reciter": "Muhammad Ayyoub"
+  "reciter": "Mishary Alafasy"
  },
  {
-  "video": "c0122",
+  "video": "c0128",
   "surah": 76,
   "from": 1,
   "to": 31,
   "date": "2026-10-24T18:00:00+02:00",
-  "metricool_id": 398720726,
+  "metricool_id": 401188232,
   "title": "Sourate Al-Insan en entier",
   "compte": "lem7710",
   "long": true,
-  "reciter": "Fares Abbad"
+  "reciter": "Mishary Alafasy"
  },
  {
-  "video": "c0123",
+  "video": "c0129",
   "surah": 94,
   "from": 1,
   "to": 8,
   "date": "2026-10-25T10:00:00+02:00",
-  "metricool_id": 398720740,
+  "metricool_id": 401188334,
   "title": "Sourates Ash-Sharh et At-Tin",
   "compte": "lem7710",
   "long": false,
-  "reciter": "Mohamed Siddiq Al-Minshawi"
+  "reciter": "Abu Bakr Ash-Shatri"
  },
  {
-  "video": "c0124",
+  "video": "c0130",
   "surah": 21,
   "from": 83,
   "to": 90,
   "date": "2026-10-26T10:00:00+02:00",
-  "metricool_id": 398720770,
+  "metricool_id": 401188437,
   "title": "Les invocations des prophètes",
   "compte": "lem7710",
   "long": false,
-  "reciter": "Abdullah Al-Juhany"
+  "reciter": "Mishary Alafasy"
  }
 ]
