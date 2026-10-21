@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-21 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur. c0118 Al-Qadr + Al-Bayyina (20/10 10h, Bukhatir) « publiée » mais absente des stats ~24 h après → cohérent avec le son retiré déjà signalé par Yanis (Bukhatir déjà retiré de config.json) ; pas de mise en brouillon (situation connue, même cas que c0036/c0039). Aujourd'hui 18h : Maryam 19:16-40 (Alafasy, longue), en attente normale. 22 au 26/10 : en attente.
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 757 / 126 / 6 ; Fin d'Al-Baqara 806 / 146 / 3 ; Yaqoub et la patience (Yusuf) 696 / 110 / 0 ; Ad-Duha 307 / 33 / 0 ; Signes de la création 305 / 46 / 0 ; Invocation de Moussa 264 / 35 / 0.
+- Compte : 17 abonnés (19/10, +1). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions (6 vidéos, sans rétention) : inchangées — Al-Baqara et Ash-Shatri en tête, 10h > 13h. Toujours aucune longue mesurable (1re test ce soir avec Maryam). Aucun changement de file aujourd'hui.
+- Attention novembre : le stock « prêt » c0120 à c0124 (Minshawi, Ayyoub, Fares Abbad, Al-Juhany) a été remplacé par c0126-c0130 ; ne pas les publier (récitateurs non testés), pareil pour c0101/c0103/c0105 (hors liste), c0104 et c0125.
+- Publication : aucune (octobre 20/20). 56 passages libres.
+
 ## 2026-10-20 (après-midi) — son retiré sur la vidéo Bukhatir
 - Yanis : le SON de la vidéo du 20/10 10h (c0118, Al-Qadr + Al-Bayyina, Salah Bukhatir) a été RETIRÉ par TikTok. → Salah Bukhatir retiré de config.json (NE PAS LE REMETTRE).
 - Bilan son : OK sur TikTok = Mishary Alafasy, Abu Bakr Ash-Shatri. Son retiré = Maher, Dossari, Qatami, Ar-Rifai, Bukhatir. Jamais testés = Minshawi, Ayyoub, Fares Abbad, Al-Juhany, Al-Ajamy.
