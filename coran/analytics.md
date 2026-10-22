@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-22 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur. c0119 Maryam 19:16-40 (21/10 18h, Alafasy, longue — 1re longue Alafasy) « publiée » mais pas encore dans les stats (~11 h seulement, délai normal de synchro) → à revérifier demain ; si toujours absente, appliquer la règle (brouillon 48 h + prévenir Yanis). Aujourd'hui 10h : c0126 Al-Ikhlas/Falaq/Nas (Ash-Shatri), en attente. 23 au 26/10 : en attente.
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 764 / 126 / 6 ; Fin d'Al-Baqara 823 / 146 / 3 ; Yaqoub et la patience (Yusuf) 703 / 111 / 0 ; Ad-Duha 307 / 33 ; Signes de la création 305 / 46 ; Invocation de Moussa 264 / 35. Al-Qadr (Bukhatir, son retiré) toujours absente (connu).
+- Compte : 17 abonnés (20/10). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : inchangées (Al-Baqara et Ash-Shatri en tête, 10h > 13h). Les vues des vidéos plafonnent après 2-3 jours : la régularité (1/jour) compte plus que tout. Aucun changement de file.
+- Publication : aucune (octobre 20/20). Stock novembre à refaire avec Alafasy / Ash-Shatri (voir 21/10). 56 passages libres.
+
 ## 2026-10-21 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur. c0118 Al-Qadr + Al-Bayyina (20/10 10h, Bukhatir) « publiée » mais absente des stats ~24 h après → cohérent avec le son retiré déjà signalé par Yanis (Bukhatir déjà retiré de config.json) ; pas de mise en brouillon (situation connue, même cas que c0036/c0039). Aujourd'hui 18h : Maryam 19:16-40 (Alafasy, longue), en attente normale. 22 au 26/10 : en attente.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 757 / 126 / 6 ; Fin d'Al-Baqara 806 / 146 / 3 ; Yaqoub et la patience (Yusuf) 696 / 110 / 0 ; Ad-Duha 307 / 33 / 0 ; Signes de la création 305 / 46 / 0 ; Invocation de Moussa 264 / 35 / 0.
