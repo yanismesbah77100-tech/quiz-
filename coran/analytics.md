@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-23 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur. c0119 Maryam 19:16-40 (21/10 18h, Alafasy, LONGUE 6 min 10) bien publiée ET présente dans les stats → les longues passent avec Alafasy. c0126 Al-Ikhlas/Falaq/Nas (22/10, Ash-Shatri) publiée et dans les stats. Aujourd'hui 10h : c0127 Al-Hashr (Alafasy), en attente. 24 au 26/10 : en attente.
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 768 / 126 / 6 ; Maryam (longue) 967 / 157 / 0 en ~1,5 jour ; Fin d'Al-Baqara 831 / 147 / 3 ; Yusuf 12:83-87 706 / 112 / 0 ; Al-Ikhlas/Falaq/Nas 695 / 124 / 0 en ~1 jour ; Ad-Duha 308 / 33 ; Signes de la création 307 / 46 ; Invocation de Moussa 264 / 35. Al-Qadr (Bukhatir) toujours absente (connu).
+- Compte : 20 abonnés (21/10, +3). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions (8 vidéos) : 1) la 1re longue (Maryam, Alafasy, 18h) fait le meilleur départ du nouveau style → les longues marchent, garder ~1 longue pour 2 courtes ; 2) Alafasy et Ash-Shatri font tous les meilleurs scores (600-970 vues, ~16-18 % de j'aime) contre ~260-310 pour les récitateurs au son retiré ; 3) Al-Baqara et les histoires de prophètes/Maryam en tête.
+- Changements : dans coran/passages.json, la longue « Youssouf : le début de l'histoire » (12:1-18) remonte en 3e passage libre (avant elle était 8e, après 7 courtes d'affilée) avec "reciter": Alafasy. coran/plan.py recopie désormais le champ "reciter" d'un passage dans la file (sinon il était ignoré).
+- Publication : aucune (octobre 20/20). Stock novembre toujours à refaire avec Alafasy / Ash-Shatri (voir 21/10). 56 passages libres.
+
 ## 2026-10-22 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur. c0119 Maryam 19:16-40 (21/10 18h, Alafasy, longue — 1re longue Alafasy) « publiée » mais pas encore dans les stats (~11 h seulement, délai normal de synchro) → à revérifier demain ; si toujours absente, appliquer la règle (brouillon 48 h + prévenir Yanis). Aujourd'hui 10h : c0126 Al-Ikhlas/Falaq/Nas (Ash-Shatri), en attente. 23 au 26/10 : en attente.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 764 / 126 / 6 ; Fin d'Al-Baqara 823 / 146 / 3 ; Yaqoub et la patience (Yusuf) 703 / 111 / 0 ; Ad-Duha 307 / 33 ; Signes de la création 305 / 46 ; Invocation de Moussa 264 / 35. Al-Qadr (Bukhatir, son retiré) toujours absente (connu).

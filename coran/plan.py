@@ -41,7 +41,7 @@ def main():
     for p in free[:n]:
         num += 1
         name = f"c{num:04d}"
-        queue["videos"].append({"name": name, "surah": p["surah"], "from": p["from"], "to": p["to"], "mode": "recit"})
+        queue["videos"].append({"name": name, "surah": p["surah"], "from": p["from"], "to": p["to"], "mode": "recit", **({"reciter": p["reciter"]} if p.get("reciter") else {})})
         added.append(name)
     if len(added) < n:
         sys.exit("Plus assez de passages dans coran/passages.json")
