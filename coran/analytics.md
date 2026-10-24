@@ -7,7 +7,7 @@ Mis à jour chaque jour par la tâche automatique.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 775 / 126 / 6 ; Maryam (longue 6 min 10) 991 / 159 / 0 ; Fin d'Al-Baqara 833 / 147 / 3 ; Al-Hashr 737 / 57 / 0 en ~1 jour ; Al-Ikhlas/Falaq/Nas 721 / 130 / 0 ; Yusuf 12:83-87 708 / 112 / 0 ; Signes de la création 309 / 47 ; Ad-Duha 308 / 33 ; Invocation de Moussa 264 / 35.
 - Compte : 20 abonnés (22/10, stable). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
 - Conclusions (9 vidéos) : inchangées — Alafasy et Ash-Shatri = 700-1 000 vues, les autres récitateurs ~260-310 ; la longue Maryam reste n°1 du nouveau style. Al-Hashr fait beaucoup de vues mais moins de j'aime (~8 % contre 15-18 %).
-- Changement : le stock prêt (c0101-c0105, c0120-c0125) n'utilise que des récitateurs non testés → on ne le publie pas. Pour novembre, 3 nouvelles vidéos lancées avec "reciter" fixé : c0131 Ibrahim et la Kaaba 2:127-129 (Ash-Shatri), c0132 Moussa, la mer s'ouvre 26:60-68 (Alafasy), c0133 Youssouf 12:1-18 (Alafasy, longue).
+- Changement : le stock prêt (c0101-c0105, c0120-c0125) n'utilise que des récitateurs non testés → on ne le publie pas. Pour novembre, 3 nouvelles vidéos lancées avec "reciter" fixé : c0131 Ibrahim et la Kaaba 2:127-129 (Ash-Shatri), c0132 Moussa, la mer s'ouvre 26:60-68 (Alafasy), c0133 Youssouf 12:1-18 (Alafasy, longue). Générées et vérifiées (texte lisible, fonds nature sans texte ni personne) : c0131 1 min 05, c0132 1 min 28, c0133 6 min 06. À publier en tête début novembre (avant c0101…).
 - Publication : aucune (octobre 20/20). 53 passages libres.
 
 ## 2026-10-23 (matin) — point quotidien
