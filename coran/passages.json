@@ -1,7 +1,7 @@
 [
 {"surah": 21, "from": 83, "to": 90, "theme": "Les invocations des prophètes"},
-{"surah": 2, "from": 127, "to": 129, "theme": "Al-Baqara : Ibrahim et Ismaïl bâtissent la Kaaba"},
-{"surah": 26, "from": 60, "to": 68, "theme": "Moussa : la mer s'ouvre"},
+{"surah": 2, "from": 127, "to": 129, "theme": "Al-Baqara : Ibrahim et Ismaïl bâtissent la Kaaba", "reciter": "Abu_Bakr_Ash-Shaatree_128kbps"},
+{"surah": 26, "from": 60, "to": 68, "theme": "Moussa : la mer s'ouvre", "reciter": "Alafasy_128kbps"},
 {"surah": 12, "from": 1, "to": 18, "theme": "Youssouf : le début de l'histoire", "long": true, "reciter": "Alafasy_128kbps"},
 {"surah": 67, "from": 1, "to": 30, "theme": "Al-Mulk en entier", "long": true},
 {"surah": 14, "from": 35, "to": 41, "theme": "L'invocation d'Ibrahim"},

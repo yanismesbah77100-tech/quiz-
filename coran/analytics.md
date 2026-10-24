@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-24 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur. c0127 Al-Hashr 59:21-24 (23/10 10h, Alafasy) publiée ET dans les stats. Aujourd'hui 18h : c0128 Al-Insan entier (Alafasy, longue), en attente. 25 et 26/10 : en attente. Al-Qadr (Bukhatir) toujours absente (connu).
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 775 / 126 / 6 ; Maryam (longue 6 min 10) 991 / 159 / 0 ; Fin d'Al-Baqara 833 / 147 / 3 ; Al-Hashr 737 / 57 / 0 en ~1 jour ; Al-Ikhlas/Falaq/Nas 721 / 130 / 0 ; Yusuf 12:83-87 708 / 112 / 0 ; Signes de la création 309 / 47 ; Ad-Duha 308 / 33 ; Invocation de Moussa 264 / 35.
+- Compte : 20 abonnés (22/10, stable). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions (9 vidéos) : inchangées — Alafasy et Ash-Shatri = 700-1 000 vues, les autres récitateurs ~260-310 ; la longue Maryam reste n°1 du nouveau style. Al-Hashr fait beaucoup de vues mais moins de j'aime (~8 % contre 15-18 %).
+- Changement : le stock prêt (c0101-c0105, c0120-c0125) n'utilise que des récitateurs non testés → on ne le publie pas. Pour novembre, 3 nouvelles vidéos lancées avec "reciter" fixé : c0131 Ibrahim et la Kaaba 2:127-129 (Ash-Shatri), c0132 Moussa, la mer s'ouvre 26:60-68 (Alafasy), c0133 Youssouf 12:1-18 (Alafasy, longue).
+- Publication : aucune (octobre 20/20). 53 passages libres.
+
 ## 2026-10-23 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur. c0119 Maryam 19:16-40 (21/10 18h, Alafasy, LONGUE 6 min 10) bien publiée ET présente dans les stats → les longues passent avec Alafasy. c0126 Al-Ikhlas/Falaq/Nas (22/10, Ash-Shatri) publiée et dans les stats. Aujourd'hui 10h : c0127 Al-Hashr (Alafasy), en attente. 24 au 26/10 : en attente.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 768 / 126 / 6 ; Maryam (longue) 967 / 157 / 0 en ~1,5 jour ; Fin d'Al-Baqara 831 / 147 / 3 ; Yusuf 12:83-87 706 / 112 / 0 ; Al-Ikhlas/Falaq/Nas 695 / 124 / 0 en ~1 jour ; Ad-Duha 308 / 33 ; Signes de la création 307 / 46 ; Invocation de Moussa 264 / 35. Al-Qadr (Bukhatir) toujours absente (connu).

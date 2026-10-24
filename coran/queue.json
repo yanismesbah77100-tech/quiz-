@@ -9,7 +9,7 @@
    "title": "Sourate Al-A'la",
    "reciter_nom": "Ali Jaber",
    "fichier_pret": true,
-   "caption": "Sourate Al-A'la (87:1-19) 🤍\nRécitation : Ali Jaber • Traduction : Muhammad Hamidullah\n#coran #islam #alala"
+   "caption": "Sourate Al-A'la (87:1-19) \ud83e\udd0d\nR\u00e9citation : Ali Jaber \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #alala"
   },
   {
    "name": "c0103",
@@ -20,7 +20,7 @@
    "title": "Sourate At-Tariq",
    "reciter_nom": "Khalid Al-Qahtani",
    "fichier_pret": true,
-   "caption": "Sourate At-Tariq (86:1-17) 🤍\nRécitation : Khalid Al-Qahtani • Traduction : Muhammad Hamidullah\n#coran #islam #attariq"
+   "caption": "Sourate At-Tariq (86:1-17) \ud83e\udd0d\nR\u00e9citation : Khalid Al-Qahtani \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #attariq"
   },
   {
    "name": "c0104",
@@ -31,7 +31,7 @@
    "title": "Sourate Al-Balad",
    "reciter_nom": "Abdullah Al-Juhany",
    "fichier_pret": true,
-   "caption": "Sourate Al-Balad (90:1-20) 🤍\nRécitation : Abdullah Al-Juhany • Traduction : Muhammad Hamidullah\n#coran #islam #albalad"
+   "caption": "Sourate Al-Balad (90:1-20) \ud83e\udd0d\nR\u00e9citation : Abdullah Al-Juhany \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #albalad"
   },
   {
    "name": "c0105",
@@ -42,7 +42,7 @@
    "title": "Sourate Ash-Shams",
    "reciter_nom": "Akram Al-Alaqimy",
    "fichier_pret": true,
-   "caption": "Sourate Ash-Shams (91:1-15) 🤍\nRécitation : Akram Al-Alaqimy • Traduction : Muhammad Hamidullah\n#coran #islam #ashshams"
+   "caption": "Sourate Ash-Shams (91:1-15) \ud83e\udd0d\nR\u00e9citation : Akram Al-Alaqimy \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #ashshams"
   },
   {
    "name": "c0025",
@@ -358,7 +358,7 @@
    "mode": "recit",
    "reciter": "Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net",
    "remplace": "c0102",
-   "caption": "Sourate Al-Ghashiya (88:1-26) 🤍\nRécitation : Ahmed Al-Ajamy • Traduction : Muhammad Hamidullah\n#coran #islam #alghashiya",
+   "caption": "Sourate Al-Ghashiya (88:1-26) \ud83e\udd0d\nR\u00e9citation : Ahmed Al-Ajamy \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #alghashiya",
    "title": "Sourate Al-Ghashiya"
   },
   {
@@ -405,6 +405,30 @@
    "mode": "recit",
    "reciter": "Alafasy_128kbps",
    "remplace": "c0124"
+  },
+  {
+   "name": "c0131",
+   "surah": 2,
+   "from": 127,
+   "to": 129,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps"
+  },
+  {
+   "name": "c0132",
+   "surah": 26,
+   "from": 60,
+   "to": 68,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps"
+  },
+  {
+   "name": "c0133",
+   "surah": 12,
+   "from": 1,
+   "to": 18,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps"
   }
  ]
 }
