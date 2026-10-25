@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-25 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur. c0128 Al-Insan en entier (24/10 18h, Alafasy, longue) « publiée » mais pas encore dans les stats (~13 h, délai normal comme pour Maryam) → à revérifier demain. Aujourd'hui 10h : c0129 Ash-Sharh + At-Tin (Ash-Shatri), en attente. 26/10 10h : c0130 Al-Anbiya (Alafasy), en attente.
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 777 / 126 / 6 ; Maryam (longue) 992 / 159 / 0 ; Fin d'Al-Baqara 834 / 147 / 3 ; Al-Hashr 741 / 59 / 0 ; Al-Ikhlas/Falaq/Nas 723 / 131 / 0 ; Yusuf 12:83-87 709 / 112 / 0 ; Signes de la création 311 / 47 ; Ad-Duha 308 / 33 ; Invocation de Moussa 264 / 35.
+- Compte : 21 abonnés (23/10, +1). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions (9 vidéos) : inchangées — Alafasy / Ash-Shatri ~700-1 000 vues contre ~260-310 pour les autres ; la longue Maryam reste n°1. Aucun changement de file (c0131-c0133 déjà en tête pour novembre).
+- Publication : aucune (octobre 20/20). 53 passages libres.
+
 ## 2026-10-24 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur. c0127 Al-Hashr 59:21-24 (23/10 10h, Alafasy) publiée ET dans les stats. Aujourd'hui 18h : c0128 Al-Insan entier (Alafasy, longue), en attente. 25 et 26/10 : en attente. Al-Qadr (Bukhatir) toujours absente (connu).
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 775 / 126 / 6 ; Maryam (longue 6 min 10) 991 / 159 / 0 ; Fin d'Al-Baqara 833 / 147 / 3 ; Al-Hashr 737 / 57 / 0 en ~1 jour ; Al-Ikhlas/Falaq/Nas 721 / 130 / 0 ; Yusuf 12:83-87 708 / 112 / 0 ; Signes de la création 309 / 47 ; Ad-Duha 308 / 33 ; Invocation de Moussa 264 / 35.
