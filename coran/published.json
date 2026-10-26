@@ -447,7 +447,8 @@
   "title": "Sourate Al-Insan en entier",
   "compte": "lem7710",
   "long": true,
-  "reciter": "Mishary Alafasy"
+  "reciter": "Mishary Alafasy",
+  "statut": "« publiée » dans Metricool mais absente des stats le 26/10 (~38 h) alors qu'Ash-Sharh (25/10) y est — blocage possible, motif demandé à Yanis"
  },
  {
   "video": "c0129",
@@ -471,6 +472,7 @@
   "title": "Les invocations des prophètes",
   "compte": "lem7710",
   "long": false,
-  "reciter": "Mishary Alafasy"
+  "reciter": "Mishary Alafasy",
+  "statut": "mise en brouillon le 26/10 (06:54) par précaution : Al-Insan (c0128) publiée le 24/10 mais absente des stats ~38 h après"
  }
 ]
