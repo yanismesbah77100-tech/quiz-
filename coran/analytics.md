@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-27 (matin) — point quotidien
+- ⚠️ c0128 Al-Insan en entier (24/10 18h, Alafasy, longue) : toujours « publiée » dans Metricool mais ABSENTE des stats (~2,5 jours) → blocage/retrait très probable (Yanis déjà prévenu le 26/10, motif à vérifier dans TikTok). Ne pas republier. c0130 Al-Anbiya reste en brouillon (date passée, non publiée). Aucune autre vidéo en erreur.
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 784 / 126 / 6 ; Maryam (longue) 1 009 / 159 / 0 ; Fin d'Al-Baqara 851 / 147 / 3 ; Al-Hashr 746 / 59 / 0 ; Al-Ikhlas/Falaq/Nas 732 / 131 / 0 ; Yusuf 12:83-87 713 / 112 / 0 ; Signes de la création 313 / 47 ; Ad-Duha 310 / 33 ; Invocation de Moussa 264 / 35 ; Ash-Sharh + At-Tin 230 / 47 (stagne vite).
+- Compte : 23 abonnés (25/10, stable). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions (10 vidéos) : inchangées — Alafasy / Ash-Shatri devant ; Maryam (longue) n°1 du nouveau style. Ash-Sharh démarre plus faiblement (230) : le compte a peut-être été moins poussé après Al-Insan. Prudence sur les longues : Youssouf c0133 (6 min) gardée mais pas en 1re position de novembre si Al-Insan est confirmée bloquée.
+- Publication : aucune (consigne : octobre complet). 53 passages libres, 13 vidéos prêtes (dont c0131-c0133 pour début novembre).
+
 ## 2026-10-26 (matin) — point quotidien
 - ⚠️ c0128 Al-Insan en entier (24/10 18h, Alafasy, longue) : « publiée » dans Metricool mais TOUJOURS absente des stats (~38 h), alors qu'Ash-Sharh publiée le lendemain y est déjà → possible blocage/retrait. Par précaution, c0130 Al-Anbiya (prévue aujourd'hui 10h) mise en BROUILLON. Yanis prévenu (motif à vérifier dans TikTok, faire appel si besoin). Ne pas republier Al-Insan.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 782 / 126 / 6 ; Maryam (longue) 1 000 / 159 / 0 ; Fin d'Al-Baqara 843 / 147 / 3 ; Al-Hashr 742 / 59 / 0 ; Al-Ikhlas/Falaq/Nas 730 / 131 / 0 ; Yusuf 12:83-87 710 / 112 / 0 ; Signes de la création 312 / 47 ; Ad-Duha 309 / 33 ; Invocation de Moussa 264 / 35 ; Ash-Sharh + At-Tin (Ash-Shatri) 212 / 42 en ~22 h (bon taux de j'aime ~20 %).
