@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-10-28 (matin) — point quotidien
+- c0128 Al-Insan en entier (24/10 18h) : toujours « publiée » dans Metricool mais absente des stats (~3,5 jours) → blocage/retrait quasi certain (Yanis prévenu le 26/10). Ne pas republier. c0130 Al-Anbiya reste en brouillon. Aucune autre vidéo en erreur.
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 786 / 127 / 6 ; Maryam (longue) 1 011 / 159 / 0 ; Fin d'Al-Baqara 851 / 147 / 3 ; Al-Hashr 747 / 59 / 0 ; Al-Ikhlas/Falaq/Nas 732 / 131 / 0 ; Yusuf 12:83-87 713 / 112 / 0 ; Signes de la création 313 / 47 ; Ad-Duha 311 / 33 ; Invocation de Moussa 264 / 35 ; Ash-Sharh + At-Tin 232 / 47 (ne bouge plus).
+- Compte : 23 abonnés (26/10, stable). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : inchangées (Alafasy / Ash-Shatri devant ; Maryam longue n°1). Toutes les vidéos plafonnent : sans publication depuis le 25/10, le compte est à l'arrêt jusqu'au 1er novembre.
+- Publication : aucune (octobre complet). Reprise le 01/11 avec c0131 (Ibrahim, Ash-Shatri) puis c0132 ; la longue c0133 pas en premier. 53 passages libres, 13 vidéos prêtes (seules c0131-c0133 avec récitateurs validés).
+
 ## 2026-10-27 (matin) — point quotidien
 - ⚠️ c0128 Al-Insan en entier (24/10 18h, Alafasy, longue) : toujours « publiée » dans Metricool mais ABSENTE des stats (~2,5 jours) → blocage/retrait très probable (Yanis déjà prévenu le 26/10, motif à vérifier dans TikTok). Ne pas republier. c0130 Al-Anbiya reste en brouillon (date passée, non publiée). Aucune autre vidéo en erreur.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 784 / 126 / 6 ; Maryam (longue) 1 009 / 159 / 0 ; Fin d'Al-Baqara 851 / 147 / 3 ; Al-Hashr 746 / 59 / 0 ; Al-Ikhlas/Falaq/Nas 732 / 131 / 0 ; Yusuf 12:83-87 713 / 112 / 0 ; Signes de la création 313 / 47 ; Ad-Duha 310 / 33 ; Invocation de Moussa 264 / 35 ; Ash-Sharh + At-Tin 230 / 47 (stagne vite).
