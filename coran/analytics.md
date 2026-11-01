@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-01 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur. c0128 Al-Insan (24/10) toujours absente des stats (~7,5 jours) → considérée bloquée/retirée, ne pas republier. c0130 Al-Anbiya reste en brouillon.
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 791 / 127 / 6 ; Maryam (longue) 1 021 / 160 / 0 ; Fin d'Al-Baqara 856 / 148 / 3 ; Al-Hashr 759 / 59 / 0 ; Al-Ikhlas/Falaq/Nas 737 / 132 / 0 ; Yusuf 12:83-87 715 / 112 / 0 ; Signes de la création 313 / 47 ; Ad-Duha 313 / 33 ; Invocation de Moussa 264 / 35 ; Ash-Sharh + At-Tin 237 / 47.
+- Compte : 23 abonnés (30/10, stable). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : inchangées (Alafasy / Ash-Shatri devant ; Maryam longue n°1). Aucun changement de file.
+- Publication : reprise de novembre — c0131 L'invocation d'Ibrahim et Ismaïl 2:127-129 (Ash-Shatri, 1 min 05), aujourd'hui 10:00 (vidéo vérifiée). Novembre : 1/20. Prochaines : c0132 puis c0133 (longue). 52 passages libres, 12 vidéos prêtes.
+
 ## 2026-10-31 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur. c0128 Al-Insan en entier (24/10) toujours « publiée » mais absente des stats (~6,5 jours) → blocage/retrait quasi certain (Yanis prévenu le 26/10). Ne pas republier. c0130 Al-Anbiya reste en brouillon.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime / partages) : Ayat al-Kursi 1 791 / 127 / 6 ; Maryam (longue) 1 018 / 160 / 0 ; Fin d'Al-Baqara 856 / 148 / 3 ; Al-Hashr 759 / 59 / 0 ; Al-Ikhlas/Falaq/Nas 736 / 132 / 0 ; Yusuf 12:83-87 715 / 112 / 0 ; Signes de la création 313 / 47 ; Ad-Duha 313 / 33 ; Invocation de Moussa 264 / 35 ; Ash-Sharh + At-Tin 237 / 47.
