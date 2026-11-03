@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-03 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur. c0131 Ibrahim et Ismaïl (01/11) publiée : 696 vues / 72 j'aime en ~2 jours (bon départ, Ash-Shatri). c0132 Moussa et la mer (02/11 18h, Alafasy) publiée, pas encore dans les stats (~12 h, délai normal) → à revérifier demain. c0128 Al-Insan toujours absente (bloquée/retirée, ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 depuis le 14/10 (vues / j'aime) : Ayat al-Kursi 1 792 / 127 ; Maryam (longue) 1 029 / 160 ; Fin d'Al-Baqara 861 / 148 ; Al-Hashr 763 / 59 ; Al-Ikhlas/Falaq/Nas 737 / 132 ; Yusuf 12:83-87 718 / 112 ; Ibrahim et Ismaïl 696 / 72 ; Signes de la création 313 ; Ad-Duha 313 ; Invocation de Moussa 264 ; Ash-Sharh+At-Tin 239 / 48.
+- Compte : 24 abonnés (01/11, +1). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : confirmées — Alafasy / Ash-Shatri font 700-1 000 vues, les autres ~260-310 ; la longue Maryam reste n°1 en j'aime.
+- Changements : le stock suivant (c0101-c0105) utilise des récitateurs hors liste → 3 nouvelles vidéos lancées avec récitateur fixé et placées juste après c0133 : c0134 Invocation d'Ibrahim 14:35-41 (Ash-Shatri), c0135 Adam et les anges 2:30-33 (Alafasy), c0136 Moussa à Madyan 28:22-28 (Ash-Shatri). Passage 12:4-6 retiré de passages.json (chevauche c0133 Youssouf 12:1-18).
+- Publication : aucune aujourd'hui (novembre 2/20, cible du jour = 2). Prochaine : c0133 Youssouf 12:1-18 (longue) le 04/11.
+
 ## 2026-11-02 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur. c0131 Ibrahim et Ismaïl (01/11) publiée : 211 vues / 18 j'aime en ~21 h, 65 s regardées au total. c0128 Al-Insan toujours absente des stats (bloquée/retirée, ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime) : Ayat al-Kursi 1 792 / 127 ; Maryam (longue) 1 026 / 160 ; Fin d'Al-Baqara 859 / 148 ; Al-Hashr 759 / 59 ; Al-Ikhlas/Falaq/Nas 737 / 132 ; Yusuf 12:83-87 716 / 112 ; Ash-Sharh+At-Tin 239 / 48 ; Ibrahim et Ismaïl 211 / 18 ; Signes de la création 313 ; Ad-Duha 313 ; Invocation de Moussa 264.
