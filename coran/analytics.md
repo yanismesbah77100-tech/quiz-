@@ -7,7 +7,7 @@ Mis à jour chaque jour par la tâche automatique.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime) : Ayat al-Kursi 1 792 / 127 ; Maryam (longue) 1 029 / 160 ; Fin d'Al-Baqara 861 / 148 ; Al-Hashr 763 / 59 ; Al-Ikhlas/Falaq/Nas 737 / 132 ; Yusuf 12:83-87 718 / 112 ; Ibrahim et Ismaïl 696 / 72 ; Signes de la création 313 ; Ad-Duha 313 ; Invocation de Moussa 264 ; Ash-Sharh+At-Tin 239 / 48.
 - Compte : 24 abonnés (01/11, +1). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
 - Conclusions : confirmées — Alafasy / Ash-Shatri font 700-1 000 vues, les autres ~260-310 ; la longue Maryam reste n°1 en j'aime.
-- Changements : le stock suivant (c0101-c0105) utilise des récitateurs hors liste → 3 nouvelles vidéos lancées avec récitateur fixé et placées juste après c0133 : c0134 Invocation d'Ibrahim 14:35-41 (Ash-Shatri), c0135 Adam et les anges 2:30-33 (Alafasy), c0136 Moussa à Madyan 28:22-28 (Ash-Shatri). Passage 12:4-6 retiré de passages.json (chevauche c0133 Youssouf 12:1-18).
+- Changements : le stock suivant (c0101-c0105) utilise des récitateurs hors liste → 3 nouvelles vidéos lancées avec récitateur fixé et placées juste après c0133 : c0134 Invocation d'Ibrahim 14:35-41 (Ash-Shatri), c0135 Adam et les anges 2:30-33 (Alafasy), c0136 Moussa à Madyan 28:22-28 (Ash-Shatri). Générées et vérifiées (texte lisible, fonds nature sans texte ni personne, aucun appel) : c0134 2 min 07, c0135 1 min 50, c0136 2 min 41. Passage 12:4-6 retiré de passages.json (chevauche c0133 Youssouf 12:1-18).
 - Publication : aucune aujourd'hui (novembre 2/20, cible du jour = 2). Prochaine : c0133 Youssouf 12:1-18 (longue) le 04/11.
 
 ## 2026-11-02 (matin) — point quotidien
