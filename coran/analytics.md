@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-05 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur. c0133 Youssouf 12:1-18 (longue, 04/11 18:00) publiée mais pas encore dans les stats (~13 h, normal ; à revérifier demain). c0128 Al-Insan toujours absente. c0130 reste en brouillon.
+- Vidéos @lem7710 (vues / j'aime) : Ayat al-Kursi 1 796 / 127 ; Maryam (longue) 1 031 / 160 ; Fin d'Al-Baqara 863 / 149 ; Al-Hashr 764 / 59 ; Al-Ikhlas/Falaq/Nas 740 / 132 ; Yusuf 12:83-87 719 / 112 ; Ibrahim et Ismaïl 699 / 72 ; Signes de la création 313 ; Ad-Duha 313 ; Invocation de Moussa 264 ; Ash-Sharh+At-Tin 239 / 48 ; Moussa et la mer 231 / 49.
+- Compte : 26 abonnés (03/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : inchangées (Alafasy / Ash-Shatri devant ; Maryam longue n°1 en j'aime). Aucun changement de file.
+- Publication : c0134 L'invocation d'Ibrahim 14:35-41 (courte, Ash-Shatri, 2 min 07) aujourd'hui 10:00 — vérifiée (texte lisible ; brève transition avec un mouton derrière le texte vers 35 s, lisible ; aucune personne ni texte dans le fond, aucun appel). Novembre : 4/20. Prochaine : c0135. 12 vidéos prêtes, 49 passages libres.
+
 ## 2026-11-04 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur. c0132 Moussa et la mer (02/11, Alafasy) publiée et présente dans les stats : 228 vues / 49 j'aime en ~36 h. c0131 Ibrahim et Ismaïl : 696 / 72 (stable). c0128 Al-Insan toujours absente (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 depuis le 14/10 (vues / j'aime) : Ayat al-Kursi 1 793 / 127 ; Maryam (longue) 1 031 / 160 ; Fin d'Al-Baqara 863 / 149 ; Al-Hashr 763 / 59 ; Al-Ikhlas/Falaq/Nas 739 / 132 ; Yusuf 12:83-87 718 / 112 ; Ibrahim et Ismaïl 696 / 72 ; Signes de la création 313 ; Ad-Duha 313 ; Invocation de Moussa 264 ; Ash-Sharh+At-Tin 239 / 48 ; Moussa et la mer 228 / 49 (encore jeune).

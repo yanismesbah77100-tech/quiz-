@@ -510,5 +510,17 @@
   "compte": "lem7710",
   "long": true,
   "reciter": "Mishary Alafasy"
+ },
+ {
+  "video": "c0134",
+  "surah": 14,
+  "from": 35,
+  "to": 41,
+  "date": "2026-11-05T10:00:00+01:00",
+  "metricool_id": 417356415,
+  "title": "L'invocation d'Ibrahim",
+  "compte": "lem7710",
+  "long": false,
+  "reciter": "Abu Bakr Ash-Shatri"
  }
 ]
