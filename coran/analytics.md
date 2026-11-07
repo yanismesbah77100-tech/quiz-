@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-07 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur (c0131 à c0134 publiées). c0128 Al-Insan toujours absente (ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 (vues / j'aime) : Ayat al-Kursi 1 797 / 127 ; Maryam (longue) 1 032 / 160 ; Fin d'Al-Baqara 864 / 149 ; Al-Hashr 767 / 59 ; Al-Ikhlas/Falaq/Nas 740 / 132 ; Yusuf 12:83-87 721 / 112 ; Ibrahim et Ismaïl 703 / 72 ; Invocation d'Ibrahim 624 / 74 (bon décollage, Ash-Shatri) ; Signes de la création 314 ; Ad-Duha 313 ; Youssouf 12:1-18 (longue) 300 / 92 ; Invocation de Moussa 264 ; Ash-Sharh+At-Tin 239 / 48 ; Moussa et la mer 232 / 49.
+- Compte : 31 abonnés (05/11, +1). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : inchangées — Ash-Shatri continue de bien marcher (3 vidéos à 620-860 vues) ; les longues gardent le meilleur taux de j'aime. Aucun changement de file.
+- Publication : c0135 Adam et les anges 2:30-33 (courte, Alafasy, 1 min 50) aujourd'hui 10:00 — vérifiée (texte lisible, fond nature sans texte ni personne, aucun appel). Novembre : 5/20. Prochaine : c0136 Moussa à Madyan. 11 vidéos prêtes, 49 passages libres.
+
 ## 2026-11-06 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur. c0133 Youssouf 12:1-18 (longue, Alafasy) maintenant dans les stats : 292 vues / 92 j'aime en ~36 h (très bon taux de j'aime). c0134 Invocation d'Ibrahim 14:35-41 (Ash-Shatri) : 201 / 24 en ~20 h. c0128 Al-Insan toujours absente (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 (vues / j'aime) : Ayat al-Kursi 1 797 / 127 ; Maryam (longue) 1 032 / 160 ; Fin d'Al-Baqara 863 / 149 ; Al-Hashr 765 / 59 ; Al-Ikhlas/Falaq/Nas 740 / 132 ; Yusuf 12:83-87 719 / 112 ; Ibrahim et Ismaïl 702 / 72 ; Signes de la création 314 ; Ad-Duha 313 ; Youssouf 12:1-18 (longue) 292 / 92 ; Invocation de Moussa 264 ; Ash-Sharh+At-Tin 239 / 48 ; Moussa et la mer 231 / 49 ; Invocation d'Ibrahim 201 / 24.
