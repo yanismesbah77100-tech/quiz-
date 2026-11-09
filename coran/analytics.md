@@ -8,7 +8,8 @@ Mis à jour chaque jour par la tâche automatique.
 - Compte : 31 abonnés (07/11, stable). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
 - Conclusions : inchangées — Alafasy et Ash-Shatri devant, les longues gardent le meilleur taux de j'aime.
 - Changement de file : la prochaine vidéo prête était c0101 (Ali Jaber, hors liste des récitateurs) → 3 nouvelles lancées avec récitateur fixé, placées avant c0101 : c0137 Nouh en entier 71:1-28 (longue, Alafasy), c0138 Moussa au buisson 20:9-16 (Ash-Shatri), c0139 Moussa et Al-Khidr 18:60-70 (Alafasy).
-- Publication : aucune aujourd'hui (novembre 6/20 = cible du jour 6). 
+- Génération réussie et vérifiée (texte lisible, fonds nature sans texte ni personne, aucun appel) : c0137 4 min 43, c0138 1 min 19, c0139 2 min 31.
+- Publication : aucune aujourd'hui (novembre 6/20 = cible du jour 6). Prochaine : c0137 Nouh (longue). 13 vidéos prêtes (dont 3 nouvelles), 46 passages libres.
 
 ## 2026-11-08 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0135 publiées). c0128 Al-Insan toujours absente (ne pas republier). c0130 reste en brouillon.
