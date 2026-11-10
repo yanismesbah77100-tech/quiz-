@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-10 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur (c0131 à c0136 publiées). c0128 Al-Insan toujours absente (ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 (vues / j'aime) : Ayat al-Kursi 1 802 / 127 ; Maryam (longue) 1 036 / 160 ; Fin d'Al-Baqara 867 / 149 ; Al-Hashr 778 / 59 ; Al-Ikhlas/Falaq/Nas 741 / 132 ; Yusuf 12:83-87 721 / 112 ; Ibrahim et Ismaïl 704 / 72 ; Moussa à Madyan 694 / 95 (en 2 jours, Ash-Shatri — très bon départ) ; Adam et les anges 652 / 83 ; Invocation d'Ibrahim 628 / 74 ; Signes de la création 314 ; Ad-Duha 313 ; Youssouf 12:1-18 (longue) 303 / 93 ; Invocation de Moussa 264 ; Ash-Sharh+At-Tin 240 / 48 ; Moussa et la mer 240 / 49.
+- Compte : 32 abonnés (08/11, +1). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : inchangées — récits de prophètes courts (Adam, Ibrahim, Moussa à Madyan) + Ash-Shatri/Alafasy démarrent bien ; les longues gardent le meilleur taux de j'aime. Aucun changement de file.
+- Publication : c0137 Nouh en entier 71:1-28 (longue, Alafasy, 4 min 43) aujourd'hui 18:00 — vérifiée (texte lisible, fond ciel/forêt sans texte ni personne, aucun appel). Novembre : 7/20. 12 vidéos prêtes, 46 passages libres.
+
 ## 2026-11-09 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0136 publiées). c0128 Al-Insan toujours absente (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 (vues / j'aime) : Ayat al-Kursi 1 800 / 127 ; Maryam (longue) 1 033 / 160 ; Fin d'Al-Baqara 866 / 149 ; Al-Hashr 771 / 59 ; Al-Ikhlas/Falaq/Nas 741 / 132 ; Yusuf 12:83-87 721 / 112 ; Ibrahim et Ismaïl 704 / 72 ; Adam et les anges 649 / 83 ; Invocation d'Ibrahim 627 / 74 ; Signes de la création 314 ; Ad-Duha 313 ; Youssouf 12:1-18 (longue) 303 / 93 ; Moussa à Madyan 264 / 51 (en 1 jour) ; Invocation de Moussa 264 ; Ash-Sharh+At-Tin 240 / 48 ; Moussa et la mer 235 / 49.
