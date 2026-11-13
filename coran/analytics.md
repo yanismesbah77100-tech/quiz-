@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-13 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur (c0131 à c0138 publiées, lien TikTok présent). c0137 Nouh (10/11) et c0138 Buisson ardent (12/11) absentes des stats, mais les stats Metricool sont toujours figées au 08/11 (aucune vidéo ni abonné après le 08/11) : pas considérées comme bloquées. c0128 Al-Insan toujours absente (ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 : chiffres identiques à la veille (Ayat al-Kursi 1 802 ; Maryam 1 036 ; Fin d'Al-Baqara 867 ; Al-Hashr 778 ; Al-Ikhlas/Falaq/Nas 741 ; Yusuf 12:83-87 721 ; Ibrahim et Ismaïl 704 ; Moussa à Madyan 694 ; Adam 652 ; Invocation d'Ibrahim 628 ; Youssouf 12:1-18 303).
+- Compte : 32 abonnés (08/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Conclusions : inchangées.
+- Changement de file : après c0139, la prochaine vidéo prête était c0101 (récitateur hors liste) → 3 nouvelles lancées avec récitateur fixé, placées avant c0101 : c0140 Al-Fatiha (Ash-Shatri), c0141 Al-Muzzammil en entier 73:1-20 (longue, Alafasy), c0142 Youssouf retrouve ses parents 12:100-101 (Ash-Shatri).
+- Publication : c0139 Moussa et Al-Khidr (18:60-70, Alafasy, 2 min 30) programmée le 13/11 à 10:00 (id 426571042), vérifiée (texte lisible, fond lac brumeux sans texte ni personne, aucun appel). Novembre : 9/20.
+
 ## 2026-11-12 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0137 publiées, lien TikTok présent). c0137 Nouh (10/11 18:00) toujours absente des stats (~37 h), mais les stats Metricool semblent figées depuis le 08/11 (aucune vidéo ni abonné après le 08/11) : pas considérée comme bloquée, à revérifier demain. c0128 Al-Insan toujours absente (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 (vues / j'aime) : chiffres identiques à la veille, sauf Moussa et la mer (26:60-68) désormais remontée : 240 / 49. Ayat al-Kursi 1 802 ; Maryam (longue) 1 036 ; Fin d'Al-Baqara 867 ; Al-Hashr 778 ; Al-Ikhlas/Falaq/Nas 741 ; Yusuf 12:83-87 721 ; Ibrahim et Ismaïl 704 ; Moussa à Madyan 694 ; Adam 652 ; Invocation d'Ibrahim 628 ; Youssouf 12:1-18 (longue) 303.
