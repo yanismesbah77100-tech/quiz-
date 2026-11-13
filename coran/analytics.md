@@ -8,6 +8,7 @@ Mis à jour chaque jour par la tâche automatique.
 - Compte : 32 abonnés (08/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
 - Conclusions : inchangées.
 - Changement de file : après c0139, la prochaine vidéo prête était c0101 (récitateur hors liste) → 3 nouvelles lancées avec récitateur fixé, placées avant c0101 : c0140 Al-Fatiha (Ash-Shatri), c0141 Al-Muzzammil en entier 73:1-20 (longue, Alafasy), c0142 Youssouf retrouve ses parents 12:100-101 (Ash-Shatri).
+- Génération c0140-c0142 réussie. Contrôle : c0142 Youssouf 12:100-101 (1 min 29) OK. c0140 Al-Fatiha ne dure que 54 s (moins d'1 minute) → mise en fin de file, à ne pas publier telle quelle. c0141 Al-Muzzammil (4 min 06) : fond cascade très blanc, texte peu lisible (surtout le long verset 20) → mise en fin de file, refaite en c0143 avec le fond v09 (vagues sombres). Ordre : c0142 puis c0143.
 - Publication : c0139 Moussa et Al-Khidr (18:60-70, Alafasy, 2 min 30) programmée le 13/11 à 10:00 (id 426571042), vérifiée (texte lisible, fond lac brumeux sans texte ni personne, aucun appel). Novembre : 9/20.
 
 ## 2026-11-12 (matin) — point quotidien

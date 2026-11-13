@@ -73,28 +73,21 @@
    "reciter": "Alafasy_128kbps"
   },
   {
-   "name": "c0140",
-   "surah": 1,
-   "from": 1,
-   "to": 7,
-   "mode": "recit",
-   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps"
-  },
-  {
-   "name": "c0141",
-   "surah": 73,
-   "from": 1,
-   "to": 20,
-   "mode": "recit",
-   "reciter": "Alafasy_128kbps"
-  },
-  {
    "name": "c0142",
    "surah": 12,
    "from": 100,
    "to": 101,
    "mode": "recit",
    "reciter": "Abu_Bakr_Ash-Shaatree_128kbps"
+  },
+  {
+   "name": "c0143",
+   "surah": 73,
+   "from": 1,
+   "to": 20,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "bg": "v09.webm"
   },
   {
    "name": "c0101",
@@ -501,6 +494,22 @@
    "mode": "recit",
    "reciter": "Alafasy_128kbps",
    "remplace": "c0124"
+  },
+  {
+   "name": "c0140",
+   "surah": 1,
+   "from": 1,
+   "to": 7,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps"
+  },
+  {
+   "name": "c0141",
+   "surah": 73,
+   "from": 1,
+   "to": 20,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps"
   }
  ]
 }
