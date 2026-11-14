@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-14 (matin) — point quotidien
+- ⚠️ Les stats Metricool sont reparties (données jusqu'au 13/11) : c0137 Nouh et c0139 Moussa et Al-Khidr (13/11) y sont, mais c0138 Moussa au buisson ardent (20:9-16, Ash-Shatri, publiée le 12/11 10:00, « publiée » dans Metricool avec lien TikTok) est ABSENTE alors que la vidéo du lendemain y est → possible blocage/retrait (même cas qu'Al-Insan). Par précaution : AUCUNE publication pendant 48 h (rien n'était programmé, donc rien à mettre en brouillon). Yanis prévenu (motif à vérifier dans TikTok, faire appel si besoin). Ne pas republier c0138. c0128 Al-Insan toujours absente. c0130 reste en brouillon.
+- Vidéos @lem7710 (vues / j'aime) : Nouh en entier (longue, 4 min 42) 1 126 / 252 en 4 jours — n°1 en vues ET meilleur taux de j'aime (22 %) ; Maryam (longue) 1 039 / 160 ; Fin d'Al-Baqara 871 / 149 ; Al-Hashr 790 / 59 ; Al-Ikhlas/Falaq/Nas 744 / 132 ; Moussa et Al-Khidr 723 / 50 (en 1 jour) ; Yusuf 12:83-87 721 / 112 ; Ibrahim et Ismaïl 705 / 72 ; Moussa à Madyan 701 / 95 ; Adam 661 / 83 ; Invocation d'Ibrahim 632 / 74 ; Youssouf 12:1-18 (longue) 313 / 93.
+- Compte : 35 abonnés (12/11, +3). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Conclusions : les longues complètes (sourate entière ou récit complet) marchent très bien (Nouh, Maryam) → garder ~1 longue pour 2 courtes ; récits de prophètes + Alafasy/Ash-Shatri toujours devant. Aucun changement de file.
+- Publication : aucune aujourd'hui (pause 48 h par précaution). Novembre : 9/20. Prochaine : c0142 Youssouf retrouve ses parents, puis c0143 Al-Muzzammil (longue). 14 vidéos prêtes, 43 passages libres.
+
 ## 2026-11-13 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0138 publiées, lien TikTok présent). c0137 Nouh (10/11) et c0138 Buisson ardent (12/11) absentes des stats, mais les stats Metricool sont toujours figées au 08/11 (aucune vidéo ni abonné après le 08/11) : pas considérées comme bloquées. c0128 Al-Insan toujours absente (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 : chiffres identiques à la veille (Ayat al-Kursi 1 802 ; Maryam 1 036 ; Fin d'Al-Baqara 867 ; Al-Hashr 778 ; Al-Ikhlas/Falaq/Nas 741 ; Yusuf 12:83-87 721 ; Ibrahim et Ismaïl 704 ; Moussa à Madyan 694 ; Adam 652 ; Invocation d'Ibrahim 628 ; Youssouf 12:1-18 303).
