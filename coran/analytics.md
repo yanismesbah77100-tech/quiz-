@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-17 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur (c0131 à c0142 « publiées », c0142 Youssouf retrouve ses parents publiée le 16/11 18:00 avec lien TikTok). Stats toujours arrêtées au 13/11 : c0142 pas encore dans les stats (normal tant qu'elles sont figées). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 : chiffres identiques (Nouh 1 137 vues / 253 j'aime ; Maryam 1 039 ; Fin d'Al-Baqara 874 ; Al-Hashr 791 ; Al-Ikhlas/Falaq/Nas 744 ; Moussa et Al-Khidr 732 ; Yusuf 12:83-87 721 ; Ibrahim et Ismaïl 705 ; Moussa à Madyan 701 ; Adam 668 ; Invocation d'Ibrahim 632 ; Youssouf 12:1-18 315).
+- Compte : 35 abonnés (14/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Conclusions : inchangées (longues complètes et récits de prophètes en tête). Aucun changement de file.
+- Publication : c0143 Sourate Al-Muzzammil en entier (73:1-20, Alafasy, longue 4 min 06) programmée aujourd'hui 18:00. Novembre : 11/20 (cible du jour 12). 12 vidéos prêtes, 43 passages libres.
+
 ## 2026-11-16 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0139 « publiées »). Stats encore arrêtées au 13/11 : c0138 Moussa au buisson ardent toujours ABSENTE (ne pas republier), c0128 Al-Insan aussi. c0130 reste en brouillon.
 - Vidéos @lem7710 : quasi identiques (Nouh 1 137 vues / 253 j'aime ; Maryam 1 039 ; Fin d'Al-Baqara 874 ; Al-Hashr 791 ; Al-Ikhlas/Falaq/Nas 744 ; Moussa et Al-Khidr 732 ; Yusuf 12:83-87 721 ; Ibrahim et Ismaïl 705 ; Moussa à Madyan 701 ; Adam 668 ; Invocation d'Ibrahim 632 ; Youssouf 12:1-18 315).
