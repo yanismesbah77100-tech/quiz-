@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-18 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur (c0131 à c0143 « publiées », c0143 Al-Muzzammil publiée le 17/11 18:00 avec lien TikTok). Stats toujours figées au 13/11 : c0142 et c0143 pas encore dans les stats (normal). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 : chiffres identiques (Nouh 1 137 vues ; Maryam 1 039 ; Fin d'Al-Baqara 874 ; Al-Hashr 791 ; Al-Ikhlas/Falaq/Nas 744 ; Moussa et Al-Khidr 732 ; Yusuf 12:83-87 721 ; Ibrahim et Ismaïl 705 ; Moussa à Madyan 701 ; Adam 668 ; Invocation d'Ibrahim 632 ; Youssouf 12:1-18 315).
+- Compte : 35 abonnés (14/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Conclusions : inchangées (longues complètes et récits de prophètes en tête).
+- Changement de file : plus aucune vidéo prête utilisable (c0101-c0105, c0120-c0125 hors liste/non testés ; c0140 < 1 min ; c0141 = doublon de c0143) → 3 nouvelles lancées avec récitateur fixé, placées avant c0101 : c0144 Az-Zumar 39:53-59 (Ash-Shatri, 1 min 56), c0145 Luqman 31:12-19 (Alafasy, 2 min 59), c0146 Ya-Sin 36:1-32 (longue, Alafasy, fond v09, 6 min 49 — un peu plus que 6 min, images à vérifier avant publication). Génération réussie.
+- Publication : c0144 « La miséricorde d'Allah » (39:53-59, Ash-Shatri, 1 min 56) programmée aujourd'hui 10:00 (id 432428067), vérifiée (texte lisible, fond ciel/montagne sans texte ni personne, aucun appel). Novembre : 12/20 (cible du jour 12). Prochaine : c0145 Luqman puis c0146 Ya-Sin (longue).
+
 ## 2026-11-17 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0142 « publiées », c0142 Youssouf retrouve ses parents publiée le 16/11 18:00 avec lien TikTok). Stats toujours arrêtées au 13/11 : c0142 pas encore dans les stats (normal tant qu'elles sont figées). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 : chiffres identiques (Nouh 1 137 vues / 253 j'aime ; Maryam 1 039 ; Fin d'Al-Baqara 874 ; Al-Hashr 791 ; Al-Ikhlas/Falaq/Nas 744 ; Moussa et Al-Khidr 732 ; Yusuf 12:83-87 721 ; Ibrahim et Ismaïl 705 ; Moussa à Madyan 701 ; Adam 668 ; Invocation d'Ibrahim 632 ; Youssouf 12:1-18 315).
