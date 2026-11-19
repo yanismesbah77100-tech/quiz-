@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-19 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur (c0131 à c0144 « publiées », c0144 Az-Zumar publiée le 18/11 10:00 avec lien TikTok). Stats toujours figées au 13/11 (c0142, c0143, c0144 pas encore dans les stats, normal). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 : chiffres identiques (Nouh 1 137 vues ; Maryam 1 039 ; Al-Hashr 791 ; Al-Ikhlas/Falaq/Nas 744 ; Moussa et Al-Khidr 732 ; Ibrahim et Ismaïl 705 ; Moussa à Madyan 701 ; Adam 668 ; Invocation d'Ibrahim 632 ; Youssouf 12:1-18 315 ; Moussa et la mer 249 ; Ash-Sharh+At-Tin 241). Fin d'Al-Baqara et Yusuf 12:83-87 sont sorties de la fenêtre de 30 jours.
+- Compte : 35 abonnés (14/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Conclusions : inchangées (longues complètes et récits de prophètes en tête).
+- Stock : seulement 2 vidéos prêtes utilisables (c0145, c0146) → 3 nouvelles lancées avec récitateur fixé, placées avant c0101 : c0147 Ta-Ha 20:1-8 (Ash-Shatri ; la vidéo va jusqu'à 20:10, 1 min 21), c0148 Al-Imran 3:190-194 (Alafasy, 1 min 54 ; fond lac un peu clair mais texte lisible), c0149 Al-Waqi'a 56:1-56 (longue, Alafasy, fond v09, 6 min 26 — un peu plus de 6 min). Génération réussie et vérifiée.
+- Publication : c0145 « Les conseils de Luqman à son fils » (31:12-19, Alafasy, 2 min 59) programmée aujourd'hui 10:00 (id 433800042), vérifiée (texte lisible, fond mer sans texte ni personne, aucun appel). Novembre : 13/20 (cible du jour 13). Prochaine : c0146 Ya-Sin (longue), puis c0147, c0148, c0149.
+
 ## 2026-11-18 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0143 « publiées », c0143 Al-Muzzammil publiée le 17/11 18:00 avec lien TikTok). Stats toujours figées au 13/11 : c0142 et c0143 pas encore dans les stats (normal). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 : chiffres identiques (Nouh 1 137 vues ; Maryam 1 039 ; Fin d'Al-Baqara 874 ; Al-Hashr 791 ; Al-Ikhlas/Falaq/Nas 744 ; Moussa et Al-Khidr 732 ; Yusuf 12:83-87 721 ; Ibrahim et Ismaïl 705 ; Moussa à Madyan 701 ; Adam 668 ; Invocation d'Ibrahim 632 ; Youssouf 12:1-18 315).
