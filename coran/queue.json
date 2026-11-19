@@ -115,6 +115,31 @@
    "bg": "v09.webm"
   },
   {
+   "name": "c0147",
+   "surah": 20,
+   "from": 1,
+   "to": 8,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps"
+  },
+  {
+   "name": "c0148",
+   "surah": 3,
+   "from": 190,
+   "to": 194,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps"
+  },
+  {
+   "name": "c0149",
+   "surah": 56,
+   "from": 1,
+   "to": 56,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "bg": "v09.webm"
+  },
+  {
    "name": "c0101",
    "surah": 87,
    "from": 1,
