@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-20 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur (c0131 à c0145 « publiées », c0145 Luqman publiée le 19/11 10:00 avec lien TikTok). Les stats sont reparties (données jusqu'au 19/11). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 (vues) : Nouh 1 163 (longue) ; Maryam 1 039 (longue) ; Al-Muzzammil 855 en 3 jours (longue, 196 j'aime — 2e meilleur) ; Al-Hashr 795 ; Moussa et Al-Khidr 746 ; Al-Ikhlas/Falaq/Nas 744 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 701 ; Youssouf retrouve ses parents 694 ; Adam 673 ; Invocation d'Ibrahim 633 ; Luqman 358 (1 jour) ; Youssouf 12:1-18 316 ; Moussa et la mer 253 ; Ash-Sharh+At-Tin 242.
+- Compte : 41 abonnés le 18/11 (+6 ce jour-là, contre 35 le 14/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions (15 vidéos) : les longues sourates/passages complets restent en tête (Nouh, Maryam, Al-Muzzammil, aussi le plus de j'aime) ; récits de prophètes stables autour de 700. Alafasy et Ash-Shatri font jeu égal. Pas de changement d'ordre : la proportion 1 longue / 2 courtes est gardée.
+- Publication : c0146 Ya-Sin 36:1-32 (longue, Alafasy, 6 min 49, fond mer) programmée aujourd'hui 18:00 (id 435156544), vérifiée (texte lisible, fond sans texte ni personne, aucun appel ; légère bande sombre en bas sur certains passages du fond, sans gêner le texte). Novembre : 14/20 (cible du jour 14). Prochaines : c0147, c0148, c0149. Stock utilisable : 3 (c0147-c0149) + anciennes non testées.
+
 ## 2026-11-19 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0144 « publiées », c0144 Az-Zumar publiée le 18/11 10:00 avec lien TikTok). Stats toujours figées au 13/11 (c0142, c0143, c0144 pas encore dans les stats, normal). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 : chiffres identiques (Nouh 1 137 vues ; Maryam 1 039 ; Al-Hashr 791 ; Al-Ikhlas/Falaq/Nas 744 ; Moussa et Al-Khidr 732 ; Ibrahim et Ismaïl 705 ; Moussa à Madyan 701 ; Adam 668 ; Invocation d'Ibrahim 632 ; Youssouf 12:1-18 315 ; Moussa et la mer 249 ; Ash-Sharh+At-Tin 241). Fin d'Al-Baqara et Yusuf 12:83-87 sont sorties de la fenêtre de 30 jours.
