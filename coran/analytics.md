@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-21 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur (c0131 à c0146 « publiées » ; c0146 Ya-Sin publiée le 20/11 18:00 avec lien TikTok, pas encore dans les stats). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 (vues) : chiffres quasi identiques à hier (stats arrêtées au 19/11) — Nouh 1 163 ; Al-Muzzammil 855 ; Al-Hashr 795 ; Moussa et Al-Khidr 746 ; Al-Ikhlas/Falaq/Nas 744 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 701 ; Youssouf retrouve ses parents 694 ; Adam 673 ; Invocation d'Ibrahim 633 ; Luqman 358 ; Youssouf 12:1-18 316 ; Moussa et la mer 253 ; Ash-Sharh+At-Tin 242. Maryam est sortie de la fenêtre de 30 jours.
+- Compte : 41 abonnés (18/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : inchangées (longues complètes en tête : Nouh, Al-Muzzammil ; récits de prophètes stables ~700). Aucun changement.
+- Publication : aucune aujourd'hui. Novembre : 14/20, cible du jour = 14 (20×21/30) → quota du rythme atteint. Prochaine : c0147 Ta-Ha 20:1-8. Stock prêt : 15 vidéos (c0147-c0149 vérifiées + anciennes), 37 passages libres.
+
 ## 2026-11-20 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0145 « publiées », c0145 Luqman publiée le 19/11 10:00 avec lien TikTok). Les stats sont reparties (données jusqu'au 19/11). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 (vues) : Nouh 1 163 (longue) ; Maryam 1 039 (longue) ; Al-Muzzammil 855 en 3 jours (longue, 196 j'aime — 2e meilleur) ; Al-Hashr 795 ; Moussa et Al-Khidr 746 ; Al-Ikhlas/Falaq/Nas 744 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 701 ; Youssouf retrouve ses parents 694 ; Adam 673 ; Invocation d'Ibrahim 633 ; Luqman 358 (1 jour) ; Youssouf 12:1-18 316 ; Moussa et la mer 253 ; Ash-Sharh+At-Tin 242.
