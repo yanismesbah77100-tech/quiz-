@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-22 (matin) — point quotidien
+- Statuts Metricool : aucune vidéo en erreur (c0131 à c0146 « publiées »). Stats à jour : Ya-Sin (c0146) et Luqman (c0145) apparaissent. c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
+- Vidéos @lem7710 (vues / j'aime) : Nouh 1 178 / 256 ; Al-Muzzammil 871 / 196 ; Al-Hashr 795 ; Moussa et Al-Khidr 755 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 701 ; Youssouf retrouve ses parents 696 ; Adam 676 ; Luqman 665 / 65 ; Ya-Sin (longue) 639 / 76 en 1,5 jour ; Invocation d'Ibrahim 633 ; Youssouf 12:1-18 319 ; Moussa et la mer 255 ; Ash-Sharh+At-Tin 242.
+- Compte : 41 abonnés (20/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : inchangées (longues complètes en tête ; Ya-Sin démarre bien). Aucun changement.
+- Publication : c0147 « Le début de Ta-Ha » (20:1-10 affichés, Ash-Shatri, 1 min 21, fond montagne enneigée) programmée aujourd'hui 10:00 (id 437294396), vérifiée. Novembre : 15/20 (cible du jour 15). Prochaines : c0148, c0149.
+
 ## 2026-11-21 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0146 « publiées » ; c0146 Ya-Sin publiée le 20/11 18:00 avec lien TikTok, pas encore dans les stats). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 (vues) : chiffres quasi identiques à hier (stats arrêtées au 19/11) — Nouh 1 163 ; Al-Muzzammil 855 ; Al-Hashr 795 ; Moussa et Al-Khidr 746 ; Al-Ikhlas/Falaq/Nas 744 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 701 ; Youssouf retrouve ses parents 694 ; Adam 673 ; Invocation d'Ibrahim 633 ; Luqman 358 ; Youssouf 12:1-18 316 ; Moussa et la mer 253 ; Ash-Sharh+At-Tin 242. Maryam est sortie de la fenêtre de 30 jours.
