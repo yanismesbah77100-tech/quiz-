@@ -8,6 +8,7 @@ Mis à jour chaque jour par la tâche automatique.
 - Compte : 41 abonnés (20/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
 - Conclusions : inchangées (longues complètes en tête ; Ya-Sin démarre bien). Aucun changement.
 - Publication : c0147 « Le début de Ta-Ha » (20:1-10 affichés, Ash-Shatri, 1 min 21, fond montagne enneigée) programmée aujourd'hui 10:00 (id 437294396), vérifiée. Novembre : 15/20 (cible du jour 15). Prochaines : c0148, c0149.
+- Stock bas (2 vidéos utilisables) → 3 nouvelles générées et vérifiées (texte lisible, fonds nature sans texte ni personne, aucun appel), placées avant c0101 : c0150 Al-Imran 3:26-27 (Alafasy, 1 min 06, fond cascade), c0151 Al-Baqara 2:261-262 (Ash-Shatri, 1 min 14, fond lac brumeux), c0152 Al-Imran 3:173-174 (Alafasy, 1 min 12, fond mer).
 
 ## 2026-11-21 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0146 « publiées » ; c0146 Ya-Sin publiée le 20/11 18:00 avec lien TikTok, pas encore dans les stats). c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
