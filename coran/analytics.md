@@ -2,6 +2,15 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-23 (matin) — vidéo disparue, pause de 48 h
+- NOUVELLE vidéo absente des stats : c0144 « La miséricorde d'Allah » (Az-Zumar 39:53-59, Ash-Shatri, publiée le 18/11 10:00, id 432428067, lien TikTok présent dans Metricool) n'apparaît pas dans les stats, alors que Luqman (19/11) et Ya-Sin (20/11) y sont → traitée comme bloquée/retirée (passée inaperçue les jours précédents). NE PAS la republier.
+- Règle appliquée : aucune vidéo n'était programmée dans les 48 h (rien à mettre en brouillon) ; pas de publication aujourd'hui (pause 48 h, reprise possible le 25/11). Yanis prévenu : vérifier le motif dans TikTok (Profil → ☰ → Paramètres → Statut du compte) et faire appel.
+- Statuts Metricool : aucun statut d'erreur (c0131 à c0147 « publiées », c0147 Ta-Ha publiée le 22/11 avec lien TikTok, pas encore dans les stats). c0138, c0128 toujours absentes. c0130 reste en brouillon.
+- Vidéos @lem7710 (vues / j'aime) : inchangées (stats arrêtées au 20/11) — Nouh 1 178 / 256 ; Al-Muzzammil 871 / 196 ; Moussa et Al-Khidr 755 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 701 ; Youssouf retrouve ses parents 696 ; Adam 676 ; Luqman 665 ; Ya-Sin 639 ; Invocation d'Ibrahim 633 ; Youssouf 12:1-18 319 ; Moussa et la mer 255 ; Ash-Sharh+At-Tin 242. Al-Hashr est sortie de la fenêtre de 30 jours.
+- Compte : 41 abonnés (20/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Conclusions : inchangées. Aucun changement de file ni de generate.py.
+- Novembre : 15/20 (cible du jour 16, mais pause). Prochaine : c0148 Al-Imran 3:190-194. Stock : 17 vidéos prêtes (dont 5 récentes vérifiées c0148-c0152), 34 passages libres.
+
 ## 2026-11-22 (matin) — point quotidien
 - Statuts Metricool : aucune vidéo en erreur (c0131 à c0146 « publiées »). Stats à jour : Ya-Sin (c0146) et Luqman (c0145) apparaissent. c0138 et c0128 toujours ABSENTES (ne pas republier). c0130 reste en brouillon.
 - Vidéos @lem7710 (vues / j'aime) : Nouh 1 178 / 256 ; Al-Muzzammil 871 / 196 ; Al-Hashr 795 ; Moussa et Al-Khidr 755 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 701 ; Youssouf retrouve ses parents 696 ; Adam 676 ; Luqman 665 / 65 ; Ya-Sin (longue) 639 / 76 en 1,5 jour ; Invocation d'Ibrahim 633 ; Youssouf 12:1-18 319 ; Moussa et la mer 255 ; Ash-Sharh+At-Tin 242.
