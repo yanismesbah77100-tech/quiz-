@@ -2,6 +2,15 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-24 (matin) — pause de 48 h en cours
+- Pas de publication aujourd'hui : pause de 48 h après la disparition de c0144 (Az-Zumar 39:53-59), reprise prévue le 25/11. Novembre : 15/20 (cible du jour 16).
+- Statuts Metricool : aucune erreur (c0131 à c0147 « publiées »). c0144 Az-Zumar toujours ABSENTE des stats (ne pas republier). c0138, c0128 toujours absentes. c0130 reste en brouillon.
+- Nouveau dans les stats : c0147 « Le début de Ta-Ha » (22/11) 620 vues / 62 j'aime en 2 jours — bon départ pour une courte.
+- Vidéos @lem7710 (vues / j'aime) : Nouh 1 188 / 257 ; Al-Muzzammil 876 / 196 ; Moussa et Al-Khidr 756 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 701 ; Youssouf retrouve ses parents 699 ; Adam 678 ; Luqman 666 ; Ya-Sin 659 ; Invocation d'Ibrahim 633 ; Ta-Ha 620 ; Youssouf 12:1-18 322 ; Moussa et la mer 257 ; Ash-Sharh+At-Tin 242.
+- Compte : 42 abonnés (22/11, +1). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides dans Metricool.
+- Conclusions : inchangées (longues complètes en tête, courtes stables autour de 600-700 vues). Aucun changement de file ni de generate.py.
+- Stock : 17 vidéos prêtes, 34 passages libres. Prochaine : c0148 Al-Imran 3:190-194.
+
 ## 2026-11-23 (matin) — vidéo disparue, pause de 48 h
 - NOUVELLE vidéo absente des stats : c0144 « La miséricorde d'Allah » (Az-Zumar 39:53-59, Ash-Shatri, publiée le 18/11 10:00, id 432428067, lien TikTok présent dans Metricool) n'apparaît pas dans les stats, alors que Luqman (19/11) et Ya-Sin (20/11) y sont → traitée comme bloquée/retirée (passée inaperçue les jours précédents). NE PAS la republier.
 - Règle appliquée : aucune vidéo n'était programmée dans les 48 h (rien à mettre en brouillon) ; pas de publication aujourd'hui (pause 48 h, reprise possible le 25/11). Yanis prévenu : vérifier le motif dans TikTok (Profil → ☰ → Paramètres → Statut du compte) et faire appel.
