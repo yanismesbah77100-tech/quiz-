@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-25 (matin) — reprise après la pause
+- Publication : c0148 « Méditer sur la création » (Al-Imran 3:190-194, Alafasy, courte 1 min 54) programmée aujourd'hui 10:00 (meilleure heure Metricool), id 441293093. Vidéo vérifiée (texte lisible, fond lac sans texte ni personne). Novembre : 16/20 (cible du jour 17).
+- Statuts Metricool : aucune erreur (c0131 à c0147 « publiées »). c0144 Az-Zumar toujours absente des stats (ne pas republier). c0138, c0128 toujours absentes. c0130 reste en brouillon.
+- Stats figées depuis le 22/11 (mêmes chiffres qu'hier) : Nouh 1 188 ; Al-Muzzammil 876 ; Moussa et Al-Khidr 756 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 701 ; Youssouf retrouve ses parents 699 ; Adam 678 ; Luqman 666 ; Ya-Sin 659 ; Invocation d'Ibrahim 633 ; Ta-Ha 620 ; Youssouf 12:1-18 322 ; Moussa et la mer 257.
+- Compte : 42 abonnés (22/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Conclusions inchangées ; aucun changement de file ni de generate.py.
+- Stock : 16 vidéos prêtes, 34 passages libres.
+
 ## 2026-11-24 (matin) — pause de 48 h en cours
 - Pas de publication aujourd'hui : pause de 48 h après la disparition de c0144 (Az-Zumar 39:53-59), reprise prévue le 25/11. Novembre : 15/20 (cible du jour 16).
 - Statuts Metricool : aucune erreur (c0131 à c0147 « publiées »). c0144 Az-Zumar toujours ABSENTE des stats (ne pas republier). c0138, c0128 toujours absentes. c0130 reste en brouillon.
