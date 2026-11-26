@@ -6,6 +6,7 @@ Mis à jour chaque jour par la tâche automatique.
 - Demande de Yanis : nouveaux thèmes = passages marquants sur les prophètes, avec une morale (champ "morale" dans passages.json, non affiché).
 - FONDS : Yanis a donné ses propres photos de La Mecque (tour de l'horloge, minarets, Kaaba) et demandé de les utiliser → coran/fonds_photos/mk1-mk6.jpg (recadrées pour retirer toutes les personnes). EXCEPTION VOULUE PAR YANIS à la règle « nature sans texte » : la calligraphie de la Kaaba et de la tour fait partie du lieu, ne pas retirer ces fonds pour ça. Toujours vérifier qu'aucune personne n'est visible.
 - File : c0157 Ibrahim et son fils 37:99-111 (mk5), c0158 Moussa et les magiciens 20:65-73 (mk2), c0159 Ibrahim et le feu 21:51-70 longue (mk6), c0163 Yunus 37:139-148 (mk4, Minshawi : avec Ash-Shatri la vidéo c0160 était trop courte et débordait sur 37:149-150, hors sujet → c0160 retirée de la file), c0161 La réponse de 'Issa 5:116-120 (mk3), c0162 Nouh et son fils 11:36-48 longue (mk1) — placées en tête, avant c0153-c0156.
+- Demande de Yanis (« diminue les phrases ») : generate.py affiche maintenant un long verset en plusieurs écrans plus courts (coupure aux signes de pause arabes et à la ponctuation française, texte complet). Les 6 vidéos prophètes sont refaites : c0164 (ex-c0157), c0165 (ex-c0158), c0166 (ex-c0159), c0167 (ex-c0163), c0168 (ex-c0161), c0169 (ex-c0162).
 - Workflow : copie coran/fonds_photos/* dans fonds/ avant génération.
 
 ## 2026-11-26 (après-midi) — analyse d'audience demandée par Yanis + changements vidéo

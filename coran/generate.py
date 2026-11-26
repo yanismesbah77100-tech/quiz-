@@ -299,7 +299,7 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None, theme=None):
     d.line((W / 2 - 160, 330, W / 2 + 160, 330), fill=GOLD + (180,), width=3)
 
     shown = ayahs if idx is None else [ayahs[idx]]
-    ar = " ".join(a["ar"] if a.get("basmala") else f"{a['ar']} ﴿{to_ar_digits(a['a'])}﴾" for a in shown)
+    ar = " ".join(a["ar"] if (a.get("basmala") or a.get("nonum")) else f"{a['ar']} ﴿{to_ar_digits(a['a'])}﴾" for a in shown)
     fr = " ".join(a["fr"] for a in shown)
     # taille adaptée : arabe en haut (jusqu'à ~55 % de la place), traduction dessous
     top, bottom = 380, H - 260
@@ -502,6 +502,59 @@ def gather(v, tmp, folder):
     return items, duration()
 
 
+# ---------------------------------------------------------------- versets longs en plusieurs écrans
+SPLIT_FR, SPLIT_AR = 150, 20  # au-delà (caractères FR / mots arabes), le verset est affiché en plusieurs écrans
+WAQF = "ۖۗۚۛۙۘ"
+
+
+def split_verse(ay):
+    """Découpe un long verset en morceaux plus courts (texte complet, rien n'est retiré ni réécrit).
+    Arabe coupé de préférence aux signes de pause (waqf), traduction coupée à la ponctuation
+    la plus proche de la même proportion. Renvoie [(ar, fr, part_du_temps), ...]."""
+    ar_w, fr = ay["ar"].split(" "), ay["fr"]
+    k = max(math.ceil(len(fr) / SPLIT_FR), math.ceil(len(ar_w) / SPLIT_AR))
+    if ay.get("basmala") or k <= 1:
+        return [(ay["ar"], fr, 1.0)]
+    total = sum(len(w) + 1 for w in ar_w)
+    cum, pos = [], 0
+    for w in ar_w:
+        pos += len(w) + 1
+        cum.append(pos / total)
+    cuts, last = [], 0
+    for j in range(1, k):
+        target = j / k
+        cands = [i for i in range(last + 2, len(ar_w) - 2)]
+        if not cands:
+            break
+        def score(i):
+            pause = any(c in ar_w[i] for c in WAQF) or (i + 1 < len(ar_w) and ar_w[i + 1] in WAQF)
+            return abs(cum[i] - target) - (0.08 if pause else 0)
+        i = min(cands, key=score)
+        if i + 1 < len(ar_w) and ar_w[i + 1] in WAQF:
+            i += 1
+        cuts.append(i + 1)
+        last = i + 1
+    ar_parts = [" ".join(ar_w[a:b]) for a, b in zip([0] + cuts, cuts + [len(ar_w)])]
+    fracs = [sum(len(w) + 1 for w in p.split(" ")) / total for p in ar_parts]
+    # traduction : coupure à la ponctuation proche de la même proportion
+    fr_cuts, acc, lastc = [], 0.0, 0
+    for f in fracs[:-1]:
+        acc += f
+        target = acc * len(fr)
+        cands = [m for m in range(lastc + 15, len(fr) - 15) if fr[m] == " " and fr[m - 1] in ".;:!?»,)"]
+        strong = [m for m in cands if fr[m - 1] in ".;:!?»" and abs(m - target) < len(fr) * 0.18]
+        pool = strong or cands or [m for m in range(lastc + 15, len(fr) - 15) if fr[m] == " "]
+        if not pool:
+            break
+        m = min(pool, key=lambda m: abs(m - target))
+        fr_cuts.append(m)
+        lastc = m
+    if len(fr_cuts) != len(ar_parts) - 1:
+        return [(ay["ar"], fr, 1.0)]
+    fr_parts = [fr[a:b].strip() for a, b in zip([0] + fr_cuts, fr_cuts + [len(fr)])]
+    return [(a, f, fr_) for a, f, fr_ in zip(ar_parts, fr_parts, fracs)]
+
+
 def build(items, mode, out_path, cfg, hook, bg_path=None, theme=None):
     with tempfile.TemporaryDirectory() as tmp:
         # le tout premier verset démarre sans blanc
@@ -511,14 +564,20 @@ def build(items, mode, out_path, cfg, hook, bg_path=None, theme=None):
             items[0] = dict(items[0], rec=first[max(0, loud[0] - int(0.03 * SR)):])
         segs, sounds = ([("hook", 0.0, INTRO, None, False)] if INTRO > 0 else []), []
         t = INTRO
+        pages = []  # écrans affichés (un long verset peut en donner plusieurs)
         for i, ay in enumerate(items):
             r = len(ay["rec"]) / SR + GAP_REC
-            segs.append(("page", t, r, i, False))
             sounds.append((soften(ay["rec"]), t))
+            parts = split_verse(ay) if "frv" not in ay else [(ay["ar"], ay["fr"], 1.0)]
+            tp = t
+            for j, (pa, pf, fr_) in enumerate(parts):
+                pages.append(dict(ay, ar=pa, fr=pf, nonum=j < len(parts) - 1))
+                segs.append(("page", tp, r * fr_, len(pages) - 1, False))
+                tp += r * fr_
             t += r
             if "frv" in ay:
                 f = len(ay["frv"]) / SR + GAP_FR
-                segs.append(("page", t, f, i, True))
+                segs.append(("page", t, f, len(pages) - 1, True))
                 sounds.append((ay["frv"] * 0.9, t + 0.2))
                 t += f
         if cfg.get("end_screen", False):
@@ -567,7 +626,7 @@ def build(items, mode, out_path, cfg, hook, bg_path=None, theme=None):
                 elif kind == "end":
                     cache[key] = end_layer(cfg)
                 else:
-                    cache[key] = layout(items, cfg, fr_on, idx, th)
+                    cache[key] = layout(pages, cfg, fr_on, idx, th)
             frame = bg.frame(tt)
             lt = tt - st
             lay = cache[key]
