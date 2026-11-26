@@ -2,6 +2,12 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-26 (soir) — série « prophètes » avec les photos de La Mecque de Yanis
+- Demande de Yanis : nouveaux thèmes = passages marquants sur les prophètes, avec une morale (champ "morale" dans passages.json, non affiché).
+- FONDS : Yanis a donné ses propres photos de La Mecque (tour de l'horloge, minarets, Kaaba) et demandé de les utiliser → coran/fonds_photos/mk1-mk6.jpg (recadrées pour retirer toutes les personnes). EXCEPTION VOULUE PAR YANIS à la règle « nature sans texte » : la calligraphie de la Kaaba et de la tour fait partie du lieu, ne pas retirer ces fonds pour ça. Toujours vérifier qu'aucune personne n'est visible.
+- File : c0157 Ibrahim et son fils 37:99-111 (mk5), c0158 Moussa et les magiciens 20:65-73 (mk2), c0159 Ibrahim et le feu 21:51-70 longue (mk6), c0160 Yunus 37:139-148 (mk4), c0161 La réponse de 'Issa 5:116-120 (mk3), c0162 Nouh et son fils 11:36-48 longue (mk1) — placées en tête, avant c0153-c0156.
+- Workflow : copie coran/fonds_photos/* dans fonds/ avant génération.
+
 ## 2026-11-26 (après-midi) — analyse d'audience demandée par Yanis + changements vidéo
 - Données disponibles via Metricool : vues, j'aime, commentaires, partages, durée (24 vidéos). NON disponibles (vides même en demandant chaque mesure à part) : temps moyen regardé, % jusqu'au bout, temps total regardé, sources de vues, sexe, pays, âge. À demander à Yanis (captures TikTok Analytics) ou passer le compte TikTok en « compte Entreprise » pour que Metricool les reçoive peut-être.
 - Constat : la plupart des vidéos plafonnent à 630-760 vues (premier lot de diffusion de TikTok). Celles qui dépassent : sourates/passages complets longs (Nouh 1 200, Maryam 1 041, Al-Muzzammil 881, fin d'Al-Baqara 878, Al-Hashr 795).

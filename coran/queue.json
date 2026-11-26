@@ -140,6 +140,66 @@
    "bg": "v09.webm"
   },
   {
+   "name": "c0157",
+   "surah": 37,
+   "from": 99,
+   "to": 111,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "hook": "Ibrahim et son fils",
+   "bg": "mk5.jpg"
+  },
+  {
+   "name": "c0158",
+   "surah": 20,
+   "from": 65,
+   "to": 73,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+   "hook": "Moussa et les magiciens",
+   "bg": "mk2.jpg"
+  },
+  {
+   "name": "c0159",
+   "surah": 21,
+   "from": 51,
+   "to": 70,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "hook": "Ibrahim et le feu",
+   "bg": "mk6.jpg"
+  },
+  {
+   "name": "c0160",
+   "surah": 37,
+   "from": 139,
+   "to": 148,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+   "hook": "Yunus et le poisson",
+   "bg": "mk4.jpg"
+  },
+  {
+   "name": "c0161",
+   "surah": 5,
+   "from": 116,
+   "to": 120,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "hook": "La r\u00e9ponse de 'Issa",
+   "bg": "mk3.jpg"
+  },
+  {
+   "name": "c0162",
+   "surah": 11,
+   "from": 36,
+   "to": 48,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "hook": "Nouh et son fils",
+   "bg": "mk1.jpg"
+  },
+  {
    "name": "c0153",
    "surah": 18,
    "from": 1,
