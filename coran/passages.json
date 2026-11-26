@@ -1,5 +1,138 @@
 [
  {
+  "surah": 37,
+  "from": 99,
+  "to": 111,
+  "theme": "Ibrahim et le sacrifice de son fils",
+  "hook": "Ibrahim et son fils",
+  "reciter": "Alafasy_128kbps",
+  "cible": "prophètes",
+  "morale": "La confiance totale en Allah"
+ },
+ {
+  "surah": 20,
+  "from": 65,
+  "to": 73,
+  "theme": "Moussa face aux magiciens de Pharaon",
+  "hook": "Moussa et les magiciens",
+  "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+  "cible": "prophètes",
+  "morale": "La vérité l'emporte toujours"
+ },
+ {
+  "surah": 21,
+  "from": 51,
+  "to": 70,
+  "theme": "Ibrahim brise les idoles et le feu devient fraîcheur",
+  "hook": "Ibrahim et le feu",
+  "reciter": "Alafasy_128kbps",
+  "cible": "prophètes",
+  "morale": "Le courage de la foi, Allah protège",
+  "long": true
+ },
+ {
+  "surah": 37,
+  "from": 139,
+  "to": 148,
+  "theme": "Yunus dans le ventre du poisson",
+  "hook": "Yunus et le poisson",
+  "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+  "cible": "prophètes",
+  "morale": "Le repentir sauve"
+ },
+ {
+  "surah": 5,
+  "from": 116,
+  "to": 120,
+  "theme": "La réponse de 'Issa le Jour du Jugement",
+  "hook": "La réponse de 'Issa",
+  "reciter": "Alafasy_128kbps",
+  "cible": "prophètes",
+  "morale": "L'humilité devant Allah"
+ },
+ {
+  "surah": 11,
+  "from": 36,
+  "to": 48,
+  "theme": "Nouh, l'arche et son fils",
+  "hook": "Nouh et son fils",
+  "reciter": "Alafasy_128kbps",
+  "cible": "prophètes",
+  "morale": "La foi avant tout, même face à sa famille",
+  "long": true
+ },
+ {
+  "surah": 38,
+  "from": 41,
+  "to": 44,
+  "theme": "La patience d'Ayyoub",
+  "hook": "La patience d'Ayyoub",
+  "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+  "cible": "prophètes",
+  "morale": "La patience dans l'épreuve"
+ },
+ {
+  "surah": 27,
+  "from": 15,
+  "to": 19,
+  "theme": "Sulayman et la fourmi",
+  "hook": "Sulayman et la fourmi",
+  "reciter": "Alafasy_128kbps",
+  "cible": "prophètes",
+  "morale": "La gratitude et l'humilité"
+ },
+ {
+  "surah": 27,
+  "from": 20,
+  "to": 44,
+  "theme": "Sulayman et la reine de Saba",
+  "hook": "Sulayman et la reine de Saba",
+  "reciter": "Alafasy_128kbps",
+  "cible": "prophètes",
+  "morale": "La sagesse et la soumission à Allah",
+  "long": true
+ },
+ {
+  "surah": 28,
+  "from": 76,
+  "to": 83,
+  "theme": "Moussa et Qarun, l'homme trop riche",
+  "hook": "Qarun et sa richesse",
+  "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+  "cible": "prophètes",
+  "morale": "L'orgueil de la richesse mène à la perte"
+ },
+ {
+  "surah": 12,
+  "from": 36,
+  "to": 42,
+  "theme": "Youssouf en prison",
+  "hook": "Youssouf en prison",
+  "reciter": "Alafasy_128kbps",
+  "cible": "prophètes",
+  "morale": "Rester fidèle à Allah dans l'épreuve"
+ },
+ {
+  "surah": 38,
+  "from": 21,
+  "to": 26,
+  "theme": "Dawud et les deux plaideurs",
+  "hook": "Dawud et les deux plaideurs",
+  "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+  "cible": "prophètes",
+  "morale": "La justice et le repentir"
+ },
+ {
+  "surah": 2,
+  "from": 67,
+  "to": 73,
+  "theme": "Moussa et la vache",
+  "hook": "Moussa et la vache",
+  "reciter": "Alafasy_128kbps",
+  "cible": "prophètes",
+  "morale": "Obéir sans chercher d'excuses"
+ },
+ {
   "surah": 18,
   "from": 1,
   "to": 10,
