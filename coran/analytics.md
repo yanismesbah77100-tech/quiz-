@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-26 (matin) — point quotidien
+- Publication : c0149 « Sourate Al-Waqi'a, versets 1 à 56 » (longue, Alafasy, 6 min 26, fond mer) programmée aujourd'hui 18:00 (longue → soir ; 18 h 2e meilleure heure Metricool), id 442688274. Vidéo vérifiée (texte lisible, fond sans texte ni personne, aucun appel). Novembre : 17/20 (cible du jour 18).
+- Statuts Metricool : aucune erreur (c0131 à c0148 « publiées »). c0144 Az-Zumar, c0138, c0128 toujours absentes des stats (ne pas republier). c0130 reste en brouillon.
+- Stats à jour : c0148 Al-Imran 3:190-194 (courte) 685 vues / 96 j'aime en 1 jour — meilleur départ d'une courte. Autres : Nouh 1 200 / 258 ; Al-Muzzammil 881 / 197 ; Moussa et Al-Khidr 757 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 702 ; Youssouf retrouve ses parents 700 ; Adam 682 ; Luqman 669 ; Ya-Sin 663 ; Invocation d'Ibrahim 635 ; Ta-Ha 628 ; Youssouf 12:1-18 323 ; Moussa et la mer 257.
+- Compte : 43 abonnés (24/11, +1). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Conclusions inchangées (longues complètes en tête, courtes ~650-700). Aucun changement de file ni de generate.py.
+- Stock : 15 vidéos prêtes, 34 passages libres.
+
 ## 2026-11-25 (matin) — reprise après la pause
 - Publication : c0148 « Méditer sur la création » (Al-Imran 3:190-194, Alafasy, courte 1 min 54) programmée aujourd'hui 10:00 (meilleure heure Metricool), id 441293093. Vidéo vérifiée (texte lisible, fond lac sans texte ni personne). Novembre : 16/20 (cible du jour 17).
 - Statuts Metricool : aucune erreur (c0131 à c0147 « publiées »). c0144 Az-Zumar toujours absente des stats (ne pas republier). c0138, c0128 toujours absentes. c0130 reste en brouillon.
