@@ -26,13 +26,16 @@ def main():
     published_names = {p["video"] for p in pub}
     free = [p for p in passages if key(p) not in used]
     arg = sys.argv[1] if len(sys.argv) > 1 else "--next"
+    pub_keys = {key(p) for p in pub if "surah" in p}
+    # une vidéo dont le passage a déjà été publié (même autre récitateur) n'est pas reprise : pas de doublon
+    ok = lambda v: v["name"] in index and v["name"] not in published_names and key(v) not in pub_keys
     if arg == "--stock":
-        ready = [v["name"] for v in queue["videos"] if v["name"] in index and v["name"] not in published_names]
+        ready = [v["name"] for v in queue["videos"] if ok(v)]
         print(json.dumps({"pretes_non_publiees": ready, "passages_libres": len(free)}))
         return
     if arg == "--next":
         for v in queue["videos"]:
-            if v["name"] in index and v["name"] not in published_names:
+            if ok(v):
                 print(json.dumps(v)); return
         print("aucune"); return
     n = int(arg)
@@ -41,7 +44,7 @@ def main():
     for p in free[:n]:
         num += 1
         name = f"c{num:04d}"
-        queue["videos"].append({"name": name, "surah": p["surah"], "from": p["from"], "to": p["to"], "mode": "recit", **({"reciter": p["reciter"]} if p.get("reciter") else {})})
+        queue["videos"].append({"name": name, "surah": p["surah"], "from": p["from"], "to": p["to"], "mode": "recit", **({"reciter": p["reciter"]} if p.get("reciter") else {}), **({"hook": p["hook"]} if p.get("hook") else {})})
         added.append(name)
     if len(added) < n:
         sys.exit("Plus assez de passages dans coran/passages.json")

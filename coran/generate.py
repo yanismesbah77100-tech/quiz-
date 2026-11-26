@@ -271,8 +271,9 @@ def text_block(d, lines, fnt, y, lh, fill, rtl=False, stroke=0):
     return y
 
 
-def layout(ayahs, cfg, highlight_fr=False, idx=None):
-    """Calque transparent : en-tête, texte arabe, traduction, pied de page."""
+def layout(ayahs, cfg, highlight_fr=False, idx=None, theme=None):
+    """Calque transparent : en-tête, texte arabe, traduction, pied de page.
+    theme : titre court du passage, affiché en grand à la place de la référence (accroche des 1res secondes)."""
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
     shown0 = ayahs[idx] if idx is not None else ayahs[0]
@@ -282,7 +283,19 @@ def layout(ayahs, cfg, highlight_fr=False, idx=None):
     hf = F(AR_FONT, 70)
     text_block(d, [first["surah_ar"]], hf, 130, 110, GOLD, rtl=True)
     sub = F(LAT_B, 38)
-    text_block(d, [f"Sourate {first['surah']}  •  {ref}"], sub, 255, 50, SOFT)
+    if theme:
+        tf = F(LAT_B, 64)
+        tl = wrap(d, theme, tf, W - 140)[:2]
+        if len(tl) > 1:
+            tf = F(LAT_B, 50)
+            tl = wrap(d, theme, tf, W - 140)[:2]
+        lh = 70 if len(tl) == 1 else 56
+        ty = 288 - len(tl) * lh / 2 - 8
+        pw = max(d.textlength(x, font=tf) for x in tl) + 70
+        d.rounded_rectangle((W / 2 - pw / 2, ty - 8, W / 2 + pw / 2, ty + len(tl) * lh + 6), 26, fill=(0, 0, 0, 110))
+        text_block(d, tl, tf, ty, lh, GOLD, stroke=2)
+    else:
+        text_block(d, [f"Sourate {first['surah']}  •  {ref}"], sub, 255, 50, SOFT)
     d.line((W / 2 - 160, 330, W / 2 + 160, 330), fill=GOLD + (180,), width=3)
 
     shown = ayahs if idx is None else [ayahs[idx]]
@@ -359,7 +372,10 @@ HOOKS = [
 ]
 MIN_DUR = 62.0
 # INTRO = 0 : la récitation commence dès la 1re image (demande de Yanis, 17/10)
-INTRO, END, GAP_REC, GAP_FR = 0.0, 3.0, 0.0, 0.8
+# END = 0.8 : plus d'écran de fin de 3 s ni de fondu au noir (26/11) : la vidéo se termine sur le dernier
+# verset et repart proprement en boucle sur TikTok (moins de départs pendant l'écran de fin)
+THEME_SECS = 3.5  # durée d'affichage du titre du thème au début
+INTRO, END, GAP_REC, GAP_FR = 0.0, 0.8, 0.0, 0.8
 FADE = 0.02  # micro-fondu (20 ms) au début/fin de chaque verset : pas de clic, pas de coupure sèche
 MAX_EDGE_SILENCE = 0.35  # on garde la respiration naturelle du récitateur, sans blanc ajouté
 
@@ -486,7 +502,7 @@ def gather(v, tmp, folder):
     return items, duration()
 
 
-def build(items, mode, out_path, cfg, hook, bg_path=None):
+def build(items, mode, out_path, cfg, hook, bg_path=None, theme=None):
     with tempfile.TemporaryDirectory() as tmp:
         # le tout premier verset démarre sans blanc
         first = items[0]["rec"]
@@ -505,7 +521,8 @@ def build(items, mode, out_path, cfg, hook, bg_path=None):
                 segs.append(("page", t, f, i, True))
                 sounds.append((ay["frv"] * 0.9, t + 0.2))
                 t += f
-        segs.append(("end", t, END, None, False))
+        if cfg.get("end_screen", False):
+            segs.append(("end", t, END, None, False))
         total = t + END
         cta_from, cta_to = total * 0.45, total * 0.45 + 4.0
 
@@ -542,14 +559,15 @@ def build(items, mode, out_path, cfg, hook, bg_path=None):
             while si + 1 < len(segs) and tt >= segs[si + 1][1]:
                 si += 1
             kind, st, dur, idx, fr_on = segs[si]
-            key = (kind, idx, fr_on)
+            th = theme if (theme and kind == "page" and tt < THEME_SECS) else None
+            key = (kind, idx, fr_on, th)
             if key not in cache:
                 if kind == "hook":
                     cache[key] = hook_layer(hook, cfg)
                 elif kind == "end":
                     cache[key] = end_layer(cfg)
                 else:
-                    cache[key] = layout(items, cfg, fr_on, idx)
+                    cache[key] = layout(items, cfg, fr_on, idx, th)
             frame = bg.frame(tt)
             lt = tt - st
             lay = cache[key]
@@ -567,7 +585,7 @@ def build(items, mode, out_path, cfg, hook, bg_path=None):
             d.rectangle((0, 0, int(W * tt / total), 10), fill=GOLD + (230,))
             if INTRO > 0 and tt < 0.5:
                 frame = Image.blend(black, frame, tt / 0.5)
-            if tt > total - 0.6:
+            if cfg.get("end_screen", False) and tt > total - 0.6:
                 frame = Image.blend(black, frame, max(0.0, (total - tt) / 0.6))
             proc.stdin.write(frame.convert("RGB").tobytes())
         proc.stdin.close()
@@ -613,7 +631,13 @@ def main():
             if not os.path.exists(bg_path):
                 print("fond introuvable :", bg_path, file=sys.stderr)
                 bg_path = None
-            dur = build(items, v["mode"] if cfg.get("spoken_translation", True) else "recit", out, cfg, hook, bg_path)
+            theme = v.get("hook")
+            if theme is None:
+                pp = os.path.join(HERE, "passages.json")
+                for p in (json.load(open(pp, encoding="utf-8")) if os.path.exists(pp) else []):
+                    if (p["surah"], p["from"], p["to"]) == (v["surah"], v["from"], v["to"]):
+                        theme = p.get("hook")
+            dur = build(items, v["mode"] if cfg.get("spoken_translation", True) else "recit", out, cfg, hook, bg_path, theme)
         print(f"ok {out} ({dur:.1f}s, {cfg_global['_reciter']}, versets {items[0]['s']}:{items[0]['a']} -> {items[-1]['s']}:{items[-1]['a']})")
 
 

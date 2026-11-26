@@ -2,6 +2,15 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-26 (après-midi) — analyse d'audience demandée par Yanis + changements vidéo
+- Données disponibles via Metricool : vues, j'aime, commentaires, partages, durée (24 vidéos). NON disponibles (vides même en demandant chaque mesure à part) : temps moyen regardé, % jusqu'au bout, temps total regardé, sources de vues, sexe, pays, âge. À demander à Yanis (captures TikTok Analytics) ou passer le compte TikTok en « compte Entreprise » pour que Metricool les reçoive peut-être.
+- Constat : la plupart des vidéos plafonnent à 630-760 vues (premier lot de diffusion de TikTok). Celles qui dépassent : sourates/passages complets longs (Nouh 1 200, Maryam 1 041, Al-Muzzammil 881, fin d'Al-Baqara 878, Al-Hashr 795).
+- Taux de j'aime (j'aime / vues, signe que les gens restent) : longues ≈ 19 % en moyenne (Youssouf 12:1-18 29 %, Al-Muzzammil 22 %, Nouh 21,5 %, Maryam 15 %, Ya-Sin 12 %) contre ≈ 10 % pour les courtes (meilleure : Al-Imran 3:190-194, 14 %).
+- Récitateurs : Alafasy ≈ Ash-Shatri (pas d'écart net). Heures : 10:00 et 18:00 équivalentes.
+- Changements generate.py (demandés par Yanis) : (1) titre du thème en grand dans les 3,5 premières secondes (champ "hook" de passages.json / queue.json) ; (2) plus d'écran de fin de 3 s ni de fondu au noir : la vidéo finit sur le dernier verset et repart en boucle. Testé en local (mise en page OK).
+- plan.py : copie "hook" dans la file ; --next / --stock ignorent un passage déjà publié (c0121 Al-Hashr et c0141 Al-Muzzammil étaient des doublons).
+- Nouvelle série « ciblée » (champ "cible" dans passages.json), à mesurer : c0153 Début d'Al-Kahf 18:1-10 (vendredi), c0154 La mère de Maryam 3:35-37, c0155 An-Naba en entier (longue), c0156 Parmi Ses signes 30:20-25 ; ensuite dans passages.json : l'annonce faite à Maryam 3:42-47, Zakariya 19:1-15, parents 46:15-16. Placées en tête de la file.
+
 ## 2026-11-26 (matin) — point quotidien
 - Publication : c0149 « Sourate Al-Waqi'a, versets 1 à 56 » (longue, Alafasy, 6 min 26, fond mer) programmée aujourd'hui 18:00 (longue → soir ; 18 h 2e meilleure heure Metricool), id 442688274. Vidéo vérifiée (texte lisible, fond sans texte ni personne, aucun appel). Novembre : 17/20 (cible du jour 18).
 - Statuts Metricool : aucune erreur (c0131 à c0148 « publiées »). c0144 Az-Zumar, c0138, c0128 toujours absentes des stats (ne pas republier). c0130 reste en brouillon.

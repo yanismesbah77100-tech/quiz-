@@ -140,6 +140,42 @@
    "bg": "v09.webm"
   },
   {
+   "name": "c0153",
+   "surah": 18,
+   "from": 1,
+   "to": 10,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "hook": "Le d\u00e9but de Sourate Al-Kahf"
+  },
+  {
+   "name": "c0154",
+   "surah": 3,
+   "from": 35,
+   "to": 37,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "hook": "La m\u00e8re de Maryam"
+  },
+  {
+   "name": "c0155",
+   "surah": 78,
+   "from": 1,
+   "to": 40,
+   "mode": "recit",
+   "reciter": "Alafasy_128kbps",
+   "hook": "Sourate An-Naba en entier"
+  },
+  {
+   "name": "c0156",
+   "surah": 30,
+   "from": 20,
+   "to": 25,
+   "mode": "recit",
+   "reciter": "Abu_Bakr_Ash-Shaatree_128kbps",
+   "hook": "Parmi Ses signes"
+  },
+  {
    "name": "c0150",
    "surah": 3,
    "from": 26,
@@ -172,7 +208,7 @@
    "title": "Sourate Al-A'la",
    "reciter_nom": "Ali Jaber",
    "fichier_pret": true,
-   "caption": "Sourate Al-A'la (87:1-19) 🤍\nRécitation : Ali Jaber • Traduction : Muhammad Hamidullah\n#coran #islam #alala"
+   "caption": "Sourate Al-A'la (87:1-19) \ud83e\udd0d\nR\u00e9citation : Ali Jaber \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #alala"
   },
   {
    "name": "c0103",
@@ -183,7 +219,7 @@
    "title": "Sourate At-Tariq",
    "reciter_nom": "Khalid Al-Qahtani",
    "fichier_pret": true,
-   "caption": "Sourate At-Tariq (86:1-17) 🤍\nRécitation : Khalid Al-Qahtani • Traduction : Muhammad Hamidullah\n#coran #islam #attariq"
+   "caption": "Sourate At-Tariq (86:1-17) \ud83e\udd0d\nR\u00e9citation : Khalid Al-Qahtani \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #attariq"
   },
   {
    "name": "c0104",
@@ -194,7 +230,7 @@
    "title": "Sourate Al-Balad",
    "reciter_nom": "Abdullah Al-Juhany",
    "fichier_pret": true,
-   "caption": "Sourate Al-Balad (90:1-20) 🤍\nRécitation : Abdullah Al-Juhany • Traduction : Muhammad Hamidullah\n#coran #islam #albalad"
+   "caption": "Sourate Al-Balad (90:1-20) \ud83e\udd0d\nR\u00e9citation : Abdullah Al-Juhany \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #albalad"
   },
   {
    "name": "c0105",
@@ -205,7 +241,7 @@
    "title": "Sourate Ash-Shams",
    "reciter_nom": "Akram Al-Alaqimy",
    "fichier_pret": true,
-   "caption": "Sourate Ash-Shams (91:1-15) 🤍\nRécitation : Akram Al-Alaqimy • Traduction : Muhammad Hamidullah\n#coran #islam #ashshams"
+   "caption": "Sourate Ash-Shams (91:1-15) \ud83e\udd0d\nR\u00e9citation : Akram Al-Alaqimy \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #ashshams"
   },
   {
    "name": "c0025",
@@ -521,7 +557,7 @@
    "mode": "recit",
    "reciter": "Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net",
    "remplace": "c0102",
-   "caption": "Sourate Al-Ghashiya (88:1-26) 🤍\nRécitation : Ahmed Al-Ajamy • Traduction : Muhammad Hamidullah\n#coran #islam #alghashiya",
+   "caption": "Sourate Al-Ghashiya (88:1-26) \ud83e\udd0d\nR\u00e9citation : Ahmed Al-Ajamy \u2022 Traduction : Muhammad Hamidullah\n#coran #islam #alghashiya",
    "title": "Sourate Al-Ghashiya"
   },
   {
