@@ -2,6 +2,14 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-27 (matin) — point quotidien
+- Publication : c0164 « Ibrahim et son fils » (As-Saffat 37:99-111, Alafasy, courte 2 min 04, fond photo de La Mecque mk5) programmée aujourd'hui 10:00 (meilleure heure Metricool), id 443960351. Vidéo vérifiée (texte lisible, découpage en écrans courts OK, aucune personne visible, aucun appel). Novembre : 18/20 (cible du jour 18).
+- Statuts Metricool : aucune erreur (c0131 à c0149 « publiées »). c0149 Al-Waqi'a (26/11 18:00) pas encore dans les stats (normal, 1 jour). c0144 Az-Zumar, c0138, c0128 toujours absentes (ne pas republier). c0130 reste en brouillon.
+- Stats : Al-Imran 3:190-194 685 vues / 96 j'aime (stable) ; Nouh 1 200 / 258 ; Al-Muzzammil 881 / 197 ; Moussa et Al-Khidr 757 ; Ibrahim et Ismaïl 709 ; Moussa à Madyan 702 ; Youssouf retrouve ses parents 700 ; Adam 682 ; Luqman 669 ; Ya-Sin 663 ; Invocation d'Ibrahim 635 ; Ta-Ha 628 ; Youssouf 12:1-18 323 ; Moussa et la mer 257.
+- Compte : 43 abonnés (24/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Conclusions inchangées ; aucun changement de file ni de generate.py. On mesurera la série « prophètes » + fonds La Mecque à partir de demain.
+- Stock : 18 vidéos prêtes, 42 passages libres.
+
 ## 2026-11-26 (soir) — série « prophètes » avec les photos de La Mecque de Yanis
 - Demande de Yanis : nouveaux thèmes = passages marquants sur les prophètes, avec une morale (champ "morale" dans passages.json, non affiché).
 - FONDS : Yanis a donné ses propres photos de La Mecque (tour de l'horloge, minarets, Kaaba) et demandé de les utiliser → coran/fonds_photos/mk1-mk6.jpg (recadrées pour retirer toutes les personnes). EXCEPTION VOULUE PAR YANIS à la règle « nature sans texte » : la calligraphie de la Kaaba et de la tour fait partie du lieu, ne pas retirer ces fonds pour ça. Toujours vérifier qu'aucune personne n'est visible.
