@@ -2,6 +2,13 @@
 
 Mis à jour chaque jour par la tâche automatique.
 
+## 2026-11-28 (matin) — point quotidien
+- Publication : c0165 « Moussa et les magiciens » (Ta-Ha 20:65-73, Ash-Shatri, courte 2 min 32, fond photo La Mecque mk2) programmée aujourd'hui 10:00 (meilleure heure Metricool), id 445170715. Vidéo vérifiée (texte lisible, aucune personne, aucun appel). Novembre : 19/20 (cible du jour 19).
+- Statuts Metricool : aucune erreur (c0131 à c0164 « publiées », c0164 Ibrahim et son fils publiée le 27/11 avec lien TikTok). Stats identiques à hier (figées vers le 25/11) : c0149 Al-Waqi'a et c0164 pas encore dans les stats → pas considérées bloquées tant que les stats ne bougent pas. c0144, c0138, c0128 toujours absentes (ne pas republier). c0130 reste en brouillon.
+- Stats inchangées : Nouh 1 200 vues / 258 j'aime ; Al-Muzzammil 881 / 197 ; Al-Kahf 757 ; Al-Baqara 2:127-129 709 ; Madyan 702 ; Youssouf 12:100-101 700 ; Al-Imran 685 ; Adam 682 ; Luqman 669 ; Ya-Sin 663 ; Ibrahim 635 ; Ta-Ha 628.
+- Compte : 43 abonnés (dernier chiffre 24/11). Temps moyen regardé, % jusqu'au bout, sexe, pays : toujours vides.
+- Aucun changement de file ni de generate.py. Stock : 17 vidéos prêtes, 42 passages libres.
+
 ## 2026-11-27 (matin) — point quotidien
 - Publication : c0164 « Ibrahim et son fils » (As-Saffat 37:99-111, Alafasy, courte 2 min 04, fond photo de La Mecque mk5) programmée aujourd'hui 10:00 (meilleure heure Metricool), id 443960351. Vidéo vérifiée (texte lisible, découpage en écrans courts OK, aucune personne visible, aucun appel). Novembre : 18/20 (cible du jour 18).
 - Statuts Metricool : aucune erreur (c0131 à c0149 « publiées »). c0149 Al-Waqi'a (26/11 18:00) pas encore dans les stats (normal, 1 jour). c0144 Az-Zumar, c0138, c0128 toujours absentes (ne pas republier). c0130 reste en brouillon.
